@@ -2,7 +2,7 @@ import images from "./images";
 
 const description = [
   {
-    category: "villa",
+    category: "Villa",
     specification: "Villa écologique en brique de terre en forme H",
     service: "Conception et construction",
     surface: "500 m2",
@@ -22,7 +22,7 @@ const description = [
     imgUrl: [images.villa2, images.villa1],
   },
   {
-    category: "villa",
+    category: "Villa",
     specification: "Conception d'une villa de type F4",
     service: "Conception et construction",
     surface: "250 m2",
@@ -40,7 +40,7 @@ const description = [
     imgUrl: [images.villa5, images.villa6, images.villa7],
   },
   {
-    category: "villa",
+    category: "Villa",
     specification: "Conception d'une villa de type F5",
     service: "Conception et construction",
     surface: "280 m2",
@@ -73,7 +73,7 @@ const description = [
     imgUrl: images.villa9,
   },
   {
-    category: "Apartment",
+    category: "Appartement",
     specification: "Appartement de type F3",
     service: "Conception et construction",
     surface: "200 m2",
@@ -122,3 +122,5 @@ const description = [
     imgUrl: [images.btm1, images.btm2],
   },
 ];
+
+export default { description };
