@@ -1,5 +1,6 @@
 import React from "react";
-import " ./consultation.css";
+import consultation from "./consultation.css";
+
 const Consultation = () => {
   return <div>Consultation</div>;
 };

@@ -1,3 +1,3 @@
 import { CardImage } from "./CardImage/CardImage";
-import { Consulting } from "./Consulting/Consulting";
-import { headerText } from "./headerText/headerText";
+import { Consultation } from "./Consultation/Consultation";
+import { HeadText } from "./HeadText/HeadText";
