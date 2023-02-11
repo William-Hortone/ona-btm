@@ -1,15 +1,25 @@
 .section__padding {
   padding: 4rem 6rem;
 }
+.App{
+  height: 100vh;
+  width:100%;
+  /* background-color: aquamarine; */
+}
+/* .text{
+  color: red;
+  height: 100vh;
+  width:100%;
+  background-color: aquamarine;
+} */
 
-
-/* .app__bg {
-  background: url('./assets/bg.png');
+.app__bg {
+  background: url('./assets/building1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-} */
+}
 
 .custom__button {
   background-color: var(--color-crimson);
