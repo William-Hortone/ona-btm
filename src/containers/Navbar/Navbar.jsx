@@ -1,8 +1,10 @@
 // import React from "react";
 import React, { Component, useState } from "react";
-import "./navbar.css";
-import images from "../../constants/images";
+import { Link } from "react-router-dom";
 import { FaBars, FaBeer, FaHome } from "react-icons/fa";
+import "./navbar.css";
+
+import images from "../../constants/images";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -15,19 +17,19 @@ const Navbar = () => {
       <div className="app__navbar-links-container">
         <ul className="app__navbar-links">
           <li className="navbar__link">
-            <a href="#">Accueil</a>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="navbar__link">
-            <a href="#"> A propos </a>
+            <Link to="/about"> A propos </Link>
           </li>
           <li className="navbar__link">
-            <a href="#">Services</a>
+            <Link to="/services">Services</Link>
           </li>
           <li className="navbar__link">
-            <a href="#">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="navbar__link">
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
@@ -50,19 +52,19 @@ const Navbar = () => {
             </div>
             <ul className="app__navbar-smallScreen-links">
               <li className="navbar__link">
-                <a href="">Accueil</a>
+                <Link to="/">Accueil</Link>
               </li>
               <li className="navbar__link">
-                <a href=""> A propos </a>
+                <Link to="/about"> A propos </Link>
               </li>
               <li className="navbar__link">
-                <a href="">Services</a>
+                <Link to="/services">Services</Link>
               </li>
               <li className="navbar__link">
-                <a href="">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
               <li className="navbar__link">
-                <a href="">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
