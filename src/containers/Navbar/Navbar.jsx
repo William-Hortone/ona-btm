@@ -1,6 +1,6 @@
 // import React from "react";
 import React, { Component, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaBeer, FaHome } from "react-icons/fa";
 import "./navbar.css";
 
@@ -8,6 +8,13 @@ import images from "../../constants/images";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const navLinkStyle = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "normal",
+      color: isActive ? "#FF7A3D" : "white",
+    };
+  };
 
   return (
     <div className="app__navbar ">
@@ -17,19 +24,29 @@ const Navbar = () => {
       <div className="app__navbar-links-container">
         <ul className="app__navbar-links">
           <li className="navbar__link">
-            <Link to="/">Accueil</Link>
+            <NavLink style={navLinkStyle} to="/">
+              Accueil
+            </NavLink>
           </li>
           <li className="navbar__link">
-            <Link to="/about"> A propos </Link>
+            <NavLink style={navLinkStyle} to="/about">
+              A propos
+            </NavLink>
           </li>
           <li className="navbar__link">
-            <Link to="/services">Services</Link>
+            <NavLink style={navLinkStyle} to="/services">
+              Services
+            </NavLink>
           </li>
           <li className="navbar__link">
-            <Link to="/projects">Projects</Link>
+            <NavLink style={navLinkStyle} to="/projects">
+              Projects
+            </NavLink>
           </li>
           <li className="navbar__link">
-            <Link to="/contact">Contact</Link>
+            <NavLink style={navLinkStyle} to="/contact">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -52,19 +69,19 @@ const Navbar = () => {
             </div>
             <ul className="app__navbar-smallScreen-links">
               <li className="navbar__link">
-                <Link to="/">Accueil</Link>
+                <a href="/">Accueil</a>
               </li>
               <li className="navbar__link">
-                <Link to="/about"> A propos </Link>
+                <a href="/about"> A propos </a>
               </li>
               <li className="navbar__link">
-                <Link to="/services">Services</Link>
+                <a href="/services">Services</a>
               </li>
               <li className="navbar__link">
-                <Link to="/projects">Projects</Link>
+                <a href="/projects">Projects</a>
               </li>
               <li className="navbar__link">
-                <Link to="/contact">Contact</Link>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </div>
