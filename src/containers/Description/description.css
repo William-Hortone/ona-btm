@@ -3,15 +3,22 @@
     width: 100%;
     display: flex;
     background-color: #fff;
+    
 }
 .app__description-left-box{
     flex: 1;
     display: flex;
     flex-direction: column;
-
+    padding:2rem  4rem 0 0;
 }
 .app__description-left-box h2{
     margin-bottom: 2rem;
+    font-family: var(--font-base);
+}
+.app__description-left-box p:nth-of-type(1){
+    font-family: var(--font-alt);
+    color: #000000b2;
+    line-height: 2;
 }
 .app__description-contact_info{
     margin-top: 3rem;
@@ -23,6 +30,24 @@
 }
 .app__description-right-box{
     flex: 1;
-   
+   padding-left: 4rem;
 
+}
+
+@media screen and (max-width: 1100px){
+    .app__description{
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+    }
+    .app__description-right-box{
+        
+       padding-left: 0;
+       display: flex;
+       align-items: center;
+    
+    }
+    .app__description-left-box{
+        padding-right: 0;
+    }
 }

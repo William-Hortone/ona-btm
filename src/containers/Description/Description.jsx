@@ -22,7 +22,9 @@ const Description = () => {
           <p>91 123-456-7890</p>
         </div>
       </div>
-      <div className="app__description-right-box"></div>
+      <div className="app__description-right-box">
+        <CardImage />
+      </div>
     </div>
   );
 };

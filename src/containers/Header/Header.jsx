@@ -25,7 +25,7 @@ const Header = () => {
         </div>
       </div>
       <div className="app__header-bg">
-        <img src={images.building2} alt="" />
+        <img src={images.building2} alt="building images" />
       </div>
       <div className="box-blur"></div>
     </div>

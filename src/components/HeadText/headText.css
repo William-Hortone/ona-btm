@@ -2,19 +2,29 @@
     margin-bottom: 3rem;
 }
 .app__headText h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: capitalize;
     /* line-height: 3; */
-    font-weight: 900;
-    font-family: var(--font-base);
+    font-weight: 600;
+    /* font-family: var(--font-base); */
     position: relative;
 }
 .app__headText h1::after{
     content: '';
-    height: 3px;
+    height: 4px;
     width: 70px;
     position: absolute;
     bottom: -10px;
     left: 0;
     background-color: var(--color-orange);
+}
+@media screen and (max-width: 800px){
+    .app__headText h1{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .app__headText h1{
+        font-size: 2rem;
+    }
 }
