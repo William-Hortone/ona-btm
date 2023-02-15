@@ -1,6 +1,6 @@
 import React from "react";
 import "./description.css";
-import { images } from "../../constants/images";
+import images from "../../constants/images";
 import { HeadText, CardImage } from "../../components";
 
 const Description = () => {
@@ -23,7 +23,7 @@ const Description = () => {
         </div>
       </div>
       <div className="app__description-right-box">
-        <CardImage />
+        <CardImage img={images.building1} />
       </div>
     </div>
   );

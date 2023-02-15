@@ -1,6 +1,11 @@
 import React from "react";
-import images from "../../constants/images";
-import { Header, Description, Specialization } from "../../containers";
+// import images from "../../constants/images";
+import {
+  Header,
+  Description,
+  Specialization,
+  RecentProjects,
+} from "../../containers";
 import { Consultation } from "../../components";
 
 const Home = () => {
@@ -10,6 +15,7 @@ const Home = () => {
       <Description />
       <Consultation />
       <Specialization />
+      <RecentProjects />
     </div>
   );
 };

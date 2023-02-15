@@ -3,10 +3,10 @@ import "./cardImage.css";
 import images from "../../constants/images";
 // import { images } from "../../constants/images";
 
-const CardImage = () => {
+const CardImage = ({ img }) => {
   return (
     <div className="app__cardImage">
-      <img src={images.building1} alt="building images" />
+      <img src={img} alt="building images" />
       <div></div>
     </div>
   );
