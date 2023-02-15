@@ -1,5 +1,7 @@
 import React from "react";
 import "./header.css";
+import { Parallax } from "react-parallax";
+import images from "../../constants/images";
 
 const Header = () => {
   return (
@@ -22,6 +24,10 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <div className="app__header-bg">
+        <img src={images.building2} alt="" />
+      </div>
+      <div className="box-blur"></div>
     </div>
   );
 };

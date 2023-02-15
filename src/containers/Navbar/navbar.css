@@ -1,5 +1,5 @@
 .app__navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,10 +9,12 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 2rem;
+    z-index: 2;
+    border-bottom: 1px solid #ffffff2c;
 }
 .app__navbar-logo{
-    width: 300px;
-    height: 90px;
+    width: 200px;
+    height: 150px;
     flex: 1;
     /* background-color: red; */
 }
@@ -39,7 +41,7 @@
     padding-right: 4rem;
 }
 .app__navbar-links li a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: var(--font-alt);
 }
 
