@@ -5,7 +5,7 @@ import { HeadText } from "../../components";
 const RecentProjects = () => {
   return (
     <div className="app__r-projects">
-      <div className="app__r-projects_head">
+      <div className="app__r-projects_head section__paddidng">
         <div className="app__r-projects_head-text-box">
           <HeadText title="Our Recent Projects" />
           <p>
