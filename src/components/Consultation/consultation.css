@@ -1,0 +1,74 @@
+.app__consultation{
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/building5.jpg');
+}
+.app__consultation-container{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    /* padding-top: 4rem ; */
+    text-align: center;
+}
+.app__consultation-container span{
+    width: 50px;
+    height: 4px;
+    background-color: var(--color-orange);
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+.app__consultation-container h1{
+    margin-bottom: 1.5rem;
+    color: #fff;
+    z-index: 1;
+    font-size: 2rem;
+}
+.app__consultation-container p{
+    z-index: 1;
+    color: #ffffffb4;
+    line-height: 2;
+    font-size: 1rem;
+}
+.app__consultation-container div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000081;
+    z-index: 0;
+}
+.app__consultation-container a{
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 808px) {
+    .app__consultation-container h1{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .app__consultation-container p{
+        line-height: 2;
+        font-size: .8rem;
+    }
+    .app__consultation-container a{
+        margin-top: 2rem;
+       
+    }
+    .app__consultation-container{
+        justify-content: center;
+     
+    }
+    
+}

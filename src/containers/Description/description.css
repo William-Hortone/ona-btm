@@ -1,8 +1,8 @@
 .app__description{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     display: flex;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     
 }
 .app__description-left-box{

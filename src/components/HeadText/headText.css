@@ -2,7 +2,7 @@
     margin-bottom: 3rem;
 }
 .app__headText h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
     /* line-height: 3; */
     font-weight: 600;
@@ -25,6 +25,6 @@
 }
 @media screen and (max-width: 450px){
     .app__headText h1{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
