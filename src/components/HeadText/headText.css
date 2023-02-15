@@ -1,0 +1,20 @@
+.app__headText{
+    margin-bottom: 3rem;
+}
+.app__headText h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    /* line-height: 3; */
+    font-weight: 900;
+    font-family: var(--font-base);
+    position: relative;
+}
+.app__headText h1::after{
+    content: '';
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--color-orange);
+}

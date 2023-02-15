@@ -51,15 +51,15 @@
     background-color:#00000063;
     z-index: -1;
 }
-/* @media screen and (min-width: 1200px){
+@media screen and (max-width: 1400px){
     .app__header-container h1 {
-        font-size: 4.5rem;
+        font-size: 3.8rem;
     }
     .app__header{
         align-items: flex-end;
     }
-} */
-@media screen and (max-width: 800px){
+}
+@media screen and (max-width: 900px){
     .app__header-container h1 {
         font-size: 3rem;
     }

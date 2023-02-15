@@ -1,0 +1,28 @@
+.app__description{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+.app__description-left-box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.app__description-left-box h2{
+    margin-bottom: 2rem;
+}
+.app__description-contact_info{
+    margin-top: 3rem;
+}
+.app__description-contact_info p:nth-of-type(2){
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-top: .7rem;
+}
+.app__description-right-box{
+    flex: 1;
+   
+
+}
