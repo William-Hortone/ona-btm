@@ -8,7 +8,7 @@ const Story = () => {
   return (
     <div className="app__story section__padding">
       <div className="app__story-left-box">
-        <CardImage img={images.building6} />
+        <CardImage img={images.office} />
       </div>
       <div className="app__story-right-box">
         <HeadText title="A Propos De Nous" />

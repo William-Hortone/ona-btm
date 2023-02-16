@@ -44,13 +44,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 @media screen and (max-width: 1200px){
     .app__story-right-box{
         padding: 0rem ;
-    }
-    
+    }   
 }
 @media screen and (max-width: 1000px) {
     .app__story{

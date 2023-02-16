@@ -6,6 +6,9 @@ import Navbar from "./Navbar/Navbar";
 import Specialization from "./Specialization/Specialization";
 import Story from "./Story/Story";
 import Team from "./Team/Team";
+import ServiceOBE from "./ServiceOBE/ServiceOBE";
+import ServiceOCA from "./ServiceOCA/ServiceOCA";
+import ServiceOT from "./ServiceOT/ServiceOT";
 
 export {
   Description,
@@ -16,4 +19,7 @@ export {
   RecentProjects,
   Story,
   Team,
+  ServiceOBE,
+  ServiceOCA,
+  ServiceOT,
 };

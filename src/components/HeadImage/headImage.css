@@ -39,6 +39,9 @@
     opacity: .56;
 }
 @media screen  and ( max-width: 768px ) {
+    .app__headImage{
+        height: 40vh;
+    }
     .app__headImage span{
         left: 50%;
         transform: translate(-50%, -50%);
@@ -47,5 +50,11 @@
     .app__headImage span::after{
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+@media screen  and ( max-width: 550px ){
+    .app__headImage span{
+       
+        font-size: 2.5rem;
     }
 }

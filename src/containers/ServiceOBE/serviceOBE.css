@@ -1,0 +1,74 @@
+.app__serviceOBE{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #Fff;
+    padding-top: 6rem;
+}
+.app__serviceOBE-left-box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 0 3rem;
+}
+.app__serviceOBE-left-box p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom:2rem ;
+    color: #000;
+    opacity: .7;
+}
+.app__serviceOBE-left-box ul{
+    padding-left: 1rem ;
+}
+.app__serviceOBE-left-box ul li{
+    font-size: 17px;
+    line-height: 1.5;
+    color: #000;
+    opacity: .8;
+}
+.app__serviceOBE-right-box{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: minmax(200px, 250px);
+}
+.s-item1{
+    background-image: url('../../assets/maison-l-plan.png');
+    background-position: center center;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 /1 ;
+}
+.s-item2{
+    background-image: url('../../assets/1plan.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.s-item3{
+    background-image: url('../../assets/4plan.jpg');
+    background-position: center center;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+
+@media screen and (max-width:1000px){
+    .app__serviceOBE{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: auto;
+        padding-top: 2rem;
+    }
+    .app__serviceOBE-left-box{
+        padding: 3rem 1rem 0 1rem;
+    }
+    .app__serviceOBE-right-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .serviceOBE-left-box_item{
+        height: 400px;
+    }
+}
