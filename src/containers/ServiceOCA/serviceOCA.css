@@ -33,6 +33,7 @@
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: minmax(200px, 250px);
     padding-right: 2rem;
+    padding-left: 4rem;
 }
 .s-item1{
     background-image: url('../../assets/maison-l-plan.png');
@@ -53,7 +54,6 @@
     grid-column: 1 / 2;
     grid-row: 2 / 2;
 }
-
 @media screen and (max-width:1000px){
     .app__serviceOCA{
         display: flex;
@@ -68,6 +68,7 @@
     .app__serviceOCA-right-box{
         display: flex;
         flex-direction: column;
+  
         padding-left: 1rem;
     }
     .serviceOCA-left-box_item{
