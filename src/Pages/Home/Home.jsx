@@ -1,10 +1,10 @@
 import React from "react";
-// import images from "../../constants/images";
 import {
   Header,
   Description,
   Specialization,
   RecentProjects,
+  Footer,
 } from "../../containers";
 import { Consultation } from "../../components";
 
@@ -16,6 +16,7 @@ const Home = () => {
       <Consultation />
       <Specialization />
       <RecentProjects />
+      <Footer />
     </div>
   );
 };
