@@ -1,0 +1,51 @@
+.app__headImage{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+
+}
+.app__headImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.app__headImage span{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    font-size: 4.4rem;
+    color: #fff;
+    z-index: 1;
+    font-weight: 900;
+
+}
+.app__headImage span::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--color-orange);
+}
+.app__headImage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .56;
+}
+@media screen  and ( max-width: 768px ) {
+    .app__headImage span{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5rem;
+    }
+    .app__headImage span::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
