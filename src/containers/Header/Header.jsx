@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.css";
-import { Parallax } from "react-parallax";
 import images from "../../constants/images";
 
 const Header = () => {
@@ -23,9 +22,6 @@ const Header = () => {
             </button>
           </a>
         </div>
-      </div>
-      <div className="app__header-bg">
-        <img src={images.building2} alt="building images" />
       </div>
       <div className="box-blur"></div>
     </div>

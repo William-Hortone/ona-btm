@@ -65,9 +65,7 @@
     border-top: 1px solid #ffffff27;
 }
 @media screen and (max-width: 1200px) {
-    .app__footer{
-        /* height: auto; */
-    }
+   
     .app__footer-container{
         padding-inline: 4rem;
         margin-bottom: 2rem;
@@ -96,10 +94,10 @@
     }
     .app__footer-container p{
         font-size: 17px;
-       
     }
     .footer-copyright{
         flex-direction: column;
         align-items: center;
+        padding: 2rem 0 0 0 ;
     }
 }

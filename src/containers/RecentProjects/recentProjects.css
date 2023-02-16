@@ -5,6 +5,7 @@
     background-color: #fff;
     flex-direction: column;
     gap: 3rem;
+    margin-bottom: 3rem;
 }
 .app__r-projects_head{
     width: 100%;

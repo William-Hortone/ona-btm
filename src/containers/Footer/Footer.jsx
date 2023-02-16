@@ -4,7 +4,7 @@ import images from "../../constants/images";
 import { FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="app__footer section__paddsing">
+    <div className="app__footer ">
       <div className="app__footer-container">
         <div className="app__footer-first-box">
           <img src={images.logo} alt="logo images" />
