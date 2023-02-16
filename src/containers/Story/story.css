@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     background-color: #fff;
+    margin-bottom: 5rem;
 }
 .app__story-left-box{
     flex: 1;
@@ -12,10 +13,10 @@
     padding: 3rem ;
 }
 .story-description p{
-    font-size: 18px;
+    font-size: 16.5px;
     line-height: 1.4;
     color: #000;
-    opacity: .56;
+    opacity: .7;
     font-family: var(--font-alt);
 }
 .app__story-description-items{
@@ -47,7 +48,6 @@
 }
 @media screen and (max-width: 1200px){
     .app__story-right-box{
-      
         padding: 0rem ;
     }
     

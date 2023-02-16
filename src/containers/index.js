@@ -5,6 +5,7 @@ import RecentProjects from "./RecentProjects/RecentProjects";
 import Navbar from "./Navbar/Navbar";
 import Specialization from "./Specialization/Specialization";
 import Story from "./Story/Story";
+import Team from "./Team/Team";
 
 export {
   Description,
@@ -14,4 +15,5 @@ export {
   Header,
   RecentProjects,
   Story,
+  Team,
 };

@@ -1,12 +1,11 @@
 import React from "react";
+import { Consultation } from "../../components";
 import {
   Header,
   Description,
   Specialization,
   RecentProjects,
-  Footer,
 } from "../../containers";
-import { Consultation } from "../../components";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <Consultation />
       <Specialization />
       <RecentProjects />
-      <Footer />
     </div>
   );
 };
