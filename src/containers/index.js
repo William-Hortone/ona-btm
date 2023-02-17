@@ -9,6 +9,7 @@ import Team from "./Team/Team";
 import ServiceOBE from "./ServiceOBE/ServiceOBE";
 import ServiceOCA from "./ServiceOCA/ServiceOCA";
 import ServiceOT from "./ServiceOT/ServiceOT";
+import SectionProject from "./SectionProject/SectionProject";
 
 export {
   Description,
@@ -22,4 +23,5 @@ export {
   ServiceOBE,
   ServiceOCA,
   ServiceOT,
+  SectionProject,
 };

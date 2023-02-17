@@ -7,39 +7,34 @@ const ServiceOT = () => {
   return (
     <div className="app__serviceOT">
       <div className="app__serviceOT-left-box">
-        <HeadText title="Ona conception architecturale" />
+        <HeadText title="Ona Travaux" />
+        <h3>Votre entreprise générale pour l'exécution de vos chantiers</h3>
         <p>
-          Notre professionnalisme, notre engagement et notre sens du service de
-          proximité sont la garantie de la qualité de nos missions. Nous
-          intervenons dans les domaines d’activités suivants: <br />
+          ONA TRAVAUX apporte une réponse à tous les projets de construction ou
+          réhabilitation de bâtiments, VRD et travaux publics Notre pôle travaux
+          TCE regroupe toutes les compétences nécessaires pour garantir la
+          réussite de vos projets. Cela par une équipe d’hommes et de femmes
+          expérimenté-es. Nos ingénieurs travaux et techniciens sont à pied
+          d’oeuvre tout au long des travaux afin d’assurer un bon suivi. <br />
+          Ona travaux réalise pour ses clients, cela grâce à la qualité et au
+          potentiel de son personnel et l’expérience de ses partenaires des
+          prestations techniques de : <br />
         </p>
-        <h3>STRUCTURE</h3>
-        <p>La conception, l’optimisation et l'étude de structures :</p>
+
         <ul>
-          <li>Béton armé</li>
-          <li>Construction métallique</li>
-          <li>Construction en bois</li>
-        </ul>
-        <p>Les plans de projet et d'exécutions:</p>
-        <ul>
-          <li>Coffrage</li>
-          <li>Armature</li>
-          <li>Nomenclatures</li>
-        </ul>
-        <p>Les calculs de structures :</p>
-        <ul>
-          <li>Descentes de charges</li>
-          <li>Calcul 3D et dynamique</li>
-          <li>
-            Éditer toute note de calcul de dimensionnement conformément aux
-            réglementations en vigueur.
-          </li>
+          <li>Gros oeuvre</li>
+          <li>VRD</li>
+          <li>Maçonnerie</li>
+          <li>Ouvrages "clés en main" </li>
+          <li>Peinture</li>
+          <li>Plomberie</li>
+          <li>Assainissement</li>
+          <li>Pose des pavés</li>
+          <li>Électricité</li>
         </ul>
       </div>
       <div className="app__serviceOT-right-box">
-        <div className="serviceOT-left-box_item s2-item1"></div>
-        <div className="serviceOT-left-box_item s2-item2"></div>
-        <div className="serviceOT-left-box_item s2-item3"></div>
+        <CardImage img={images.building6} />
       </div>
     </div>
   );

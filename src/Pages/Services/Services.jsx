@@ -1,6 +1,6 @@
 import React from "react";
 import { ServiceOBE, ServiceOCA, ServiceOT } from "../../containers";
-import { HeadImage } from "../../components";
+import { HeadImage, Consultation } from "../../components";
 
 import images from "../../constants/images";
 
@@ -11,6 +11,7 @@ const Services = () => {
       <ServiceOCA />
       <ServiceOBE />
       <ServiceOT />
+      <Consultation />
     </div>
   );
 };

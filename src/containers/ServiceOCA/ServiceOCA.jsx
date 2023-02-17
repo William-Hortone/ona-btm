@@ -25,9 +25,6 @@ const ServiceOCA = () => {
       </div>
       <div className="app__serviceOCA-right-box">
         <CardImage img={images.plan5} />
-        {/* <div className="serviceOCA-left-box_item s-item1"></div>
-        <div className="serviceOCA-left-box_item s-item2"></div>
-        <div className="serviceOCA-left-box_item s-item3"></div> */}
       </div>
     </div>
   );

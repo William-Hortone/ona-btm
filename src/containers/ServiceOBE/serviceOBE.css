@@ -1,10 +1,9 @@
 .app__serviceOBE{
     width: 100%;
-    height: 200vh;
+    height: 180vh;
     display: flex;
     background-color: #Fff;
     padding-top: 6rem;
-    border-bottom: 1px solid red;
 }
 .app__serviceOBE-left-box{
     flex: 1;

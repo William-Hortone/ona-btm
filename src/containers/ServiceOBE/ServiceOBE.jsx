@@ -9,10 +9,10 @@ const ServiceOBE = () => {
     <div className="app__serviceOBE">
       <div className="app__serviceOBE-left-box">
         <div className="app__serviceOBE-left-box_first">
-          <CardImage img={images.team} />
+          <CardImage img={images.service3} />
         </div>
         <div className="app__serviceOBE-left-box_second">
-          <CardImage img={images.service1} />
+          <CardImage img={images.service2} />
         </div>
       </div>
       <div className="app__serviceOBE-right-box">
