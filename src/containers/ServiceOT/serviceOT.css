@@ -14,7 +14,8 @@
 .app__serviceOT-left-box p{
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom:2rem ;
+    margin-bottom:1rem ;
+    margin-top:.5rem ;
     color: #000;
     opacity: .7;
 }

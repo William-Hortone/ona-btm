@@ -24,9 +24,10 @@ const ServiceOCA = () => {
         </ul>
       </div>
       <div className="app__serviceOCA-right-box">
-        <div className="serviceOCA-left-box_item s-item1"></div>
+        <CardImage img={images.plan5} />
+        {/* <div className="serviceOCA-left-box_item s-item1"></div>
         <div className="serviceOCA-left-box_item s-item2"></div>
-        <div className="serviceOCA-left-box_item s-item3"></div>
+        <div className="serviceOCA-left-box_item s-item3"></div> */}
       </div>
     </div>
   );

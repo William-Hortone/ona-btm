@@ -8,7 +8,12 @@ const ServiceOBE = () => {
   return (
     <div className="app__serviceOBE">
       <div className="app__serviceOBE-left-box">
-        <CardImage img={images.team} />
+        <div className="app__serviceOBE-left-box_first">
+          <CardImage img={images.team} />
+        </div>
+        <div className="app__serviceOBE-left-box_second">
+          <CardImage img={images.service1} />
+        </div>
       </div>
       <div className="app__serviceOBE-right-box">
         <HeadText title="Ona bureau d'études : structure" />
@@ -25,6 +30,42 @@ const ServiceOBE = () => {
           utilisés, qu’il s’agisse de béton, de métal, de bois ou d’une
           association entre ces différents matériaux.
         </p>
+        <p>
+          Notre professionnalisme, notre engagement et notre sens du service de
+          proximité sont la garantie de la qualité de nos missions. Nous
+          intervenons dans les domaines d’activités suivants: <br />
+        </p>
+        <h3>STRUCTURE</h3>
+        <p>La conception, l’optimisation et l'étude de structures :</p>
+        <ul>
+          <li>Béton armé</li>
+          <li>Construction métallique</li>
+          <li>Construction en bois</li>
+        </ul>
+        <p>Les plans de projet et d'exécutions:</p>
+        <ul>
+          <li>Coffrage</li>
+          <li>Armature</li>
+          <li>Nomenclatures</li>
+        </ul>
+        <p>Les calculs de structures :</p>
+        <ul>
+          <li>Descentes de charges</li>
+          <li>Calcul 3D et dynamique</li>
+          <li>
+            Éditer toute note de calcul de dimensionnement conformément aux
+            réglementations en vigueur.
+          </li>
+        </ul>
+        <h3>ECONOMIE DE LA CONSTRUCTION</h3>
+        <p>Les prescriptions techniques et études de prix tous corps d’état:</p>
+        <ul>
+          <li>Choix des matériaux et optimisation du projet</li>
+          <li>Elaboration des budgets prévisionnels et définitifs</li>
+          <li>Elaboration des cahiers des charges</li>
+          <li>Vérification et analyse technique des offres d'entreprises</li>
+          <li>Assistance à la passation des contrats de travaux</li>
+        </ul>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .app__serviceOCA{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     background-color: #Fff;
     padding-top: 6rem;
@@ -9,7 +9,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 3rem 0rem 0 3rem;
+    padding: 3rem 4rem 0 4rem;
 }
 .app__serviceOCA-left-box p{
     font-size: 18px;
@@ -29,31 +29,8 @@
 }
 .app__serviceOCA-right-box{
     flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: minmax(200px, 250px);
-    padding-right: 2rem;
-    padding-left: 4rem;
 }
-.s-item1{
-    background-image: url('../../assets/maison-l-plan.png');
-    background-position: center center;
-    background-size: cover;
-    grid-column: 1 / 3;
-    grid-row: 1 /1 ;
-}
-.s-item2{
-    background-image: url('../../assets/1plan.jpg');
-    background-position: center center;
-    background-size: cover;
-}
-.s-item3{
-    background-image: url('../../assets/4plan.jpg');
-    background-position: center center;
-    background-size: cover;
-    grid-column: 1 / 2;
-    grid-row: 2 / 2;
-}
+
 @media screen and (max-width:1000px){
     .app__serviceOCA{
         display: flex;
@@ -62,16 +39,21 @@
         height: auto;
         padding-top: 2rem;
     }
-    .app__serviceOCA-left-box{
-        padding: 3rem 1rem 0 1rem;
-    }
     .app__serviceOCA-right-box{
         display: flex;
         flex-direction: column;
-  
-        padding-left: 1rem;
+        padding-left: 4rem;
     }
     .serviceOCA-left-box_item{
         height: 400px;
+    }
+}
+@media screen and (max-width:650px){
+    .app__serviceOCA{
+        padding-top: 2rem;
+    }
+    .app__serviceOCA-right-box,
+    .app__serviceOCA-left-box{
+        padding-left: 2rem;
     }
 }
