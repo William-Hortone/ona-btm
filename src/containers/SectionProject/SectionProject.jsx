@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import {
-  ProjectImg,
-  HeadText,
-  Category,
-  ProjectsContainer,
-} from "../../components";
+import { Category, ProjectsContainer } from "../../components";
 import items from "../../constants/data";
-import images from "../../constants/images";
 import "./sectionProject.css";
 
 const SectionProject = () => {

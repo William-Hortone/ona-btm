@@ -10,8 +10,8 @@ const Services = () => {
       <HeadImage img={images.building4} title="Services" />
       <ServiceOCA />
       <ServiceOBE />
-      <ServiceOT />
-      <Consultation />
+      {/* <ServiceOT /> */}
+      {/* <Consultation /> */}
     </div>
   );
 };

@@ -10,6 +10,7 @@ const ProjectsContainer = ({ projects }) => {
             <article>
               <div className="project-img">
                 <img src={project.img[0]} alt={project.specification} />
+                <span />
               </div>
               <div className="project-info">
                 <div>
