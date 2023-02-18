@@ -1,0 +1,19 @@
+.app__projects{
+    background-color: #F7F5EF;
+}
+.app__projects h2{
+    font-size: 3rem;
+    padding: 4rem 6rem;
+    font-family: var(--font-base);
+    font-weight: 900;
+}
+@media screen and (max-width: 1000px){
+    .app__projects h2{
+        padding: 2rem 4rem;
+    }
+}
+@media screen and (max-width: 850px){
+    .app__projects h2{
+        text-align: center;
+    }
+}

@@ -109,7 +109,7 @@ const description = [
     img: [images.house1, images.house2],
   },
   {
-    category: "	Bâtiment",
+    category: "Bâtiment",
     specification: "Bâtiment R+1",
     service: "Conception et construction",
     surface: "120 m2",

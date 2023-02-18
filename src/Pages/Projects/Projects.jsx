@@ -3,7 +3,7 @@ import { HeadImage, HeadText, ProjectImg, Category } from "../../components";
 import { SectionProject } from "../../containers";
 import images from "../../constants/images";
 import items from "../../constants/data";
-
+import "./projects.css";
 const Projects = () => {
   // const [projects, SetProjects] = useState(items);
 
@@ -19,6 +19,7 @@ const Projects = () => {
   return (
     <div className="app__projects">
       <HeadImage title="Projects" img={images.building2} />
+      <h2>Projects Recent</h2>
       <SectionProject />
     </div>
   );
