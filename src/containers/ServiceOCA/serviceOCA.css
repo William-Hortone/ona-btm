@@ -30,7 +30,6 @@
 .app__serviceOCA-right-box{
     flex: 1;
 }
-
 @media screen and (max-width:1000px){
     .app__serviceOCA{
         display: flex;

@@ -1,0 +1,30 @@
+.app__sectionProject{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    background-color: bisque;
+}
+.app__sectionProject-left-box{
+    flex: 1;
+    height: 50%;
+    position: sticky;
+    top: 100px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    background-color: rgb(255, 195, 127);
+}
+.app__sectionProject-right-box{
+    flex: 4;
+    background-color: aquamarine;
+}
+
+/* .categories-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  
+    gap: 1.5rem;
+
+} */
