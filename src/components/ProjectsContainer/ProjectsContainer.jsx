@@ -6,8 +6,8 @@ const ProjectsContainer = ({ projects }) => {
     <>
       <div className="app__projectsContainer">
         {projects.map((project, index) => (
-          <a href="#" className="app__projectsContainer-project">
-            <article key={index}>
+          <a href="#" key={index} className="app__projectsContainer-project">
+            <article>
               <div className="project-img">
                 <img src={project.img[0]} alt={project.specification} />
               </div>

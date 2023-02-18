@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { HeadImage, HeadText, ProjectImg, Category } from "../../components";
+import {
+  HeadImage,
+  HeadText,
+  ProjectImg,
+  Category,
+  Consultation,
+} from "../../components";
 import { SectionProject } from "../../containers";
 import images from "../../constants/images";
 import items from "../../constants/data";
@@ -21,6 +27,7 @@ const Projects = () => {
       <HeadImage title="Projects" img={images.building2} />
       <h2>Projects Recent</h2>
       <SectionProject />
+      <Consultation />
     </div>
   );
 };

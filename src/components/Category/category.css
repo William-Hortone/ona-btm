@@ -14,12 +14,11 @@
     align-items: center;
     gap: 1rem;
     border-top: 1px solid #0000000e ;
-    /* padding-top: 2rem; */
     padding: 2rem ;
 }
 .btn-category{
     width: 100px;
-    padding: .5rem 0;
+    padding: .5rem .3rem;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -34,6 +33,14 @@
     .categories_btn-container{
         flex-direction: row;
         justify-content: center;
+    }
+}
+@media screen and (max-width: 380px) {
+    .categories_btn-container{
+        flex-wrap: wrap;
+    }
+    .btn-category{
+        width: fit-content;
     }
 }
 
