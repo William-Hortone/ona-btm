@@ -2,7 +2,8 @@ import React from "react";
 import "./specialization.css";
 import images from "../../constants/images";
 import { CardImage, HeadText } from "../../components";
-import { FaRegClone } from "react-icons/fa";
+import { FaRegClone, FaCogs } from "react-icons/fa";
+import { IoConstructOutline } from "react-icons/io";
 
 const Specialization = () => {
   return (
@@ -14,8 +15,7 @@ const Specialization = () => {
         <HeadText title="Nos spécialisations" />
         <p className="text-description">
           Les prestations de conception architecturale proposées par ONA
-          CONCEPTION ARCHI s’adaptent aux besoins les plus ciblés de vos
-          chantiers partout dans le Gabon.
+          CONCEPTION ARCHI
         </p>
         <div className="app__specialization-categories">
           <div className="app__specialization-category">
@@ -32,11 +32,21 @@ const Specialization = () => {
             <p>A short description to prove that you are the best.​</p>
           </div>
           <div className="app__specialization-category">
-            <h3>Architecture​</h3>
+            <h3>
+              <FaCogs /> ​Expertise & Diagnostic
+            </h3>
             <p>A short description to prove that you are the best.​</p>
           </div>
           <div className="app__specialization-category">
-            <h3>Architecture​</h3>
+            <h3>Note De Calcul & Note Sismique</h3>
+            <p>A short description to prove that you are the best.​</p>
+          </div>
+          <div className="app__specialization-category">
+            <h3> Bureau D'Etude TCE </h3>
+            <p>A short description to prove that you are the best.​</p>
+          </div>
+          <div className="app__specialization-category">
+            <h3>Engenierie & Calcul De Structure</h3>
             <p>A short description to prove that you are the best.​</p>
           </div>
         </div>
