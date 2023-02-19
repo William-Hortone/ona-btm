@@ -10,8 +10,8 @@ const Footer = () => {
           <img src={images.logo} alt="logo images" />
           <div>
             <p>
-              Natus eget occaecati, lobortis, vestibulum nam eros, risus lacinia
-              lacus.Lorem accusantium
+              Entreprise générale de bâtiment , basée à Paris et au Gabon dans
+              la province de l’Estuaire.
             </p>
             <div className="footer-icons">
               <FaFacebookF />
@@ -19,17 +19,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="app__footer-second-box">
-          <h3>Our Services</h3>
+          <h3>Nos Services</h3>
           <p>Architecture</p>
           <p>Site Planning</p>
           <p>Landscape Design</p>
         </div>
         <div className="app__footer-third-box">
-          <h3>Contact Details</h3>
-          <p>125, Central Square,New York</p>
-          <p>91 123-456-7890/91</p>
-          <p>91 123-456-7890/91</p>
-          <p>info@example.com</p>
+          <h3>Contacts</h3>
+          <p>Paris,France / Libreville, Gabon</p>
+          <p>+33 695469273</p>
+          <p>+241 077761684</p>
+          <p>onabatiment@gmail.com</p>
         </div>
       </div>
       <div className="footer-copyright">

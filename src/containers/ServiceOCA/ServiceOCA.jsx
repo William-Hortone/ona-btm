@@ -24,7 +24,7 @@ const ServiceOCA = () => {
         </ul>
       </div>
       <div className="app__serviceOCA-img-box">
-        <img src={images.plan1} alt="" />
+        <img src={images.plan6} alt="" />
       </div>
       <div className="app__serviceOCA-third-box">
         <HeadText title="Ona bureau d'études : structure" />

@@ -8,7 +8,7 @@ const Consultation = () => {
     <div className="app__consultation">
       <div className="app__consultation-container">
         <span />
-        <h1>Get Your Free Consultation</h1>
+        <h1>Prendre Un Rendez-Vous Gratuitement</h1>
         <p>
           You can use these sections to highlight the features of heading. Use
           these paragraphs <br /> to focus on the topic you want. Make sure you
@@ -16,7 +16,7 @@ const Consultation = () => {
         </p>
         <a href="/contact">
           <button type="button" className="custom__button">
-            Prendre un redez-vous
+            Rendez-vous
           </button>
         </a>
         <div />

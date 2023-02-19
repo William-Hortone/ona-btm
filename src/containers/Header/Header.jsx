@@ -25,7 +25,7 @@ const Header = () => {
           </div>
         </m.div>
         <p className="p__opensans">
-          Our goal then and now is to provide quality on time projects
+          Notre objectif est de fournir des projets de qualité à temps
         </p>
         <div className="app__header-btm-container">
           <a href="/about">

@@ -8,24 +8,27 @@ const Specialization = () => {
   return (
     <div className="app__specialization section__padding">
       <div className="app__specialization-left-box">
-        <CardImage img={images.building3} />
+        <CardImage img={images.building9} />
       </div>
       <div className="app__specialization-right-box">
-        <HeadText title="Our Specialization" />
+        <HeadText title="Nos spécialisations" />
         <p className="text-description">
-          You can use these sections to highlight the features of heading. Use
-          these paragraphs to focus on the topic you want. Make sure you keep it
-          short and attractive
+          Les prestations de conception architecturale proposées par ONA
+          CONCEPTION ARCHI s’adaptent aux besoins les plus ciblés de vos
+          chantiers partout dans le Gabon.
         </p>
         <div className="app__specialization-categories">
           <div className="app__specialization-category">
             <h3>
-              <FaRegClone /> Architecture​
+              <FaRegClone /> Conception Architecturale
             </h3>
-            <p>A short description to prove that you are the best.​</p>
+            <p>
+              Esquisses et plans d'aménagement, Des plans 3D de construction
+              ....
+            </p>
           </div>
           <div className="app__specialization-category">
-            <h3>Architecture​</h3>
+            <h3>Service Clé En Main​</h3>
             <p>A short description to prove that you are the best.​</p>
           </div>
           <div className="app__specialization-category">

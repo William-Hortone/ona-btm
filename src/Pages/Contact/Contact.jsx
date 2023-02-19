@@ -1,15 +1,13 @@
 import React from "react";
 import { motion as m } from "framer-motion";
+import images from "../../constants/images";
+import { HeadImage } from "../../components";
+
 const Contact = () => {
   return (
-    <m.div
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{ opacity: 1 }}
-    >
-      Contact
-    </m.div>
+    <div className="app__contact">
+      <HeadImage title="Contact" img={images.building9} />
+    </div>
   );
 };
 
