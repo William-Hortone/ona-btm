@@ -4,6 +4,7 @@ import { Home, About, Services, Contact, Projects } from "./Pages";
 import { Footer, Navbar } from "./containers";
 import { motion as m } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+
 import "./App.css";
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
       className="App "
     >
       <Navbar />
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

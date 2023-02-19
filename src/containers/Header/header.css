@@ -13,6 +13,9 @@
 .app__header-container{
     width: 40%;
 }
+.header_title-box{
+    overflow: hidden;
+}
 .app__header-container h1{
     font-size: 4.5rem;
     font-weight: bold;
