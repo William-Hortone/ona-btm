@@ -10,6 +10,7 @@ import ServiceOBE from "./ServiceOBE/ServiceOBE";
 import ServiceOCA from "./ServiceOCA/ServiceOCA";
 import ServiceOT from "./ServiceOT/ServiceOT";
 import SectionProject from "./SectionProject/SectionProject";
+import ServiceContact from "./ServiceContact/ServiceContact";
 
 export {
   Description,
@@ -24,4 +25,5 @@ export {
   ServiceOCA,
   ServiceOT,
   SectionProject,
+  ServiceContact,
 };

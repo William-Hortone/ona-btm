@@ -20,7 +20,8 @@ const ServiceOT = () => {
           potentiel de son personnel et l’expérience de ses partenaires des
           prestations techniques de : <br />
         </p>
-
+      </div>
+      <div className="app__serviceOT-right-box">
         <ul>
           <li>Gros oeuvre</li>
           <li>VRD</li>
@@ -32,9 +33,6 @@ const ServiceOT = () => {
           <li>Pose des pavés</li>
           <li>Électricité</li>
         </ul>
-      </div>
-      <div className="app__serviceOT-right-box">
-        <CardImage img={images.building6} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import images from "../../constants/images";
 import { Story, Team } from "../../containers";
 import { motion as m } from "framer-motion";
 
-import "./about.css";
+// import "./about.css";
 
 const About = () => {
   return (

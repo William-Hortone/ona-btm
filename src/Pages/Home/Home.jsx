@@ -8,7 +8,7 @@ import {
 } from "../../containers";
 
 import { motion as m } from "framer-motion";
-import "./home.css";
+// import "./home.css";
 
 const Home = () => {
   return (

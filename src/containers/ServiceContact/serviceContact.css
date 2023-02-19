@@ -1,0 +1,96 @@
+.app__serviceContact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #BDAE8F;
+}
+.app__serviceContact-left-box{
+    flex: 1;
+    padding: 4rem;
+}
+.app__serviceContact h2{
+    font-size: 2.7rem;
+    font-weight: 600;
+    font-family: var(--font-base);
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.span{
+    position: relative;
+    font-size: 1rem;
+    font-family: var(--font-alt);
+    border-bottom: 2px solid #00000088;
+    padding-bottom: 8px;
+}
+.span::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -20%;
+    bottom: -10px;
+    border-radius: 50%;
+    background-color: #BDAE8F;
+    transition: left .5s ease;
+}
+.span:hover.span::after{
+    left: 100%;
+}
+.app__serviceContact-right-box{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 4rem;
+}
+.app__serviceContact-right-box_img1{
+    flex: 1;
+    height: 50%;
+}
+.app__serviceContact-right-box_img2{
+    flex: 1.4;
+    height: 70%;
+}
+.app__serviceContact-right-box_img1 img,
+.app__serviceContact-right-box_img2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+@media screen and (max-width:1200px){
+    .app__serviceContact h2{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .app__serviceContact{
+        height: 60vh;
+        display: flex;
+    }
+    .app__serviceContact{
+        padding-right: 0;
+    }
+    .app__serviceContact h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .app__serviceContact{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .app__serviceContact-left-box{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:550px){
+    .app__serviceContact h2{
+        font-size: 1.5rem;
+    }
+    .app__serviceContact a{
+        font-size: .7rem;
+    }
+}

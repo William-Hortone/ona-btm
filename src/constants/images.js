@@ -36,6 +36,8 @@ import service3 from "../assets/service3.jpg";
 import boss from "../assets/boss.jpg";
 import team from "../assets/team.jpg";
 import office from "../assets/image3.jpg";
+import place1 from "../assets/contact1.png";
+import place2 from "../assets/contact2.png";
 
 export default {
   logo,
@@ -76,4 +78,6 @@ export default {
   boss,
   team,
   office,
+  place1,
+  place2,
 };

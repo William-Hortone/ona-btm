@@ -1,5 +1,10 @@
 import React from "react";
-import { ServiceOBE, ServiceOCA, ServiceOT } from "../../containers";
+import {
+  ServiceOBE,
+  ServiceOCA,
+  ServiceOT,
+  ServiceContact,
+} from "../../containers";
 import { HeadImage, Consultation } from "../../components";
 import { motion as m } from "framer-motion";
 import images from "../../constants/images";
@@ -16,7 +21,8 @@ const Services = () => {
       <HeadImage img={images.building4} title="Services" />
       <ServiceOCA />
       <ServiceOBE />
-      {/* <ServiceOT /> */}
+      <ServiceOT />
+      <ServiceContact />
       {/* <Consultation /> */}
     </div>
   );
