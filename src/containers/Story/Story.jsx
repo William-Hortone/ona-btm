@@ -3,6 +3,7 @@ import "./story.css";
 import { CardImage, HeadText, Consultation } from "../../components";
 import images from "../../constants/images";
 import { FaCheck } from "react-icons/fa";
+import { motion as m } from "framer-motion";
 
 const Story = () => {
   return (
@@ -10,7 +11,7 @@ const Story = () => {
       <div className="app__story-left-box">
         <CardImage img={images.office} />
       </div>
-      <div className="app__story-right-box">
+      <div className="app__story-right-box ">
         <HeadText title="A Propos De Nous" />
         <div className="story-description">
           <p>

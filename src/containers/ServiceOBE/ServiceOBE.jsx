@@ -1,7 +1,6 @@
 import React from "react";
 import { CardImage, HeadText } from "../../components";
 import images from "../../constants/images";
-
 import "./serviceOBE.css";
 
 const ServiceOBE = () => {
