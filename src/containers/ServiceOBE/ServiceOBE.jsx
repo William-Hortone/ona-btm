@@ -18,25 +18,25 @@ const ServiceOBE = () => {
         </ul>
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-two">
-        <img src={images.service1} alt="images of building" />
+        <img src={images.building17} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-three">
-        <img src={images.service2} alt="images of building" />
+        <img src={images.building15} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-four">
-        <img src={images.plan3} alt="images of building" />
+        <img src={images.plan6} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-five">
-        <img src={images.building5} alt="images of building" />
+        <img src={images.plan7} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-six">
-        <img src={images.building6} alt="images of building" />
+        <img src={images.building15} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-seven">
-        <img src={images.service1} alt="images of building" />
+        <img src={images.building14} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-hight">
-        <img src={images.plan4} alt="images of building" />
+        <img src={images.building9} alt="images of building" />
       </div>
       {/* <div className="app__serviceOBE-left-box">
         <div className="app__serviceOBE-left-box_first">

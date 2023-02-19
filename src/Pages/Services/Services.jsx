@@ -18,7 +18,7 @@ const Services = () => {
       // exit={{ opacity: 1 }}
       className="app__service"
     >
-      <HeadImage img={images.building4} title="Services" />
+      <HeadImage img={images.building17} title="Services" />
       <ServiceOCA />
       <ServiceOBE />
       <ServiceOT />
