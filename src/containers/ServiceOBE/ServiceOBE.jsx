@@ -21,22 +21,22 @@ const ServiceOBE = () => {
         <img src={images.service1} alt="" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-three">
-        <img src={images.service1} alt="" />
+        <img src={images.service2} alt="" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-four">
-        <img src={images.service1} alt="" />
+        <img src={images.building6} alt="" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-five">
-        <img src={images.service1} alt="" />
+        <img src={images.plan2} alt="" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-six">
-        <img src={images.service1} alt="" />
+        <img src={images.plan5} alt="" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-seven">
-        <img src={images.service1} alt="" />
+        <img src={images.service3} alt="" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-hight">
-        <img src={images.service1} alt="" />
+        <img src={images.plan4} alt="" />
       </div>
       {/* <div className="app__serviceOBE-left-box">
         <div className="app__serviceOBE-left-box_first">

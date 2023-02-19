@@ -8,18 +8,17 @@ import "./about.css";
 
 const About = () => {
   return (
-    <m.div
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{ opacity: 1 }}
+    <div
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // transition={{ duration: 0.75, ease: "easeOut" }}
       className="app__about"
     >
       <HeadImage title="A Propos" img={images.building7} />
       <Story />
       <Team />
       <Consultation />
-    </m.div>
+    </div>
   );
 };
 

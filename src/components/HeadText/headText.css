@@ -1,20 +1,24 @@
 .app__headText{
     margin-bottom: 3rem;
 }
+.app__headText-title{
+    overflow: hidden;
+}
 .app__headText h1{
     font-size: 3rem;
     text-transform: capitalize;
     /* line-height: 3; */
-    font-weight: 600;
+    font-weight: 500;
     /* font-family: var(--font-base); */
     position: relative;
+    padding-bottom: 1rem;
 }
 .app__headText h1::after{
     content: '';
     height: 4px;
     width: 70px;
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
     left: 0;
     background-color: var(--color-orange);
 }

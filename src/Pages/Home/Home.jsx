@@ -12,11 +12,11 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <m.div
-      initial={{ y: "100%" }}
-      animate={{ y: "0" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      exit={{ opacity: 1 }}
+    <div
+      // initial={{ y: "100%"}}
+      // animate={{ y: "0%" }}
+      // transition={{ duration: 0.75, ease: "easeOut" }}
+      // exit={{ opacity: 1 }}
       className="app__homePage"
     >
       <Header />
@@ -24,7 +24,7 @@ const Home = () => {
       <Consultation />
       <Specialization />
       <RecentProjects />
-    </m.div>
+    </div>
   );
 };
 

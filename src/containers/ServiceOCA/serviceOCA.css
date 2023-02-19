@@ -6,6 +6,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding-top: 6rem;
+    background-color: #F7F5EF;
 }
 
 .app__serviceOCA-first-box{

@@ -9,7 +9,7 @@ const HeadImage = ({ img, title }) => {
 
       <div className="title_box">
         <m.h1
-          animate={{ y: 0 }}
+          animate={{ y: "0%" }}
           initial={{ y: "100%" }}
           transition={{ delay: 0.5, duration: 0.7 }}
         >
