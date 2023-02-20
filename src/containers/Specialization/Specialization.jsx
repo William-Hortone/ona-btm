@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./specialization.css";
 import images from "../../constants/images";
 import { CardImage, HeadText } from "../../components";
 import { FaRegClone, FaCogs } from "react-icons/fa";
-import { IoConstructOutline } from "react-icons/io";
+// import { IoConstructOutline } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Specialization = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="app__specialization section__padding">
-      <div className="app__specialization-left-box">
+      <div
+        data-aos="fade-right"
+        data-aos-once="true"
+        className="app__specialization-left-box"
+      >
         <CardImage img={images.building9} />
       </div>
       <div className="app__specialization-right-box">

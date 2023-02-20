@@ -6,16 +6,16 @@ import {
   ServiceContact,
 } from "../../containers";
 import { HeadImage, Consultation } from "../../components";
-import { motion as m } from "framer-motion";
+import { motion } from "framer-motion";
 import images from "../../constants/images";
-
+import "./service.css";
 const Services = () => {
   return (
-    <div
-      // initial={{ y: "100%" }}
-      // animate={{ y: "0%" }}
-      // transition={{ duration: 0.75, ease: "easeOut" }}
-      // exit={{ opacity: 1 }}
+    <motion.div
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ Scale: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__service"
     >
       <HeadImage img={images.building17} title="Services" />
@@ -24,7 +24,7 @@ const Services = () => {
       <ServiceOT />
       <ServiceContact />
       {/* <Consultation /> */}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./serviceOCA.css";
 import { CardImage, HeadText } from "../../components";
 import images from "../../constants/images";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ServiceOCA = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="app__serviceOCA">
       <div className="app__serviceOCA-first-box">
@@ -23,7 +28,11 @@ const ServiceOCA = () => {
           <li>Simulation 3D</li>
         </ul>
       </div>
-      <div className="app__serviceOCA-img-box">
+      <div
+        data-aos="fade-right"
+        data-aos-once="true"
+        className="app__serviceOCA-img-box"
+      >
         <img src={images.plan6} alt="" />
       </div>
       <div className="app__serviceOCA-third-box">
@@ -46,28 +55,32 @@ const ServiceOCA = () => {
           proximité sont la garantie de la qualité de nos missions. Nous
           intervenons dans les domaines d’activités suivants: <br />
         </p>
-        <h3>STRUCTURE</h3>
-        <p>La conception, l’optimisation et l'étude de structures :</p>
-        <ul>
-          <li>Béton armé</li>
-          <li>Construction métallique</li>
-          <li>Construction en bois</li>
-        </ul>
-        <p>Les plans de projet et d'exécutions:</p>
-        <ul>
-          <li>Coffrage</li>
-          <li>Armature</li>
-          <li>Nomenclatures</li>
-        </ul>
-        <p>Les calculs de structures :</p>
-        <ul>
-          <li>Descentes de charges</li>
-          <li>Calcul 3D et dynamique</li>
-          <li>
-            Éditer toute note de calcul de dimensionnement conformément aux
-            réglementations en vigueur.
-          </li>
-        </ul>
+        <h3 data-aos="fade-left" data-aos-once="true">
+          STRUCTURE
+        </h3>
+        <div data-aos="fade-left" data-aos-once="true">
+          <p>La conception, l’optimisation et l'étude de structures :</p>
+          <ul>
+            <li>Béton armé</li>
+            <li>Construction métallique</li>
+            <li>Construction en bois</li>
+          </ul>
+          <p>Les plans de projet et d'exécutions:</p>
+          <ul>
+            <li>Coffrage</li>
+            <li>Armature</li>
+            <li>Nomenclatures</li>
+          </ul>
+          <p>Les calculs de structures :</p>
+          <ul>
+            <li>Descentes de charges</li>
+            <li>Calcul 3D et dynamique</li>
+            <li>
+              Éditer toute note de calcul de dimensionnement conformément aux
+              réglementations en vigueur.
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* <div className="app__serviceOCA-left-box">

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./team.css";
 import images from "../../constants/images";
 import { CardImage, HeadText } from "../../components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Team = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="app__team section__padding">
       <div className="app__team-left-box">
@@ -28,7 +34,11 @@ const Team = () => {
           réalisation des travaux.
         </p>
       </div>
-      <div className="app__team-right-box">
+      <div
+        data-aos="fade-left"
+        data-aos-once="true"
+        className="app__team-right-box"
+      >
         <CardImage img={images.boss} />
       </div>
     </div>

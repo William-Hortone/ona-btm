@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CardImage, HeadText } from "../../components";
 import images from "../../constants/images";
 import "./serviceOBE.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ServiceOBE = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="app__serviceOBE">
       <div className="app__serviceOBE-box-one">
@@ -17,10 +23,16 @@ const ServiceOBE = () => {
           <li>Assistance à la passation des contrats de travaux</li>
         </ul>
       </div>
-      <div className="serviceOBE_item app__serviceOBE-box-two">
+      <div
+        data-aos="zoom-out-left"
+        className="serviceOBE_item app__serviceOBE-box-two"
+      >
         <img src={images.building17} alt="images of building" />
       </div>
-      <div className="serviceOBE_item app__serviceOBE-box-three">
+      <div
+        data-aos="zoom-out-right"
+        className="serviceOBE_item app__serviceOBE-box-three"
+      >
         <img src={images.building9} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-four">
@@ -35,7 +47,10 @@ const ServiceOBE = () => {
       <div className="serviceOBE_item app__serviceOBE-box-seven">
         <img src={images.building11} alt="images of building" />
       </div>
-      <div className="serviceOBE_item app__serviceOBE-box-hight">
+      <div
+        data-aos="zoom-out-left"
+        className="serviceOBE_item app__serviceOBE-box-hight"
+      >
         <img src={images.plan5} alt="images of building" />
       </div>
       {/* <div className="app__serviceOBE-left-box">

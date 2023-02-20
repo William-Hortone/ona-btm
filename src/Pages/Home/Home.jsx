@@ -16,7 +16,7 @@ const Home = () => {
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 1 }}
       exit={{ Scale: 0 }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__homePage"
     >
       <Header />
