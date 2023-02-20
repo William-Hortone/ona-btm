@@ -1,5 +1,5 @@
 .app__navbar{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,9 +8,21 @@
     display:  flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: #1e181094; */
     padding-right: 2rem;
-    z-index: 2;
+    z-index: 5;
+    /* transition: background .5s ease; */
     border-bottom: 1px solid #ffffff2c;
+}
+.navbar-gb{
+    /* background-color: #BBD0D1; */
+    background-color: #1e181094;
+    /* background-color: #bdae8f8a; */
+    /* transition: background .5s ease; */
+}
+.navbar-gb li {
+    color: #000;
+
 }
 .app__navbar-logo{
     width: 200px;

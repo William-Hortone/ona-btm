@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    /* position: relative; */
+    position: relative;
     background: url('../../assets/building16.jpg');
     background-attachment: fixed;
     background-position: center center;
@@ -47,7 +47,7 @@
     z-index: 0;
 }
 @media screen and (max-width: 1400px){
-    .app__header-container h1 {
+    .app__header-container h2 {
         font-size: 3.8rem;
     }
     .app__header{
