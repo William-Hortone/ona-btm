@@ -7,26 +7,24 @@ import {
   RecentProjects,
 } from "../../containers";
 import AnimatedPage from "../../components/AnimatedPages";
-import { motion as m } from "framer-motion";
-// import "./home.css";
+import { motion } from "framer-motion";
+import "./home.css";
 
 const Home = () => {
   return (
-    <AnimatedPage>
-      <div
-        // initial={{ y: "100%" }}
-        // animate={{ y: "0%" }}
-        // transition={{ duration: 0.75, ease: "easeOut" }}
-        // exit={{ opacity: 1 }}
-        className="app__homePage"
-      >
-        <Header />
-        <Description />
-        <Consultation />
-        <Specialization />
-        <RecentProjects />
-      </div>
-    </AnimatedPage>
+    <motion.div
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ Scale: 0 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      className="app__homePage"
+    >
+      <Header />
+      <Description />
+      <Consultation />
+      <Specialization />
+      <RecentProjects />
+    </motion.div>
   );
 };
 

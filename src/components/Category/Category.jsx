@@ -6,36 +6,37 @@ const Category = ({ handleFilterProjects }) => {
     <div className="categories-container">
       <h3>Cathegories</h3>
       <div className="categories_btn-container">
-        <button
+        <div
           className="btn-category"
           onClick={() => handleFilterProjects("all")}
         >
-          Tous
-        </button>
-        <button
+          <span> Tous</span>
+        </div>
+        <div
           className="btn-category"
           onClick={() => handleFilterProjects("Villa")}
         >
-          Villas
-        </button>
-        <button
+          <span> Villas</span>
+        </div>
+        <div
           className="btn-category"
           onClick={() => handleFilterProjects("Maison")}
         >
-          Maisons
-        </button>
-        <button
-          className="btn-category"
-          onClick={() => handleFilterProjects("Appartement")}
-        >
-          Appartements
-        </button>
-        <button
+          <span> Maisons</span>
+        </div>
+
+        <div
           className="btn-category"
           onClick={() => handleFilterProjects("Bâtiment")}
         >
-          Bâtiment
-        </button>
+          <span> Bâtiment</span>
+        </div>
+        <div
+          className="btn-category"
+          onClick={() => handleFilterProjects("Appartement")}
+        >
+          <span> Appartements</span>
+        </div>
       </div>
     </div>
   );

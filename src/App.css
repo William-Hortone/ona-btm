@@ -2,10 +2,10 @@
   padding: 6rem 8rem;
 }
 .App{
-  height: 100vh;
+  height: 100%;
   width:100%;
-  background: transparent ;
-  position: relative;
+  /* background: transparent ; */
+  /* position: relative; */
   /* position: absolute;
   top: 0;
   left: 0; */

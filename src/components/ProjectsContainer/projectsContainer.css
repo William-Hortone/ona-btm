@@ -6,9 +6,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    /* background-color: rebeccapurple; */
+    margin-bottom: 4rem;
 }
 .app__projectsContainer-project{
-    width: 32%;
+    width: 45%;
     height: 45vh;
     position: relative;
     display: flex;

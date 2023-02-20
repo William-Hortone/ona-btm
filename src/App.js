@@ -17,7 +17,7 @@ const App = () => {
       className="App "
     >
       <Navbar />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

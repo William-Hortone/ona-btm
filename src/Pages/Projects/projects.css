@@ -5,7 +5,7 @@
     font-size: 3rem;
     padding: 4rem 6rem;
     font-family: var(--font-base);
-    font-weight: 900;
+    font-weight: 600;
 }
 @media screen and (max-width: 1000px){
     .app__projects h2{
@@ -15,5 +15,12 @@
 @media screen and (max-width: 850px){
     .app__projects h2{
         text-align: center;
+    }
+}
+@media screen and (max-width: 550px){
+    .app__projects h2{
+        text-align: center;
+        font-size: 3rem;
+        padding: 2rem  0 0 0 ;
     }
 }

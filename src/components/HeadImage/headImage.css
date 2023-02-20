@@ -56,19 +56,21 @@
     .app__headImage{
         height: 40vh;
     }
-    .app__headImage span{
+    /* .app__headImage span{
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 3.5rem;
-    }
-    .app__headImage span::after{
+    } */
+    /* .app__headImage span::after{
         left: 50%;
         transform: translateX(-50%);
-    }
+    } */
 }
 @media screen  and ( max-width: 550px ){
-    .app__headImage span{
-       
+    /* .app__headImage span{
         font-size: 2.5rem;
+    } */
+    .app__headImage h1{
+        font-size: 3.5rem;
     }
 }
