@@ -3,6 +3,8 @@ import images from "./images";
 const description = [
   {
     link: "/villa1",
+    title1: "Villa écologique",
+    title2: "en brique de terre",
     category: "Villa",
     specification: "Villa écologique en brique de terre",
     service: "Conception et construction",
@@ -25,6 +27,8 @@ const description = [
   },
   {
     link: "/villa2",
+    title1: "Conception d'une villa",
+    title2: "de type F4",
     category: "Villa",
     specification: "Conception d'une villa de type F4",
     service: "Conception et construction",
@@ -45,6 +49,8 @@ const description = [
   },
   {
     link: "/villa3",
+    title1: "Conception d'une villa",
+    title2: "de type F5",
     category: "Villa",
     specification: "Conception d'une villa de type F5",
     service: "Conception et construction",
@@ -64,6 +70,8 @@ const description = [
   },
   {
     link: "/villa4",
+    title1: "Conception d'une villa",
+    title2: "de type F5",
     category: "Villa",
     specification: "Conception d'une villa de type F5",
     service: "Conception et construction",
@@ -81,6 +89,8 @@ const description = [
   },
   {
     link: "/apartment",
+    title1: "Appartement",
+    title2: "de type F3",
     category: "Appartement",
     specification: "Appartement de type F3",
     service: "Conception et construction",
@@ -96,6 +106,8 @@ const description = [
   },
   {
     link: "/house",
+    title1: "Maison plein pieds",
+    title2: "de type F5",
     category: "Maison",
     specification: "Maison plein pieds de type F5",
     service: "Conception et construction",
@@ -116,6 +128,8 @@ const description = [
   },
   {
     category: "Bâtiment",
+    title1: "Bâtiment R+1",
+    title2: "Bâtiment R+1",
     specification: "Bâtiment R+1",
     service: "Conception et construction",
     surface: "120 m2",

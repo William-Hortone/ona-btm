@@ -18,7 +18,13 @@
     height: auto;
     display: flex;
     flex-direction:column;
+   transition: background-color .5s ease;
+}
+.bg-color-initial {
     background-color: #A59786;
+}
+.bg-color{
+    background-color: #bb136f;
 }
 .app__singleProject-container_first-box{
     width: 100%;
