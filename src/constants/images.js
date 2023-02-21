@@ -10,6 +10,7 @@ import villa8 from "../assets/villa2.jpg";
 import villa9 from "../assets/house16.jpg";
 import villa10 from "../assets/house17.jpg";
 import villa11 from "../assets/house8.jpg";
+import villa12 from "../assets/house7.jpg";
 import apartment1 from "../assets/villa5.jpg";
 import apartment2 from "../assets/villa1.jpg";
 import apartment3 from "../assets/villa4.jpg";
@@ -65,6 +66,7 @@ export default {
   villa9,
   villa10,
   villa11,
+  villa12,
   apartment1,
   apartment2,
   apartment3,

@@ -3,7 +3,12 @@ import { images } from "../../constants";
 import "./nextProject.css";
 import { data } from "../../constants";
 
-const NextProject = () => {
+const NextProject = ({
+  nextProjectImg1,
+  nextProjectImg2,
+  nextProjectTitle1,
+  nextProjectTitle2,
+}) => {
   return (
     <div className="app__nextProject">
       <div className="container">
@@ -11,33 +16,33 @@ const NextProject = () => {
           <p>Autre Projet</p>
           <div className="slider_container">
             <div className="wrapper">
-              <span className="span_text">Will Fashion</span>
-              <div className="span_image">
-                <img src={images.villa5} alt="" />
+              <span>{nextProjectTitle1}</span>
+              <div className="div_image">
+                <img src={nextProjectImg1} alt="" />
               </div>
-              <span className="span_text">Nous appartient</span>
-              <div className="span_image">
-                <img src={images.villa1} alt="" />
+              <span>{nextProjectTitle2}</span>
+              <div className="div_image">
+                <img src={nextProjectImg2} alt="" />
               </div>
             </div>
             <div className="wrapper">
-              <span className="span_text">Will Fashion</span>
-              <div className="span_image">
-                <img src={images.villa5} alt="" />
+              <span>{nextProjectTitle1}</span>
+              <div className="div_image">
+                <img src={nextProjectImg1} alt="" />
               </div>
-              <span className="span_text">Nous appartient</span>
-              <div className="span_image">
-                <img src={images.villa1} alt="" />
+              <span>{nextProjectTitle2}</span>
+              <div className="div_image">
+                <img src={nextProjectImg2} alt="" />
               </div>
             </div>
 
             {/* <div className="wrapper">
-              <span className="span_text">Will Fashion</span>
-              <div className="span_image">
+              <span >Will Fashion</span>
+              <div className="sdivimage">
                 <img src={images.villa5} alt="" />
               </div>
-              <span className="span_text">Nous appartient </span>
-              <div className="span_image">
+              <span >Nous appartient </span>
+              <div className="sdivimage">
                 <img src={images.villa5} alt="" />
               </div>
             </div> */}
@@ -47,33 +52,41 @@ const NextProject = () => {
           <p>Nous Contacter</p>
           <div className="slider_container">
             <div className="wrapper">
-              <span className="span_text">Will Fashion</span>
-              <div className="span_image">
-                <img src={images.villa5} alt="" />
+              <span>Vous souhaitez</span>
+              <div className="div_image">
+                <img src={images.place2} alt="photo of restaurant" />
               </div>
-              <span className="span_text">Nous appartient</span>
-              <div className="span_image">
-                <img src={images.villa1} alt="" />
+              <span>travailler avec nous?</span>
+              <div className="div_image">
+                <img src={images.building17} alt="photo of restaurant" />
+              </div>
+              <span>Contactez-nous</span>
+              <div className="div_image">
+                <img src={images.place1} alt="photo of restaurant" />
               </div>
             </div>
             <div className="wrapper">
-              <span className="span_text">Will Fashion</span>
-              <div className="span_image">
-                <img src={images.villa5} alt="" />
+              <span>Vous souhaitez</span>
+              <div className="div_image">
+                <img src={images.place2} alt="photo of restaurant" />
               </div>
-              <span className="span_text">Nous appartient</span>
-              <div className="span_image">
-                <img src={images.villa1} alt="" />
+              <span>travailler avec nous?</span>
+              <div className="div_image">
+                <img src={images.building17} alt="photo of restaurant" />
+              </div>
+              <span>Contactez-nous</span>
+              <div className="div_image">
+                <img src={images.place1} alt="photo of restaurant" />
               </div>
             </div>
 
             {/* <div className="wrapper">
-              <span className="span_text">Will Fashion</span>
-              <div className="span_image">
+              <span >Will Fashion</span>
+              <div className="sdivimage">
                 <img src={images.villa5} alt="" />
               </div>
-              <span className="span_text">Nous appartient </span>
-              <div className="span_image">
+              <span >Nous appartient </span>
+              <div className="sdivimage">
                 <img src={images.villa5} alt="" />
               </div>
             </div> */}
