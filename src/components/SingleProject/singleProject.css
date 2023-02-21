@@ -24,7 +24,7 @@
     background-color: #A59786;
 }
 .bg-color{
-    background-color: #969C89;
+    background-color: #9DA391;
 }
 .app__singleProject-container_first-box{
     width: 100%;
@@ -93,10 +93,18 @@
     margin-top: 10rem;
     display: flex;
     justify-content: flex-end;
+    gap: 1rem;
+}
+.container_third-box-text {
+    flex: 1;
+}
+.container_third-box-text p {
+    font-size: 2rem;
 }
 .container_third-box-img{
+    flex: 2;
     width: 80%;
-    height: 80%;
+    height: 70%;
 }
 .container_third-box-img img{
     width: 100%;

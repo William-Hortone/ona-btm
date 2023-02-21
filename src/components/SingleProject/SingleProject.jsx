@@ -58,8 +58,16 @@ const SingleProject = ({
           </motion.div>
         </div>
         <div className="app__singleProject-container_third-box">
+          <div className="container_third-box-text">
+            <p>
+              "Quatre Chambres ", // "Une toilette visiteur", // "Un grand
+              salon", // "Une salle a mange", // "Une zone véhicule", // "Deux
+              Salle d'eau", // "Un dressing dans la chambre parent", // "Une
+              grande cuisine avec magasin", // "Trois terrasses",
+            </p>
+          </div>
           <div className="container_third-box-img">
-            <img src={sProjectImg3} alt="" />
+            <img src={sProjectImg3} alt="photo of the house" />
           </div>
         </div>
       </div>
