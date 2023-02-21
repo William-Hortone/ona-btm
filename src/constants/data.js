@@ -2,6 +2,7 @@ import images from "./images";
 
 const description = [
   {
+    link: "/villa1",
     category: "Villa",
     specification: "Villa écologique en brique de terre",
     service: "Conception et construction",
@@ -23,6 +24,7 @@ const description = [
     img: [images.villa2, images.villa1],
   },
   {
+    link: "/villa2",
     category: "Villa",
     specification: "Conception d'une villa de type F4",
     service: "Conception et construction",
@@ -42,6 +44,7 @@ const description = [
     img: [images.villa5, images.villa6, images.villa7],
   },
   {
+    link: "/villa3",
     category: "Villa",
     specification: "Conception d'une villa de type F5",
     service: "Conception et construction",
@@ -60,6 +63,7 @@ const description = [
     img: [images.villa10, images.villa11],
   },
   {
+    link: "/villa4",
     category: "Villa",
     specification: "Conception d'une villa de type F5",
     service: "Conception et construction",
@@ -76,6 +80,7 @@ const description = [
     img: [images.villa9],
   },
   {
+    link: "/apartment",
     category: "Appartement",
     specification: "Appartement de type F3",
     service: "Conception et construction",
@@ -90,6 +95,7 @@ const description = [
     img: [images.apartment1, images.apartment2, images.apartment3],
   },
   {
+    link: "/house",
     category: "Maison",
     specification: "Maison plein pieds de type F5",
     service: "Conception et construction",

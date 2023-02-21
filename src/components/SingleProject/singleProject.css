@@ -1,0 +1,62 @@
+.app__singleProject{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+}
+.fixed-box{
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/building13.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.app__singleProject-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    background-color: #A59786;
+}
+.app__singleProject-container_first-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    /* background-color: beige; */
+}
+.container_left-box{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 5rem;
+    /* background-color: rgb(220, 238, 245); */
+}
+.container_left-box h2{
+    font-size: 4rem;
+    /* line-height: 1.5; */
+    font-family: var(--font-base);
+    text-transform: uppercase;
+    /* text-align: center; */
+    /* padding-left: 5rem; */
+}
+.container_right-box{
+    flex: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: rgb(202, 202, 22); */
+}
+.container_right-box-img{
+    width: 90%;
+    height: 70%;
+    /* object-fit: cover; */
+}
+.container_right-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

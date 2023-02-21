@@ -4,6 +4,7 @@ import HeadText from "./HeadText/HeadText";
 import HeadImage from "./HeadImage/HeadImage";
 import Category from "./Category/Category";
 import ProjectsContainer from "./ProjectsContainer/ProjectsContainer";
+import SingleProject from "./SingleProject/SingleProject";
 
 export {
   CardImage,
@@ -12,4 +13,5 @@ export {
   HeadImage,
   Category,
   ProjectsContainer,
+  SingleProject,
 };
