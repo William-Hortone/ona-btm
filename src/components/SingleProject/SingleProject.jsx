@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./singleProject.css";
-import { images } from "../../constants";
+
 // import { NextProject } from "../";
 // import { Parallax } from "react-parallax";
 import { motion } from "framer-motion";

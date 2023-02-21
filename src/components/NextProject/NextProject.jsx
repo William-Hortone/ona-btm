@@ -1,18 +1,19 @@
 import React from "react";
 import { images } from "../../constants";
 import "./nextProject.css";
-import { data } from "../../constants";
+// import { data } from "../../constants";
 
 const NextProject = ({
   nextProjectImg1,
   nextProjectImg2,
   nextProjectTitle1,
   nextProjectTitle2,
+  nextProjectLink,
 }) => {
   return (
     <div className="app__nextProject">
       <div className="container">
-        <a href="#" className="content-slider first">
+        <a href={nextProjectLink} className="content-slider first">
           <p>Autre Projet</p>
           <div className="slider_container">
             <div className="wrapper">
@@ -48,7 +49,7 @@ const NextProject = ({
             </div> */}
           </div>
         </a>
-        <a href="#" className="content-slider first">
+        <a href="/contact" className="content-slider first">
           <p>Nous Contacter</p>
           <div className="slider_container">
             <div className="wrapper">

@@ -14,6 +14,7 @@ const Apartment = () => {
       <NextProject
         nextProjectTitle1={data[4].title1}
         nextProjectTitle2={data[4].title2}
+        nextProjectLink={data[4].link}
         nextProjectImg1={data[4].img[0]}
         nextProjectImg2={data[4].img[1]}
       />

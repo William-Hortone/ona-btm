@@ -127,6 +127,7 @@ const description = [
     img: [images.house1, images.house2],
   },
   {
+    link: "/batiment",
     category: "Bâtiment",
     title1: "Bâtiment R+1",
     title2: "Bâtiment R+1",

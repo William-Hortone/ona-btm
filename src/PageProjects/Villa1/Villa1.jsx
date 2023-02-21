@@ -16,6 +16,7 @@ const Villa1 = () => {
       <NextProject
         nextProjectTitle1={data[1].title1}
         nextProjectTitle2={data[1].title2}
+        nextProjectLink={data[1].link}
         nextProjectImg1={data[1].img[0]}
         nextProjectImg2={data[1].img[1]}
       />
