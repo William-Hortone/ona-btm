@@ -10,11 +10,12 @@ const SingleProject = ({
   sProjectImg1,
   sProjectImg2,
   sProjectImg3,
+  projectDescription,
 }) => {
   const [scroll, setScroll] = useState(false);
 
   const handleChangeBg = () => {
-    if (window.scrollY >= 1500) {
+    if (window.scrollY >= 1200) {
       setScroll(true);
     } else {
       setScroll(false);
@@ -28,8 +29,8 @@ const SingleProject = ({
       <div
         className={
           scroll
-            ? "app__singleProject-container section__padding bg-color"
-            : "app__singleProject-container section__padding bg-color-initial "
+            ? "app__singleProject-container bg-color"
+            : "app__singleProject-container bg-color-initial "
         }
       >
         <div className="app__singleProject-container_first-box">
@@ -50,22 +51,12 @@ const SingleProject = ({
             className="container_second-box-img"
           >
             <img src={sProjectImg2} alt="" />
-            {/* <Parallax strength={300} bgImage={images.villa2}>
-              <div className="box">
-                <div className="text">We do Parallax </div>
-              </div>
-            </Parallax> */}
           </motion.div>
         </div>
         <div className="app__singleProject-container_third-box">
-          <div className="container_third-box-text">
-            <p>
-              "Quatre Chambres ", // "Une toilette visiteur", // "Un grand
-              salon", // "Une salle a mange", // "Une zone véhicule", // "Deux
-              Salle d'eau", // "Un dressing dans la chambre parent", // "Une
-              grande cuisine avec magasin", // "Trois terrasses",
-            </p>
-          </div>
+          {/* <div className="container_third-box-text">
+            <p>{projectDescription}</p>
+          </div> */}
           <div className="container_third-box-img">
             <img src={sProjectImg3} alt="photo of the house" />
           </div>

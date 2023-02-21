@@ -75,7 +75,8 @@
         width: 100%;
     }
     .app__header-container h2 {
-        font-size: 3.2rem;
-        margin-bottom: 2rem;
+        font-size: 2em;
+        /* margin-bottom: 2rem; */
+        /* line-height: 1.1; */
     }
 }

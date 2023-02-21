@@ -12,6 +12,7 @@ const Villa1 = () => {
         sProjectImg1={data[0].img[1]}
         sProjectImg2={data[0].img[0]}
         sProjectImg3={data[0].img[2]}
+        projectDescription={data[0].dsc}
       />
       <NextProject
         nextProjectTitle1={data[1].title1}

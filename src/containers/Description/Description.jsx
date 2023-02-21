@@ -12,7 +12,7 @@ const Description = () => {
   return (
     <div className="app__description section__padding">
       <div className="app__description-left-box">
-        <HeadText title="Welcome To The Concrete Constructions" />
+        <HeadText title="Ona Batiment" />
         <h2>Où nous construisons vos visions</h2>
         <p>
           Write a warm welcoming message for visitors.You can mention all the

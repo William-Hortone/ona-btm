@@ -96,10 +96,48 @@
 }
 .app__nextProject-second-box p{
     font-size: 1.5rem;
- 
     font-family: var(--font-base);
 }
 
+@media screen and (max-width: 850px) {
+    
+    .container{
+        height: 50vh;
+    }
+    .content-slider p{
+        font-size: 2.6rem;
+    }   
+    .wrapper span {
+        font-size: 2rem;
+    }
+    .app__nextProject-second-box p{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    
+    /* .container{
+        height: 50vh;
+    }
+    .content-slider p{
+        font-size: 2.6rem;
+    }   
+    .wrapper span {
+        font-size: 2rem;
+    } */
+    /* .app__nextProject-second-box p{
+        font-size: 1.2rem;
+    } */
+    .app__nextProject-second-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .app__nextProject-second-box{
+        padding: 0 2rem;
+    }
+}
 
 
 
