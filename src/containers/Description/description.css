@@ -13,12 +13,15 @@
 }
 .app__description-left-box h2{
     margin-bottom: 2rem;
-    font-family: var(--font-base);
+    font-weight: 100;
+    font-size: 25px;
+    /* font-family: var(--font-base); */
 }
 .app__description-left-box p:nth-of-type(1){
     font-family: var(--font-alt);
     color: #000000b2;
-    line-height: 2;
+    line-height: 1.7;
+    font-size: 20px;
 }
 .app__description-contact_info{
     margin-top: 3rem;

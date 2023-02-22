@@ -1,14 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { images } from "../../constants";
+import { HeadImage, Consultation } from "../../components";
 import {
   ServiceOBE,
   ServiceOCA,
   ServiceOT,
   ServiceContact,
+  Footer,
 } from "../../containers";
-import { HeadImage, Consultation } from "../../components";
-import { motion } from "framer-motion";
-import images from "../../constants/images";
 import "./service.css";
+
 const Services = () => {
   return (
     <motion.div
@@ -24,6 +26,9 @@ const Services = () => {
       <ServiceOT />
       <ServiceContact />
       {/* <Consultation /> */}
+      <div className="footer__container">
+        <Footer />
+      </div>
     </motion.div>
   );
 };

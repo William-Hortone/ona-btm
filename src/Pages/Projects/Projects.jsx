@@ -1,7 +1,7 @@
 import React from "react";
 import { HeadImage, Consultation } from "../../components";
-import { SectionProject } from "../../containers";
-import images from "../../constants/images";
+import { SectionProject, Footer } from "../../containers";
+import { images } from "../../constants";
 import { motion } from "framer-motion";
 import "./projects.css";
 
@@ -15,9 +15,12 @@ const Projects = () => {
       className="app__projects"
     >
       <HeadImage title="Projects" img={images.building2} />
-      <h2>Projets Recent</h2>
+      <h2> Nos Projets Récents</h2>
       <SectionProject />
       <Consultation />
+      <div className="footer__container">
+        <Footer />
+      </div>
     </motion.div>
   );
 };

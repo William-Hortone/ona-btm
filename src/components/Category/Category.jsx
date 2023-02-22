@@ -4,25 +4,25 @@ import "./category.css";
 const Category = ({ handleFilterProjects }) => {
   return (
     <div className="categories-container">
-      <h3>Cathegories</h3>
+      <h3>Catégories</h3>
       <div className="categories_btn-container">
         <div
           className="btn-category"
           onClick={() => handleFilterProjects("all")}
         >
-          <span> Tous</span>
+          <span>Tous</span>
         </div>
         <div
           className="btn-category"
           onClick={() => handleFilterProjects("Villa")}
         >
-          <span> Villas</span>
+          <span>Villas</span>
         </div>
         <div
           className="btn-category"
           onClick={() => handleFilterProjects("Maison")}
         >
-          <span> Maisons</span>
+          <span>Maisons</span>
         </div>
 
         <div

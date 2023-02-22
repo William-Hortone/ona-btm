@@ -3,6 +3,8 @@
     height: 60vh;
     background-color: #1E1810;
     z-index: 11;
+    /* position: absolute;
+    bottom: 0; */
 }
 .app__footer-container{
     width: 100%;

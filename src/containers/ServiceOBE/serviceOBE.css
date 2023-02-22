@@ -7,6 +7,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     background-color: #BBD0D1;
     padding: 4rem ;
+    overflow-x: hidden;
 }
 .serviceOBE_item img{
     width: 100%;

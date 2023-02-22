@@ -1,13 +1,14 @@
 import React from "react";
 import { Consultation } from "../../components";
+import AnimatedPage from "../../components/AnimatedPages";
+import { motion } from "framer-motion";
 import {
   Header,
   Description,
   Specialization,
   RecentProjects,
+  Footer,
 } from "../../containers";
-import AnimatedPage from "../../components/AnimatedPages";
-import { motion } from "framer-motion";
 import "./home.css";
 
 const Home = () => {
@@ -24,6 +25,9 @@ const Home = () => {
       <Consultation />
       <Specialization />
       <RecentProjects />
+      <div className="footer__container">
+        <Footer />
+      </div>
     </motion.div>
   );
 };

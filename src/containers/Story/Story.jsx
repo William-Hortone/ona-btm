@@ -28,25 +28,25 @@ const Story = () => {
               <span>
                 <FaCheck />
               </span>
-              <p>Professional Specialist</p>
+              <p>spécialiste professionnel</p>
             </div>
             <div>
               <span>
                 <FaCheck />
               </span>
-              <p>Brilliant Ideas</p>
+              <p>Idées brillantes</p>
             </div>
             <div>
               <span>
                 <FaCheck />
               </span>
-              <p>Precise Builders</p>
+              <p>Constructeurs précis</p>
             </div>
             <div>
               <span>
                 <FaCheck />
               </span>
-              <p> 24/7 Assiatance</p>
+              <p>Assistance 24/7</p>
             </div>
           </div>
         </div>

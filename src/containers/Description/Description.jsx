@@ -15,12 +15,12 @@ const Description = () => {
         <HeadText title="Ona Batiment" />
         <h2>Où nous construisons vos visions</h2>
         <p>
-          Write a warm welcoming message for visitors.You can mention all the
-          benefits or services with some real examples. You can also state how
-          you emphasize on their well being. This often shows your concern and
-          increases the chances of conversion. Tell people a little more to
-          attract.You can mention some contact details as shown below to get in
-          touch with visitors.
+          Notre bureau d'études offre à ses clients l'assurance d'une
+          réalisation de leurs projets, optimise dans tous les domaines : un
+          juste équilibre entre les coûts, les délais imposent et la recherche
+          d'une qualité maximum d'exécution. Nos ingénieurs disposent de
+          capacités techniques et de moyens humains pour réaliser divers travaux
+          pour vos projets.
         </p>
         <div className="app__description-contact_info">
           <p>Appelez-Nous Dès Aujourd'hui</p>

@@ -18,13 +18,9 @@ import "./App.css";
 
 const App = () => {
   const location = useLocation();
+
   return (
-    <div
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // transition={{ duration: 0.75, ease: "easeOut" }}
-      className="App "
-    >
+    <div className="App ">
       <Navbar />
       <AnimatePresence exitBeforeEnter initial={false}>
         <Routes key={location.pathname} location={location}>

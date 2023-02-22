@@ -4,6 +4,7 @@
     display: flex;
     background-color: #Fff;
     margin-bottom: 6rem;
+    overflow-x: hidden;
 }
 .app__serviceOT-left-box{
     flex: 1;

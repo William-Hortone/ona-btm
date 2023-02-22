@@ -52,6 +52,7 @@ import team from "../assets/team.jpg";
 import office from "../assets/image3.jpg";
 import place1 from "../assets/contact1.png";
 import place2 from "../assets/contact2.png";
+import place3 from "../assets/restaurant.jpg";
 
 export default {
   logo,
@@ -108,4 +109,5 @@ export default {
   office,
   place1,
   place2,
+  place3,
 };
