@@ -16,9 +16,8 @@ const Consultation = () => {
         <span />
         <h1>Prendre Un Rendez-Vous Gratuitement</h1>
         <p>
-          You can use these sections to highlight the features of heading. Use
-          these paragraphs <br /> to focus on the topic you want. Make sure you
-          keep it short and attractive.
+          Vous avez une idée de projet ou vous souhaitez avoir plus <br />
+          d'information sur nos services, contactez-nous.
         </p>
         <a href="/contact" data-aos="zoom-out-up">
           <button type="button" className="custom__button">

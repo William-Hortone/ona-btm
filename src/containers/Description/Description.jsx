@@ -12,7 +12,7 @@ const Description = () => {
   return (
     <div className="app__description section__padding">
       <div className="app__description-left-box">
-        <HeadText title="Ona Batiment" />
+        <HeadText title="Ona Bâtiment" />
         <h2>Où nous construisons vos visions</h2>
         <p>
           Notre bureau d'études offre à ses clients l'assurance d'une

@@ -21,8 +21,9 @@ const Footer = () => {
         <div className="app__footer-second-box">
           <h3>Nos Services</h3>
           <p>Architecture</p>
-          <p>Site Planning</p>
-          <p>Landscape Design</p>
+          <p>Planification de site</p>
+          <p>Service Clé En Main</p>
+          <p>Bureau D'Etude TCE</p>
         </div>
         <div className="app__footer-third-box">
           <h3>Contacts</h3>

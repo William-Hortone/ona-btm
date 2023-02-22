@@ -1,14 +1,13 @@
-// import React from "react";
 import React, { Component, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaBars, FaBeer, FaHome } from "react-icons/fa";
+import { FaBars, FaHome } from "react-icons/fa";
 import "./navbar.css";
 
 import images from "../../constants/images";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [navbar, setNavbar] = useState(false);
+  // const [navbar, setNavbar] = useState(false);
 
   const navLinkStyle = ({ isActive }) => {
     return {
@@ -17,17 +16,8 @@ const Navbar = () => {
     };
   };
 
-  const handleNavbarBg = () => {
-    if (window.scrollY >= 400) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", handleNavbarBg);
-
   return (
-    <div className={navbar ? "app__navbar navbar-gb " : " app__navbar"}>
+    <div className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.logo} alt="logo img" />
       </div>
