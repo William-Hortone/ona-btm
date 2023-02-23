@@ -1,13 +1,12 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaBars, FaHome } from "react-icons/fa";
+import { FaBars, FaHome, FaTimes } from "react-icons/fa";
 import "./navbar.css";
 
 import images from "../../constants/images";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  // const [navbar, setNavbar] = useState(false);
 
   const navLinkStyle = ({ isActive }) => {
     return {
@@ -61,7 +60,7 @@ const Navbar = () => {
           <div className="app__navbar-smallScreen_overlay slide-bottom">
             <div className="smallSreen-headLine">
               <img src={images.logo} alt="logo img" />
-              <FaHome
+              <FaTimes
                 color="#fff"
                 fontSize={27}
                 onClick={() => setToggleMenu(false)}

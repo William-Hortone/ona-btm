@@ -23,7 +23,6 @@ const Specialization = () => {
       </div>
       <div className="app__specialization-right-box">
         <HeadText title="Nos spécialisations" />
-
         <p className="text-description">
           Les prestations de conception architecturale proposées par ONA
           CONCEPTION ARCHI
