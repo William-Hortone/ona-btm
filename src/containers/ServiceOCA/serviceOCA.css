@@ -2,14 +2,12 @@
     width: 100%;
     /* height: 130vh; */
     display: grid;
-    /* background-color: #Fff; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding-top: 6rem;
     background-color: #F7F5EF;
     overflow-x: hidden;
 }
-
 .app__serviceOCA-first-box{
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -21,6 +19,7 @@
     opacity: .7;
     font-size: 20px;
     line-height: 1.5;
+    
 }
 .app__serviceOCA-first-box ul,
 .app__serviceOCA-third-box ul{
@@ -42,12 +41,22 @@
     grid-row: 1 / 4;
     padding: 2rem 4rem 2rem 6rem;
 }
-.app__serviceOCA-third-box p,
+
 .app__serviceOCA-third-box ul li{
     color: #000;
     opacity: .7;
     font-size: 20px;
     line-height: 1.5;
+}
+.app__serviceOCA-third-box p{
+    color: #000;
+    opacity: .7;
+    font-size: 20px;
+    line-height: 1.5;
+    
+}
+.service_be-structure-container p{
+    font-weight: 900;
 }
 .app__serviceOCA-third-box h3{
     margin: 1rem 0;

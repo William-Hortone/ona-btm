@@ -15,12 +15,11 @@ const Description = () => {
         <HeadText title="Ona Bâtiment" />
         <h2>Où nous construisons vos visions</h2>
         <p>
-          Notre bureau d'études offre à ses clients l'assurance d'une
-          réalisation de leurs projets, optimise dans tous les domaines : un
-          juste équilibre entre les coûts, les délais imposent et la recherche
-          d'une qualité maximum d'exécution. Nos ingénieurs disposent de
-          capacités techniques et de moyens humains pour réaliser divers travaux
-          pour vos projets.
+          Notre bureau d'études offre à ses clients et partenaires l'assurance
+          d'une parfaire réalisation de leurs projets. Nous optimisons les coûts
+          et les délais en apportant les solutions optimales à vos projets. Nos
+          ingénieurs disposent des capacités techniques et des logiciels de
+          pointes pour assurer une qualité maximale des études.
         </p>
         <div className="app__description-contact_info">
           <p>Appelez-Nous Dès Aujourd'hui</p>

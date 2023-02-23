@@ -11,6 +11,10 @@ const NextProject = ({
 }) => {
   return (
     <div className="app__nextProject">
+      {/* <button onclick="history.go(-1)" className="goBck">
+        Retour
+      </button> */}
+
       <div className="container">
         <a href={nextProjectLink} className="content-slider first">
           <p>Autre Projet</p>
@@ -37,7 +41,7 @@ const NextProject = ({
             </div>
           </div>
         </a>
-        <a href="/contact" className="content-slider first">
+        <a href="/contact" className="content-slider">
           <p>Nous Contacter</p>
           <div className="slider_container">
             <div className="wrapper">
@@ -68,7 +72,6 @@ const NextProject = ({
                 <img src={images.place1} alt="photo of restaurant" />
               </div>
             </div>
-            images of house
           </div>
         </a>
       </div>

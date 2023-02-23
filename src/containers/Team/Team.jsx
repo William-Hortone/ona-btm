@@ -15,12 +15,18 @@ const Team = () => {
       <div className="app__team-left-box">
         <HeadText title="Equipe Et Services" />
         <p>
-          Composée de trois ingénieurs Génie civil dont: un ingénieur structure,
-          un ingénieur étude de prix et un ingénieur travaux et de deux
-          techniciens dont un projeteur dessinateur et un chef chantier. Fort de
-          notre expérience et de notre savoir-faire, que vous soyez particulier,
-          professionnel, ou collectivité, nous vous accompagnons dans tous vos
-          projets de constructions.
+          L'équipe permanente est composée : d'un gérant, par ailleurs
+          responsable travaux, d'un ingénieur structure & Économiste, d'un
+          ingénieur travaux par ailleurs coordinateur de travaux, de 3 chefs de
+          chantier, de 5 compagnons permanents, et d'un nombre variable
+          d'intérimaires et de sous-traitant. <br /> <br /> Cette hiérarchie
+          très horizontale nous permet une réactivité quasiment instantanée dans
+          nos décisions. Le peu de procédure hiérarchique interne nous permet
+          également d'être au plus près de nos équipes tout au long des travaux
+          et ainsi de maîtriser parfaitement le déroulement d'un projet.
+          <br /> Fort de notre expérience et de notre savoir-faire, que vous
+          soyez particulier, professionnel, ou collectivité, nous vous
+          accompagnons dans tous vos projets de constructions.
           <br /> <br />
           De la conception architecturale, à la réalisation de votre projet, en
           passant par le choix des fournitures ainsi que leurs qualités, Notre

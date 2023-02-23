@@ -99,9 +99,7 @@
 .app__navbar-smallScreen{
     display: none;
 }
-
 @media screen and (max-width: 800px) {
-    
     .app__navbar-links-container{
         display: none;
     }
@@ -112,5 +110,4 @@
     .app__navbar-smallScreen{
         display: block;
     }
-
 }

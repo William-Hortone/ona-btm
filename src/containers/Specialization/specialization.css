@@ -31,9 +31,14 @@
     width: 47%;
     height: auto;
 }
+.specialization-icons-text{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 .app__specialization-category h3{
-    font-weight: 550;
-    /* font-family: var(--font-alt); */
+    font-weight: 600;
 }
 @media screen and (max-width: 1200px) {
     .app__specialization-left-box{
@@ -61,7 +66,7 @@
         padding-top: 0;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
     .app__specialization-category{
         width: 100%;
     }  

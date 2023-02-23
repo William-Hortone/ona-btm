@@ -23,40 +23,51 @@ const Specialization = () => {
       </div>
       <div className="app__specialization-right-box">
         <HeadText title="Nos spécialisations" />
+
         <p className="text-description">
           Les prestations de conception architecturale proposées par ONA
           CONCEPTION ARCHI
         </p>
         <div className="app__specialization-categories">
           <div className="app__specialization-category">
-            <h3>
-              <FaRegClone /> Conception Architecturale
-            </h3>
+            <div className="specialization-icons-text">
+              <FaRegClone style={{ color: "#df6127" }} />
+              <h3>Conception Architecturale</h3>
+            </div>
             <p>
-              Esquisses et plans d'aménagement, Des plans 3D de construction
-              ....
+              Les prestations de conception architecturale que nous proposons
+              s’adaptent aux besoins les plus ciblés de vos chantiers partout
+              dans le Gabon.
             </p>
           </div>
           <div className="app__specialization-category">
-            <h3>Service Clé En Main​</h3>
-            <p>A short description to prove that you are the best.​</p>
+            <div className="specialization-icons-text">
+              <FaCogs style={{ color: "#df6127" }} />
+              <h3>Bureau d'études GO</h3>
+            </div>
+            <p>
+              Un bureau d’études spécialisé dans le calcul, la conception,
+              l’optimisation et les études d’exécutions des structures pour le
+              bâtiment et le génie civil​
+            </p>
           </div>
           <div className="app__specialization-category">
-            <h3>
-              <FaCogs /> ​Expertise & Diagnostic
-            </h3>
-            <p>A short description to prove that you are the best.​</p>
+            <div className="specialization-icons-text">
+              <FaCogs style={{ color: "#df6127" }} />
+
+              <h3>Travaux</h3>
+            </div>
+            <p>
+              Notre structure apporte une réponse à tous vos projets de
+              construction ou réhabilitation de bâtiments.​
+            </p>
           </div>
           <div className="app__specialization-category">
-            <h3>Note De Calcul & Note Sismique</h3>
-            <p>A short description to prove that you are the best.​</p>
-          </div>
-          <div className="app__specialization-category">
-            <h3> Bureau D'Etude TCE </h3>
-            <p>A short description to prove that you are the best.​</p>
-          </div>
-          <div className="app__specialization-category">
-            <h3>Engenierie & Calcul De Structure</h3>
+            <div className="specialization-icons-text">
+              <FaCogs style={{ color: "#df6127" }} />
+
+              <h3>Services clé en main</h3>
+            </div>
             <p>A short description to prove that you are the best.​</p>
           </div>
         </div>

@@ -17,11 +17,13 @@ const Story = () => {
           <p>
             ONA Bâtiment est une entreprise générale de bâtiment répartie en
             trois pôles : <br />
-            - Ona Conception architecturale : OCA <br />
-            - Ona Bureau d’études : structure & etude de prix OBE <br />- Ona
-            Travaux : OT <br />
-            <br /> Notre entreprise, basée à Paris et au Gabon dans la province
-            de l’Estuaire, intervient principalement dans tout le Gabon.
+            - Conception architecturale : CA <br />
+            - Bureau d’études : structure & etude de prix BE <br />- Travaux :
+            TVX <br />
+            <br /> Intervient sur deux secteurs géographiques : Afrique et
+            Europe. Au Gabon, Ona Batiment intervient aussi bien en etude de
+            projet qu'en realisation des travaux. En Afrique et en Europe, nous
+            intervenons uniquement en etude de projet.
           </p>
           <div className="app__story-description-items">
             <div>

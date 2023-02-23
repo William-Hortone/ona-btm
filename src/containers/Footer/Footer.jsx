@@ -20,10 +20,10 @@ const Footer = () => {
         </div>
         <div className="app__footer-second-box">
           <h3>Nos Services</h3>
-          <p>Architecture</p>
-          <p>Planification de site</p>
+          <p>Travaux</p>
+          <p>Bureau d'études GO</p>
           <p>Service Clé En Main</p>
-          <p>Bureau D'Etude TCE</p>
+          <p>Conception Architecturale</p>
         </div>
         <div className="app__footer-third-box">
           <h3>Contacts</h3>

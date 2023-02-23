@@ -1,6 +1,7 @@
 import React from "react";
 import "./recentProjects.css";
 import { HeadText } from "../../components";
+import { FaArrowRight } from "react-icons/fa";
 
 const RecentProjects = () => {
   return (
@@ -9,15 +10,21 @@ const RecentProjects = () => {
         <div className="app__r-projects_head-text-box">
           <HeadText title="nos projets récents" />
           <p>
-            You can use these sections to highlight the features of heading. Use
-            these paragraphs to focus on the topic you want. Make sure you keep
-            it short and attractive
+            Présentation de nos récents projets et de certains projets que nous
+            mettons à la disposition de nos clients.
           </p>
         </div>
         <div className="app__r-projects_head-btn-box">
-          <button type="button" className="custom__button">
-            Voir plus
-          </button>
+          <a href="/projects">
+            <button
+              style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              type="button"
+              className="custom__button"
+            >
+              Voir plus
+              <FaArrowRight />
+            </button>
+          </a>
         </div>
       </div>
       <div className="app__r-projects_container">

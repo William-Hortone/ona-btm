@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./serviceOCA.css";
-import { CardImage, HeadText } from "../../components";
+import { HeadText } from "../../components";
 import images from "../../constants/images";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,14 +9,15 @@ const ServiceOCA = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
   return (
     <div className="app__serviceOCA">
       <div className="app__serviceOCA-first-box">
-        <HeadText title="Ona conception architecturale" />
+        <HeadText title="conception architecturale" />
         <p>
-          Les prestations de conception architecturale proposées par ONA
-          CONCEPTION ARCHI s’adaptent aux besoins les plus ciblés de vos
-          chantiers partout dans le Gabon. <br />
+          Les prestations de conception architecturale proposées par CONCEPTION
+          ARCHI s’adaptent aux besoins les plus ciblés de vos chantiers partout
+          dans le Gabon. <br />
           Dans le cadre d’une remise en état, d’une extension ou d’un projet
           neuf, nous réalisons : <br /> <br />
         </p>
@@ -26,6 +27,7 @@ const ServiceOCA = () => {
           <li>Des plans de valorisation d’un bâtiment ancien</li>
           <li>Des plans de surélévation d’appartement</li>
           <li>Simulation 3D</li>
+          <li>Synthèse des plans</li>
         </ul>
       </div>
       <div
@@ -33,14 +35,14 @@ const ServiceOCA = () => {
         data-aos-once="true"
         className="app__serviceOCA-img-box"
       >
-        <img src={images.plan6} alt="" />
+        <img src={images.plan6} alt="plan images" />
       </div>
       <div className="app__serviceOCA-third-box">
-        <HeadText title="Ona bureau d'études : structure" />
+        <HeadText title="Bureau d'études : structure" />
         <p>
-          ONA ÉTUDES est un bureau d’études structure spécialisé dans le calcul,
-          la conception, l’optimisation et les études d’exécutions des
-          structures pour le bâtiment et le génie civil. <br />
+          ÉTUDES est un bureau d’études structure spécialisé dans le calcul, la
+          conception, l’optimisation et les études d’exécutions des structures
+          pour le bâtiment et le génie civil. <br />
           Alliant rigueur et créativité, nos ingénieurs relèvent les différents
           challenges techniques des grands projets. Ils analysent et identifient
           avec précision les contraintes dès la phase d’avant projet tout en
@@ -58,7 +60,11 @@ const ServiceOCA = () => {
         <h3 data-aos="fade-left" data-aos-once="true">
           STRUCTURE
         </h3>
-        <div data-aos="fade-left" data-aos-once="true">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          className="service_be-structure-container"
+        >
           <p>La conception, l’optimisation et l'étude de structures :</p>
           <ul>
             <li>Béton armé</li>

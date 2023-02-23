@@ -52,7 +52,6 @@
     z-index: 1;
 }
 
-
 @media screen and (max-width: 808px) {
     .app__consultation-container h1{
         margin-bottom: 1rem;
@@ -60,7 +59,7 @@
     }
     .app__consultation-container p{
         line-height: 2;
-        font-size: .8rem;
+        /* font-size: .8rem; */
     }
     .app__consultation-container a{
         margin-top: 2rem;
@@ -71,4 +70,10 @@
      
     }
     
+}
+@media screen and (max-width: 550px){
+    .app__consultation-container p{
+        line-height: 2;
+        font-size: .8rem;
+    }
 }
