@@ -14,7 +14,7 @@ const Projects = () => {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__projects"
     >
-      <HeadImage title="Projects" img={images.building2} />
+      <HeadImage title="Projects" img={images.building9} />
       <h2> Nos Projets Récents</h2>
       <SectionProject />
       <Consultation />

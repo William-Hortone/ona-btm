@@ -1,103 +1,146 @@
 .app__contact{
     width: 100%;
-    height: auto;
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url('../../assets/contactimg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     color: #ffff;
 }
 .app__contact-container{
+    flex: 1;
     width: 100%;
     height: auto;
-    background-color: red;
-    padding: 4rem 6rem;
-}
-.app__contact-container_title p{
-    font-size: 20px ;
-}
-.app__contact-container-boxes{
-    width: 100%;
-    height: 90vh;
     display: flex;
-    gap: 2rem;
-    background-color: antiquewhite;
+    padding: 6rem 4rem 0 4rem;
+    border-bottom: 1px solid #ffffff2c;
+    z-index: 2;
 }
 .app__contact-container_left-box{
     flex: 1;
-    background-color: rgb(69, 16, 138);
-    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    gap: 2rem;
 }
 .app__contact-container_left-box h2{
-    font-size: 2.3rem;
-    margin-bottom: 3rem;
+    font-size: 4.3rem;
     font-family: var(--font-base);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact_section-infos{
+    display: flex;
+    gap: 2rem;
+}
+.contact_section-infos p{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.app__contact-container_right-box{
+    flex: 1;
+    padding-top: 5rem;
 }
 form{
     width: 100%;
-
+    height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
-input{
+label {
+    font-size: 1.5rem;
+    opacity: .2;
+}
+input,
+textarea{
     width: 100%;
-    padding: 1rem 0 1rem 1rem;
-    background-color: #efefef;
-    margin-bottom: 1.5rem;
-    /* border: transparent; */
+    padding: .2rem 0 .2rem 1rem;
+    margin-bottom: 3rem;
     outline: none;
+    border: none;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
+    border-bottom: 1px solid #ffffff2c;
+    transition: padding .5s ease;
+    background: transparent;
+    color: #ffff;
 }
-textarea{
+form button{
     width: 100%;
-    min-height: 280px;
-    padding: .8rem;
-    margin-bottom: 1rem;
-    background-color: #efefef;
     font-size: 14px;
-    font-weight: 600;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    text-align: start;
+    background: transparent;
+    cursor: pointer;
+    padding: 2rem 0 2rem .5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #ffff;
+    opacity: .5;
 }
 form button{
     width: 170px;
+    transition: .5s ease;
 }
-input:focus{
-    border: 3px solid var(--color-orange);
-   
+form button:hover{
+    transform: scale(1.1);
 }
-
-.app__contact-container_right-box{
-    flex: 1;
-    background-color: rgb(24, 168, 118);
-    padding: 2rem 4rem ;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+input:focus,
+textarea:focus{
+    padding-top: 1rem;
 }
-.app__contact-container_right-box h2{
-    font-size: 2.3rem;
-    font-family: var(--font-base);
-}
-.info-contact_boxes{
+.contact-copyright{
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-.info-contact{
-    width: 40%;
-    display: flex;
-    align-items: flex-start;
-}
-.info-contact span{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: .5rem;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    background-color: blueviolet;
+    padding: 2.5rem 4rem;
+    z-index: 2;
+    opacity: .3;
 }
-.info-contact_text h3{
-    font-size: 1.5rem;
+.blur-span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .8;
+    z-index: 1;
+}
+@media screen and (max-width: 1000px){
+    .app__contact-container{
+        /* flex-direction: column; */
+        padding: 6rem 2rem;
+
+    }
+    .app__contact-container_right-box{
+        flex: 1;
+        /* padding-top: 0; */
+    }
+    .app__contact-container_left-box h2{
+        font-size: 3rem;
+    }
+    input,
+textarea{
     margin-bottom: 1rem;
+}
+}
+@media screen and (max-width: 750px){
+    .app__contact-container{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .app__contact-container_right-box{
+        flex: 1;
+        padding-top: 0;
+    }
 }

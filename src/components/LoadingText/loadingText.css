@@ -1,0 +1,27 @@
+.loading-text {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #333;
+  }
+  
+  .loading-text.loading {
+    animation: blink 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+  }
+  

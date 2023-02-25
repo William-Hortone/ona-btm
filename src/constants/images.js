@@ -36,6 +36,7 @@ import building14 from "../assets/building14.jpg";
 import building15 from "../assets/building15.jpg";
 import building16 from "../assets/building16.jpg";
 import building17 from "../assets/building17.jpg";
+import building18 from "../assets/contactimg.jpg";
 import plan1 from "../assets/1plan.jpg";
 import plan2 from "../assets/2plan.jpg";
 import plan3 from "../assets/3plan.jpg";
@@ -93,6 +94,7 @@ export default {
   building15,
   building16,
   building17,
+  building18,
   plan1,
   plan2,
   plan3,

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion as m } from "framer-motion";
 import images from "../../constants/images";
+import emailjs from "@emailjs/browser";
 import { HeadImage, HeadText } from "../../components";
 import {
   FaEnvelope,
@@ -20,10 +21,77 @@ const Contact = () => {
     console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_86h9uwu",
+        "template_meb9jv8",
+        // form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="app__contact">
-      <HeadImage title="Contact" img={images.building9} />
       <div className="app__contact-container">
+        <div className="app__contact-container_left-box">
+          <h2>Contactez-Nous</h2>
+          <div className="contact_section-infos">
+            <div>
+              <p>+33 695469273</p>
+              <p>+241 077761684</p>
+              <p>onabatiment@gmail.com</p>
+            </div>
+            <div>
+              <p>Paris / France</p>
+              <p>Libreville / Gabon</p>
+            </div>
+          </div>
+        </div>
+        <div className="app__contact-container_right-box">
+          <form onSubmit={sendEmail}>
+            <label id="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              value={email}
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label for="message">Message</label>
+            <textarea
+              value={message}
+              name="email"
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button type="submit" className="custom__buttocn">
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+      <div className="contact-copyright">
+        <p>© Ona Batiment 2023</p>
+        <p>By William Hortone</p>
+      </div>
+      <div className="blur-span"></div>
+      {/* <div className="app__contact-container">
         <div className="app__contact-container_title">
           <HeadText title="Nous joindre" />
           <p>
@@ -34,13 +102,7 @@ const Contact = () => {
           <div className="app__contact-container-boxes">
             <div className="app__contact-container_left-box">
               <h2>Nous Envoyer Un Message</h2>
-              {/* <form action="">
-                <input type="text" placeholder="Nom" required />
-                <input type="text" placeholder="Email" required />
-                <input type="text" placeholder="Objet" required />
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </form> */}
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={sendEmail}>
                 <input
                   type="text"
                   value={name}
@@ -68,17 +130,17 @@ const Contact = () => {
               <div className="info-contact_boxes">
                 <div className="info-contact">
                   <span>
-                    <FaPhoneAlt />
+                    <FaPhoneAlt style={{ color: "#FF7A3D" }} />
                   </span>
                   <div className="info-contact_text">
-                    <h3>Telephone</h3>
+                    <h3>Telephones</h3>
                     <p>+33 695469273</p>
                     <p>+241 077761684</p>
                   </div>
                 </div>
                 <div className="info-contact">
                   <span>
-                    <FaMapMarkedAlt />
+                    <FaMapMarkedAlt style={{ color: "#FF7A3D" }} />
                   </span>
                   <div className="info-contact_text">
                     <h3>Nos Emplacements</h3>
@@ -88,7 +150,7 @@ const Contact = () => {
                 </div>
                 <div className="info-contact">
                   <span>
-                    <FaEnvelope />
+                    <FaEnvelope style={{ color: "#FF7A3D" }} />
                   </span>
                   <div className="info-contact_text">
                     <h3>Notre Email</h3>
@@ -97,10 +159,10 @@ const Contact = () => {
                 </div>
                 <div className="info-contact">
                   <span>
-                    <FaRegCalendarAlt />
+                    <FaRegCalendarAlt style={{ color: "#FF7A3D" }} />
                   </span>
                   <div className="info-contact_text">
-                    <h3>Telehone</h3>
+                    <h3>Nos horaires</h3>
                     <p>Lun-Ven 9H à 17H</p>
                   </div>
                 </div>
@@ -108,7 +170,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

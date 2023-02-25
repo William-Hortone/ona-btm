@@ -1,8 +1,9 @@
 import React from "react";
 import "./header.css";
-import images from "../../constants/images";
+// import images from "../../constants/images";
 import { motion as m } from "framer-motion";
 import { container, item } from "../../components/animation";
+import { LoadingText } from "../../components";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
           animate="show"
           className="header_text-container"
         >
-          <div className="header_title-box">
+          <div className="header_title-box ">
             <m.h2 variants={item}>Vision élargie,</m.h2>
           </div>
           <div className="header_title-box">
