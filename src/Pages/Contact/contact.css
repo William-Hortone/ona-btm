@@ -8,13 +8,14 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-     color: #ffff;
+    color: #ffff;
 }
 .app__contact-container{
     flex: 1;
     width: 100%;
     height: auto;
     display: flex;
+    gap: 1rem;
     padding: 6rem 4rem 0 4rem;
     border-bottom: 1px solid #ffffff2c;
     z-index: 2;
@@ -39,6 +40,7 @@
 .contact_section-infos p{
     font-size: 18px;
     line-height: 1.2;
+    opacity: .5;
 }
 .app__contact-container_right-box{
     flex: 1;
@@ -118,29 +120,58 @@ textarea:focus{
 }
 @media screen and (max-width: 1000px){
     .app__contact-container{
-        /* flex-direction: column; */
+        align-items: center;
         padding: 6rem 2rem;
-
     }
-    .app__contact-container_right-box{
-        flex: 1;
-        /* padding-top: 0; */
+    .app__contact-container_left-box{
+        padding-top: 0rem;
     }
     .app__contact-container_left-box h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     input,
-textarea{
-    margin-bottom: 1rem;
+    textarea{
+        margin-bottom: 1rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
 }
-}
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
     .app__contact-container{
         flex-direction: column;
         padding: 0 2rem;
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+    .app__contact-container_left-box{
+        padding-top: 8rem;
     }
     .app__contact-container_right-box{
         flex: 1;
         padding-top: 0;
+        width: 100%;
     }
+       form button{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 550px){
+   .app__contact-container_left-box h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .contact-copyright{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_section-infos p{
+        font-size: 14px;
+        line-height: 1;
+    }
+    
+    
+  
 }
