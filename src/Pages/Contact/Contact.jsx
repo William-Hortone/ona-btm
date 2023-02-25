@@ -58,16 +58,23 @@ const Contact = () => {
 
   return (
     <motion.div
-      // initial="hidden"
-      // animate="visible"
-      // exit="exit"
-      // variants={routeVariants}
-      // transition={{ duration: 0.5 }}
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ Scale: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__contact"
     >
       <div className="app__contact-container">
         <div className="app__contact-container_left-box">
-          <h2>Contactez-Nous</h2>
+          <div className="contact-title-box">
+            <motion.h2
+              animate={{ y: "0%" }}
+              initial={{ y: "100%" }}
+              transition={{ delay: 0.7, duration: 0.7 }}
+            >
+              Contactez-Nous
+            </motion.h2>
+          </div>
           <div className="contact_section-infos">
             <div>
               <p>+33 695469273</p>
@@ -113,86 +120,6 @@ const Contact = () => {
         <p>By William Hortone</p>
       </div>
       <div className="blur-span"></div>
-      {/* <div className="app__contact-container">
-        <div className="app__contact-container_title">
-          <HeadText title="Nous joindre" />
-          <p>
-            Add a couple of lines that tell users how easily they can get in
-            touch with you. People prefer services where they can contact
-            providers right away.
-          </p>
-          <div className="app__contact-container-boxes">
-            <div className="app__contact-container_left-box">
-              <h2>Nous Envoyer Un Message</h2>
-              <form onSubmit={sendEmail}>
-                <input
-                  type="text"
-                  value={name}
-                  placeholder="Nom"
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  type="email"
-                  value={email}
-                  placeholder="Adresse email"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <textarea
-                  value={message}
-                  placeholder="Votre message"
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-                <button type="submit" className="custom__button">
-                  Envoyer
-                </button>
-              </form>
-            </div>
-            <div className="app__contact-container_right-box">
-              <h2> Infos Contacts </h2>
-              <div className="info-contact_boxes">
-                <div className="info-contact">
-                  <span>
-                    <FaPhoneAlt style={{ color: "#FF7A3D" }} />
-                  </span>
-                  <div className="info-contact_text">
-                    <h3>Telephones</h3>
-                    <p>+33 695469273</p>
-                    <p>+241 077761684</p>
-                  </div>
-                </div>
-                <div className="info-contact">
-                  <span>
-                    <FaMapMarkedAlt style={{ color: "#FF7A3D" }} />
-                  </span>
-                  <div className="info-contact_text">
-                    <h3>Nos Emplacements</h3>
-                    <p>Paris,France</p>
-                    <p>Libreville, Gabon</p>
-                  </div>
-                </div>
-                <div className="info-contact">
-                  <span>
-                    <FaEnvelope style={{ color: "#FF7A3D" }} />
-                  </span>
-                  <div className="info-contact_text">
-                    <h3>Notre Email</h3>
-                    <p>onabatiment@gmail.com</p>
-                  </div>
-                </div>
-                <div className="info-contact">
-                  <span>
-                    <FaRegCalendarAlt style={{ color: "#FF7A3D" }} />
-                  </span>
-                  <div className="info-contact_text">
-                    <h3>Nos horaires</h3>
-                    <p>Lun-Ven 9H à 17H</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </motion.div>
   );
 };

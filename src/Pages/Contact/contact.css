@@ -27,6 +27,11 @@
     padding-top: 8rem;
     gap: 2rem;
 }
+.contact-title-box{
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+}
 .app__contact-container_left-box h2{
     font-size: 4.3rem;
     font-family: var(--font-base);
