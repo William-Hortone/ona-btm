@@ -21,7 +21,10 @@ const SectionProject = () => {
         <Category handleFilterProjects={handleFilterProjects} />
       </div>
       <div className="app__sectionProject-right-box">
-        <ProjectsContainer projects={projects} />
+        <ProjectsContainer
+          projects={projects}
+          handleFilterProjects={handleFilterProjects}
+        />
       </div>
     </div>
   );

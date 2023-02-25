@@ -100,3 +100,13 @@
         font-size: 1.2rem;
     }
 }
+
+/* .filter-item {
+    transition: all 0.3s ease;
+  }
+  
+  .filter-item.active {
+    transform: scale(1.2);
+    border-color: #333;
+  }
+   */

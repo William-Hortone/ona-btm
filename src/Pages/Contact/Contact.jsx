@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion as m } from "framer-motion";
+import { motion } from "framer-motion";
 import images from "../../constants/images";
 import emailjs from "@emailjs/browser";
 import { HeadImage, HeadText } from "../../components";
@@ -15,6 +15,21 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  // const routeVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: -100,
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //     x: 100,
+  //   },
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +57,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="app__contact">
+    <motion.div
+      // initial="hidden"
+      // animate="visible"
+      // exit="exit"
+      // variants={routeVariants}
+      // transition={{ duration: 0.5 }}
+      className="app__contact"
+    >
       <div className="app__contact-container">
         <div className="app__contact-container_left-box">
           <h2>Contactez-Nous</h2>
@@ -171,7 +193,7 @@ const Contact = () => {
           </div>
         </div>
       </div> */}
-    </div>
+    </motion.div>
   );
 };
 

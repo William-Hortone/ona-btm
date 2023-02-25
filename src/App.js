@@ -11,17 +11,30 @@ import {
   Batiment,
 } from "./PageProjects";
 import { Footer, Navbar } from "./containers";
-import { motion as m } from "framer-motion";
+// import { motion as m } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
-
+import { MotionLayout } from "framer-motion";
 import "./App.css";
 
 const App = () => {
   const location = useLocation();
 
+  // const pageVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //   },
+  // };
+
   return (
     <div className="App ">
       <Navbar />
+      {/* <MotionLayout initial="hidden" animate="visible" variants={pageVariants}> */}
       <AnimatePresence exitBeforeEnter initial={false}>
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
@@ -38,6 +51,7 @@ const App = () => {
           <Route path="/batiment" element={<Batiment />} />
         </Routes>
       </AnimatePresence>
+      {/* </MotionLayout> */}
       {/* <Footer /> */}
     </div>
   );
