@@ -13,15 +13,11 @@
     height: fit-content;
     width: fit-content;
     z-index: 1;
-    /* padding: 1; */
-    /* margin:  10% 0; */
     overflow: hidden;
     position: relative;
     top: -200px;
     /* top: 50%; */
     left: 10%;
-    /* padding: 100px 0; */
-    /* background-color: rebeccapurple; */
 }
 .app__headImage h1{
     /* position: absolute;
@@ -56,21 +52,18 @@
     .app__headImage{
         height: 40vh;
     }
-    /* .app__headImage span{
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3.5rem;
-    } */
-    /* .app__headImage span::after{
-        left: 50%;
-        transform: translateX(-50%);
-    } */
+    .title_box{
+        top: -130px;
+    }
+    .app__headImage h1{
+        font-size: 3rem;
+    }
 }
 @media screen  and ( max-width: 550px ){
     /* .app__headImage span{
         font-size: 2.5rem;
     } */
-    .app__headImage h1{
+    /* .app__headImage h1{
         font-size: 3.5rem;
-    }
+    } */
 }

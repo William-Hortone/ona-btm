@@ -1,14 +1,29 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import images from "../../constants/images";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./serviceContact.css";
 
 const ServiceContact = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  });
+  const variants = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.5,
+        ease: "easeOut",
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: 100,
+    },
+  };
 
   return (
     <div className="app__serviceContact">
@@ -25,13 +40,15 @@ const ServiceContact = () => {
         <div className="app__serviceContact-right-box_img1">
           <img src={images.place1} alt="images office" />
         </div>
-        <div
-          data-aos="zoom-out-left"
-          data-aos-once="true"
-          className="app__serviceContact-right-box_img2"
+        <motion.div
+          ref={ref}
+          className="animated app__serviceContact-right-box_img2"
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={variants}
         >
           <img src={images.place2} alt="images office" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

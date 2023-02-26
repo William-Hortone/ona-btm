@@ -4,22 +4,8 @@
 .App{
   height: 100%;
   width:100%;
+  overflow-x: hidden;
   position: absolute;
-  /* background: transparent ; */
-  /* position: relative; */
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  /* background-color: aquamarine; */
-}
-
-
-.app__bg {
-  background: url('./assets/building1.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 .custom__button {
@@ -55,7 +41,7 @@
   background: #df6127;
 }
 .custom__btn:hover{
-color: var(--color-white);
+  color: var(--color-white);
  border: 1px solid var(--color-orange);
 }
 
@@ -69,6 +55,7 @@ color: var(--color-white);
   line-height: 29.9px;
   font-size: 23px;
 }
+
 .p__opensans {
   font-family: var(--font-alt);
   color: var(--color-white);
@@ -77,15 +64,6 @@ color: var(--color-white);
   text-transform: capitalize;
   line-height: 28px;
   font-size: 16px;
-}
-
-.headtext__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-golden);
-  font-size: 64px;
-  line-height: 83.2px;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
 }
 
 @media screen and (min-width: 2000px) {
@@ -98,25 +76,17 @@ color: var(--color-white);
     font-size: 30px;
     line-height: 50px;
   }
-  .headtext__cormorant {
-    font-size: 150px;
-    line-height: 210px;
-  }
 }
-
-
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 4rem;
   }
 }
-
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
   }
-  
-  .p__cormorant {
+    .p__cormorant {
     font-size: 21px;
   }
 
@@ -124,7 +94,6 @@ color: var(--color-white);
     font-size: 14px;
   }
 }
-
 @media screen and (max-width: 450px) {
   .p__opensans {
     font-size: 12px;

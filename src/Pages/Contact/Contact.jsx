@@ -1,35 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import images from "../../constants/images";
 import emailjs from "@emailjs/browser";
-import { HeadImage, HeadText } from "../../components";
-import {
-  FaEnvelope,
-  FaPhoneAlt,
-  FaRegCalendarAlt,
-  FaMapMarkedAlt,
-} from "react-icons/fa";
 import "./contact.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  // const routeVariants = {
-  //   hidden: {
-  //     opacity: 0,
-  //     x: -100,
-  //   },
-  //   visible: {
-  //     opacity: 1,
-  //     x: 0,
-  //   },
-  //   exit: {
-  //     opacity: 0,
-  //     x: 100,
-  //   },
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -119,7 +96,7 @@ const Contact = () => {
         <p>© Ona Batiment 2023</p>
         <p>By William Hortone</p>
       </div>
-      <div className="blur-span"></div>
+      <span className="blur-span" />
     </motion.div>
   );
 };

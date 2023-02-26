@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import "./team.css";
 import images from "../../constants/images";
-import { CardImage, HeadText } from "../../components";
+import { AnimateDiv, CardImage, HeadText } from "../../components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Team = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 2000 });
+  // }, []);
 
   return (
     <div className="app__team section__padding">
@@ -41,11 +41,11 @@ const Team = () => {
         </p>
       </div>
       <div
-        data-aos="fade-left"
-        data-aos-once="true"
+        // data-aos="fade-left"
+        // data-aos-once="true"
         className="app__team-right-box"
       >
-        <CardImage img={images.boss} />
+        <AnimateDiv image={images.boss} />
       </div>
     </div>
   );

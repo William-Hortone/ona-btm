@@ -25,9 +25,9 @@ const Services = () => {
       <ServiceOBE />
       <ServiceOT />
       <ServiceContact />
-      <div className="footer__container">
-        <Footer />
-      </div>
+      <Footer />
+      {/* <div className="footer__container">
+      </div> */}
     </motion.div>
   );
 };

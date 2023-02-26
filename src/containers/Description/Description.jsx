@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./description.css";
 import images from "../../constants/images";
-import { HeadText, CardImage } from "../../components";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { HeadText, AnimateDiv } from "../../components";
 
 const Description = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
   return (
     <div className="app__description section__padding">
       <div className="app__description-left-box">
@@ -26,12 +21,8 @@ const Description = () => {
           <p> +33 695469273 / +241 077761684</p>
         </div>
       </div>
-      <div
-        data-aos="fade-left"
-        data-aos-once="true"
-        className="app__description-right-box"
-      >
-        <CardImage img={images.building11} />
+      <div className="app__description-right-box">
+        <AnimateDiv image={images.building11} />
       </div>
     </div>
   );

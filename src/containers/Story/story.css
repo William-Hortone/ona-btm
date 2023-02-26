@@ -57,3 +57,8 @@
         gap: 3rem;
     }
 }
+@media screen and (max-width: 450px) {
+    .app__story-description-items div{
+        width: 100%;
+    }
+}

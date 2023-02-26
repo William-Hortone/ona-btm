@@ -2,13 +2,30 @@ import React, { useEffect } from "react";
 import "./serviceOCA.css";
 import { HeadText } from "../../components";
 import images from "../../constants/images";
-import AOS from "aos";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "aos/dist/aos.css";
 
 const ServiceOCA = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  });
+
+  const variants = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.5,
+        ease: "easeOut",
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: -100,
+    },
+  };
 
   return (
     <div className="app__serviceOCA">
@@ -30,13 +47,15 @@ const ServiceOCA = () => {
           <li>Synthèse des plans</li>
         </ul>
       </div>
-      <div
-        data-aos="fade-right"
-        data-aos-once="true"
-        className="app__serviceOCA-img-box"
+      <motion.div
+        ref={ref}
+        className="animated app__serviceOCA-img-box"
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={variants}
       >
         <img src={images.plan6} alt="plan images" />
-      </div>
+      </motion.div>
       <div className="app__serviceOCA-third-box">
         <HeadText title="Bureau d'études : structure" />
         <p>
@@ -60,10 +79,13 @@ const ServiceOCA = () => {
         <h3 data-aos="fade-left" data-aos-once="true">
           STRUCTURE
         </h3>
-        <div
-          data-aos="fade-left"
-          data-aos-once="true"
-          className="service_be-structure-container"
+        <motion.div
+          ref={ref}
+          className="animated service_be-structure-container "
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={variants}
+          //  className="service_be-structure-container"
         >
           <p>La conception, l’optimisation et l'étude de structures :</p>
           <ul>
@@ -86,7 +108,7 @@ const ServiceOCA = () => {
               réglementations en vigueur.
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

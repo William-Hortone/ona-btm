@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./specialization.css";
 import images from "../../constants/images";
-import { CardImage, HeadText } from "../../components";
+import { CardImage, HeadText, AnimateLeft } from "../../components";
 import { FaRegClone, FaCogs } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,12 +13,9 @@ const Specialization = () => {
 
   return (
     <div className="app__specialization section__padding">
-      <div
-        data-aos="fade-right"
-        data-aos-once="true"
-        className="app__specialization-left-box"
-      >
-        <CardImage img={images.building9} />
+      <div className="app__specialization-left-box">
+        <AnimateLeft image={images.building9} />
+        {/* <CardImage img={images.building9} /> */}
       </div>
       <div className="app__specialization-right-box">
         <HeadText title="Nos spécialisations" />

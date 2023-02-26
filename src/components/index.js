@@ -7,6 +7,8 @@ import ProjectsContainer from "./ProjectsContainer/ProjectsContainer";
 import SingleProject from "./SingleProject/SingleProject";
 import NextProject from "./NextProject/NextProject";
 import LoadingText from "./LoadingText/LoadingText";
+import AnimateDiv from "./AnimateDiv/AnimateDiv";
+import AnimateLeft from "./AnimateDiv/AnimateLeft";
 
 export {
   CardImage,
@@ -18,4 +20,6 @@ export {
   SingleProject,
   NextProject,
   LoadingText,
+  AnimateDiv,
+  AnimateLeft,
 };
