@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./projectsContainer.css";
 
 const ProjectsContainer = ({ projects }) => {
@@ -6,8 +7,8 @@ const ProjectsContainer = ({ projects }) => {
     <>
       <div className="app__projectsContainer">
         {projects.map((project, index) => (
-          <a
-            href={project.link}
+          <Link
+            to={project.link}
             key={index}
             className="app__projectsContainer-project"
           >
@@ -24,7 +25,7 @@ const ProjectsContainer = ({ projects }) => {
                 <span className="project-title">{project.specification}</span>
               </div>
             </article>
-          </a>
+          </Link>
         ))}
       </div>
     </>

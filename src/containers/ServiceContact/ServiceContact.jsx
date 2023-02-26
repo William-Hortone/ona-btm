@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import "./serviceContact.css";
+import { Link } from "react-router-dom";
 import images from "../../constants/images";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./serviceContact.css";
 
 const ServiceContact = () => {
   useEffect(() => {
@@ -16,10 +17,9 @@ const ServiceContact = () => {
           Vous souhaitez travailler avec nous? <br /> Contactez-nous pour
           entamer une conversation.
         </h2>
-        <a href="/contact" data-aos="fade-up" data-aos-duration="3000">
+        <Link to="/contact" data-aos="fade-up" data-aos-duration="3000">
           <span className="span"> Contactez-nous</span>
-          {/* <span className="span" /> */}
-        </a>
+        </Link>
       </div>
       <div className="app__serviceContact-right-box">
         <div className="app__serviceContact-right-box_img1">

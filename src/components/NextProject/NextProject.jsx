@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { images } from "../../constants";
 import "./nextProject.css";
 
@@ -11,12 +12,8 @@ const NextProject = ({
 }) => {
   return (
     <div className="app__nextProject">
-      {/* <button onclick="history.go(-1)" className="goBck">
-        Retour
-      </button> */}
-
       <div className="container">
-        <a href={nextProjectLink} className="content-slider first">
+        <Link to={nextProjectLink} className="content-slider first">
           <p>Autre Projet</p>
           <div className="slider_container">
             <div className="wrapper">
@@ -40,8 +37,8 @@ const NextProject = ({
               </div>
             </div>
           </div>
-        </a>
-        <a href="/contact" className="content-slider">
+        </Link>
+        <Link to="/contact" className="content-slider">
           <p>Nous Contacter</p>
           <div className="slider_container">
             <div className="wrapper">
@@ -73,7 +70,7 @@ const NextProject = ({
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="app__nextProject-second-box">
         <p>Ona Batiment@2023 </p>

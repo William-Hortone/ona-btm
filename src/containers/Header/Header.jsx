@@ -4,6 +4,7 @@ import "./header.css";
 import { motion as m } from "framer-motion";
 import { container, item } from "../../components/animation";
 import { LoadingText } from "../../components";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -29,16 +30,16 @@ const Header = () => {
           Notre objectif est de fournir des projets de qualité à temps
         </p>
         <div className="app__header-btm-container">
-          <a href="/about">
+          <Link to="/about">
             <button type="button" className="custom__button">
               En Savoir Plus
             </button>
-          </a>
-          <a href="/contact">
+          </Link>
+          <Link to="/contact">
             <button type="button" className="custom__btn">
               Contact
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <span className="box-blur"></span>

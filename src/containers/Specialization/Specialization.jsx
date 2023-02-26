@@ -3,7 +3,6 @@ import "./specialization.css";
 import images from "../../constants/images";
 import { CardImage, HeadText } from "../../components";
 import { FaRegClone, FaCogs } from "react-icons/fa";
-// import { IoConstructOutline } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -67,7 +66,9 @@ const Specialization = () => {
 
               <h3>Services clé en main</h3>
             </div>
-            <p>A short description to prove that you are the best.​</p>
+            <p>
+              Notre structure met à votre disposition un service clé en main.​
+            </p>
           </div>
         </div>
       </div>

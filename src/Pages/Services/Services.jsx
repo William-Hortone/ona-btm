@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
-import { HeadImage, Consultation } from "../../components";
+import { HeadImage } from "../../components";
 import {
   ServiceOBE,
   ServiceOCA,
@@ -25,7 +25,6 @@ const Services = () => {
       <ServiceOBE />
       <ServiceOT />
       <ServiceContact />
-      {/* <Consultation /> */}
       <div className="footer__container">
         <Footer />
       </div>

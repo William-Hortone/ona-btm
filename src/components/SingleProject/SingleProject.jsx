@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./singleProject.css";
-// import { Parallax } from "react-parallax";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const SingleProject = ({
@@ -8,7 +8,6 @@ const SingleProject = ({
   sProjectImg1,
   sProjectImg2,
   sProjectImg3,
-  projectDescription,
 }) => {
   const [scroll, setScroll] = useState(false);
 
@@ -48,13 +47,10 @@ const SingleProject = ({
             viewport={{ once: true }}
             className="container_second-box-img"
           >
-            <img src={sProjectImg2} alt="" />
+            <img src={sProjectImg2} alt="villa image" />
           </motion.div>
         </div>
         <div className="app__singleProject-container_third-box">
-          {/* <div className="container_third-box-text">
-            <p>{projectDescription}</p>
-          </div> */}
           <div className="container_third-box-img">
             <img src={sProjectImg3} alt="photo of the house" />
           </div>

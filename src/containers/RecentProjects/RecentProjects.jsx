@@ -2,6 +2,7 @@ import React from "react";
 import "./recentProjects.css";
 import { HeadText } from "../../components";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const RecentProjects = () => {
   return (
@@ -15,7 +16,7 @@ const RecentProjects = () => {
           </p>
         </div>
         <div className="app__r-projects_head-btn-box">
-          <a href="/projects">
+          <Link to="/projects">
             <button
               style={{ display: "flex", alignItems: "center", gap: "10px" }}
               type="button"
@@ -24,34 +25,34 @@ const RecentProjects = () => {
               Voir plus
               <FaArrowRight />
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="app__r-projects_container">
-        <a href="/villa1" className="app__r-projects-items item1">
+        <Link to="/villa1" className="app__r-projects-items item1">
           <span />
           <div>01 </div>
-        </a>
-        <a href="/villa2" className="app__r-projects-items item2">
+        </Link>
+        <Link to="/villa2" className="app__r-projects-items item2">
           <span />
           <div>02 </div>
-        </a>
-        <a href="villa3" className="app__r-projects-items item3">
+        </Link>
+        <Link to="villa3" className="app__r-projects-items item3">
           <span />
           <div>03 </div>
-        </a>
-        <a href="/house" className="app__r-projects-items item4 ">
+        </Link>
+        <Link to="/house" className="app__r-projects-items item4 ">
           <span />
           <div>04 </div>
-        </a>
-        <a href="/villa2" className="app__r-projects-items item5">
+        </Link>
+        <Link to="/villa2" className="app__r-projects-items item5">
           <span />
           <div>05 </div>
-        </a>
-        <a href="/apartment" className="app__r-projects-items item6">
+        </Link>
+        <Link to="/apartment" className="app__r-projects-items item6">
           <span />
           <div>06 </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

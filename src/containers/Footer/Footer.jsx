@@ -14,7 +14,9 @@ const Footer = () => {
               la province de l’Estuaire.
             </p>
             <div className="footer-icons">
-              <FaFacebookF />
+              <a target="blank" href="https://www.facebook.com/ONABATIMENTG">
+                <FaFacebookF />
+              </a>
             </div>
           </div>
         </div>
