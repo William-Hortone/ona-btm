@@ -1,9 +1,8 @@
 import React from "react";
-import "./story.css";
-import { CardImage, HeadText, Consultation } from "../../components";
+import { CardImage, HeadText } from "../../components";
 import images from "../../constants/images";
 import { FaCheck } from "react-icons/fa";
-import { motion as m } from "framer-motion";
+import "./story.css";
 
 const Story = () => {
   return (

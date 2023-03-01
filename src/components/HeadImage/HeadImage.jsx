@@ -1,12 +1,11 @@
 import React from "react";
-import "./headImage.css";
 import { motion as m } from "framer-motion";
+import "./headImage.css";
 
 const HeadImage = ({ img, title }) => {
   return (
     <div className="app__headImage">
       <img src={img} alt="images of building" />
-
       <div className="title_box">
         <m.h1
           animate={{ y: "0%" }}

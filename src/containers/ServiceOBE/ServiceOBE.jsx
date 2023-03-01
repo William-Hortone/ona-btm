@@ -1,17 +1,10 @@
-import React, { useEffect } from "react";
-import { CardImage, HeadText } from "../../components";
+import React from "react";
 import images from "../../constants/images";
-import "./serviceOBE.css";
-// import AOS from "aos";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import "aos/dist/aos.css";
+import "./serviceOBE.css";
 
 const ServiceOBE = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 2000 });
-  // }, []);
-
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: false,
@@ -49,6 +42,7 @@ const ServiceOBE = () => {
       x: -100,
     },
   };
+
   return (
     <div className="app__serviceOBE">
       <div className="app__serviceOBE-box-one">

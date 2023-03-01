@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
-import "./serviceOCA.css";
+import React from "react";
 import { HeadText } from "../../components";
 import images from "../../constants/images";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import "aos/dist/aos.css";
+import "./serviceOCA.css";
 
 const ServiceOCA = () => {
   const [ref, inView] = useInView({
@@ -76,16 +75,13 @@ const ServiceOCA = () => {
           proximité sont la garantie de la qualité de nos missions. Nous
           intervenons dans les domaines d’activités suivants: <br />
         </p>
-        <h3 data-aos="fade-left" data-aos-once="true">
-          STRUCTURE
-        </h3>
+        <h3>STRUCTURE</h3>
         <motion.div
           ref={ref}
           className="animated service_be-structure-container "
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
-          //  className="service_be-structure-container"
         >
           <p>La conception, l’optimisation et l'étude de structures :</p>
           <ul>

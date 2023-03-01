@@ -1,7 +1,7 @@
 import React from "react";
-import { HeadImage, Consultation, AnimateDiv } from "../../components";
-import images from "../../constants/images";
+import { HeadImage, Consultation } from "../../components";
 import { Story, Team, Footer } from "../../containers";
+import images from "../../constants/images";
 import { motion } from "framer-motion";
 import "./about.css";
 
@@ -19,8 +19,6 @@ const About = () => {
       <Team />
       <Consultation />
       <Footer />
-      {/* <div className="footer__container">
-      </div> */}
     </motion.div>
   );
 };

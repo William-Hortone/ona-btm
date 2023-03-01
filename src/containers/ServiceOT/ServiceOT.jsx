@@ -1,6 +1,5 @@
 import React from "react";
-import { CardImage, HeadText } from "../../components";
-import images from "../../constants/images";
+import { HeadText } from "../../components";
 import "./serviceOT.css";
 
 const ServiceOT = () => {

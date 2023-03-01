@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import images from "../../constants/images";
 import { motion } from "framer-motion";
