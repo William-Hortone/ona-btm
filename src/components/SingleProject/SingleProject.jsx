@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./singleProject.css";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import "./singleProject.css";
 
 const SingleProject = ({
   projectTitle,

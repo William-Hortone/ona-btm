@@ -1,7 +1,7 @@
 import React from "react";
-import "./villa1.css";
 import { SingleProject, NextProject } from "../../components";
 import { data } from "../../constants";
+import "./villa1.css";
 
 const Villa1 = () => {
   return (
