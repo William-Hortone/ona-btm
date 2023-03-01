@@ -7,9 +7,7 @@
 .app__headText h1{
     font-size: 3rem;
     text-transform: capitalize;
-    /* line-height: 3; */
     font-weight: 500;
-    /* font-family: var(--font-base); */
     position: relative;
     padding-bottom: 1rem;
 }

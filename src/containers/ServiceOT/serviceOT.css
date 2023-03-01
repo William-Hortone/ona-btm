@@ -26,22 +26,9 @@
     margin-top:.5rem ;
     color: #000;
     font-family: var(--font-alt);
-    /* opacity: .7; */
 }
-/* .app__serviceOT-left-box ul{
-    padding-left: 1rem ;
-}
-.app__serviceOT-left-box ul li{
-    font-size: 15px;
-    line-height: 1.5;
-    color: #000;
-    opacity: .8;
-} */
-
 .app__serviceOT-right-box{
     flex: 1;
-    /* padding-right: 2rem;
-    padding-left: 4rem; */
     padding: 10rem  4rem 4rem 4rem;
 }
 .app__serviceOT-right-box ul{
@@ -50,7 +37,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 2rem; */
 }
 .app__serviceOT-right-box li{
     font-size: 1.5rem;
@@ -62,7 +48,6 @@
     text-transform: uppercase;
     color: #000;
     font-family: var(--font-alt);
-    /* opacity: .7; */
 }
 @media screen and (max-width:1000px){
     .app__serviceOT{

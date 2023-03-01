@@ -10,7 +10,6 @@
     height: 50%;
     position: sticky;
     top: 100px;
-    /* background-color: antiquewhite; */
 }
 .app__sectionProject-right-box{
     flex: 2;

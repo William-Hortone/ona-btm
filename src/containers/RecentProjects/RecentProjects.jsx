@@ -1,8 +1,8 @@
 import React from "react";
-import "./recentProjects.css";
 import { HeadText } from "../../components";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "./recentProjects.css";
 
 const RecentProjects = () => {
   return (

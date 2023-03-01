@@ -2,7 +2,6 @@
     width: 100%;
     height: 60vh;
     position: relative;
-    /* overflow: hidden; */
 }
 .app__headImage img{
     width: 100%;
@@ -16,14 +15,9 @@
     overflow: hidden;
     position: relative;
     top: -200px;
-    /* top: 50%; */
     left: 10%;
 }
 .app__headImage h1{
-    /* position: absolute;
-    top: 50%;
-    left: 10%; */
-    /* margin:  10% 0; */
     font-size: 4.4rem;
     color: #fff;
     z-index: 1;
@@ -58,12 +52,4 @@
     .app__headImage h1{
         font-size: 3rem;
     }
-}
-@media screen  and ( max-width: 550px ){
-    /* .app__headImage span{
-        font-size: 2.5rem;
-    } */
-    /* .app__headImage h1{
-        font-size: 3.5rem;
-    } */
 }
