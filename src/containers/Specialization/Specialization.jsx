@@ -1,21 +1,14 @@
-import React, { useEffect } from "react";
-import "./specialization.css";
+import React from "react";
 import images from "../../constants/images";
-import { CardImage, HeadText, AnimateLeft } from "../../components";
+import { HeadText, AnimateLeft } from "../../components";
 import { FaRegClone, FaCogs } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import "./specialization.css";
 
 const Specialization = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   return (
     <div className="app__specialization section__padding">
       <div className="app__specialization-left-box">
         <AnimateLeft image={images.building9} />
-        {/* <CardImage img={images.building9} /> */}
       </div>
       <div className="app__specialization-right-box">
         <HeadText title="Nos spécialisations" />
@@ -49,7 +42,6 @@ const Specialization = () => {
           <div className="app__specialization-category">
             <div className="specialization-icons-text">
               <FaCogs style={{ color: "#df6127" }} />
-
               <h3>Travaux</h3>
             </div>
             <p>
@@ -60,7 +52,6 @@ const Specialization = () => {
           <div className="app__specialization-category">
             <div className="specialization-icons-text">
               <FaCogs style={{ color: "#df6127" }} />
-
               <h3>Services clé en main</h3>
             </div>
             <p>

@@ -1,7 +1,8 @@
 import React from "react";
-import "./footer.css";
 import images from "../../constants/images";
 import { FaFacebookF } from "react-icons/fa";
+import "./footer.css";
+
 const Footer = () => {
   return (
     <div className="app__footer ">

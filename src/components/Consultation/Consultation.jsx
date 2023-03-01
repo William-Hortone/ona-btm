@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import "./consultation.css";
-import images from "../../constants/images";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./consultation.css";
 
 const Consultation = () => {
   return (

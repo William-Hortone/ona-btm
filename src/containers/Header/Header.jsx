@@ -1,10 +1,8 @@
 import React from "react";
-import "./header.css";
-// import images from "../../constants/images";
 import { motion as m } from "framer-motion";
 import { container, item } from "../../components/animation";
-import { LoadingText } from "../../components";
 import { Link } from "react-router-dom";
+import "./header.css";
 
 const Header = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 import { Consultation } from "../../components";
-import AnimatedPage from "../../components/AnimatedPages";
 import { motion } from "framer-motion";
 import {
   Header,
