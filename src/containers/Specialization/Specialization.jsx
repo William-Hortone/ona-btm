@@ -12,10 +12,6 @@ const Specialization = () => {
       </div>
       <div className="app__specialization-right-box">
         <HeadText title="Nos spécialisations" />
-        <p className="text-description">
-          Les prestations de conception architecturale proposées par ONA
-          CONCEPTION ARCHI
-        </p>
         <div className="app__specialization-categories">
           <div className="app__specialization-category">
             <div className="specialization-icons-text">
@@ -24,29 +20,28 @@ const Specialization = () => {
             </div>
             <p>
               Les prestations de conception architecturale que nous proposons
-              s’adaptent aux besoins les plus ciblés de vos chantiers partout
-              dans le Gabon.
+              s’adaptent aux besoins les plus ciblés de vos chantiers.
             </p>
           </div>
           <div className="app__specialization-category">
             <div className="specialization-icons-text">
               <FaCogs style={{ color: "#df6127" }} />
-              <h3>Bureau d'études GO</h3>
+              <h3>Bureau d'études GO et études de prix</h3>
             </div>
             <p>
               Un bureau d’études spécialisé dans le calcul, la conception,
-              l’optimisation et les études d’exécutions des structures pour le
-              bâtiment et le génie civil​
+              l’optimisation et les études d’exécutions des structures pour les
+              bâtiments et le génie civil​, et le chiffrage de projects.
             </p>
           </div>
           <div className="app__specialization-category">
             <div className="specialization-icons-text">
               <FaCogs style={{ color: "#df6127" }} />
-              <h3>Travaux</h3>
+              <h3>Service Travaux</h3>
             </div>
             <p>
               Notre structure apporte une réponse à tous vos projets de
-              construction ou réhabilitation de bâtiments.​
+              construction neuves ou réhabilitation bâtiments.​
             </p>
           </div>
           <div className="app__specialization-category">

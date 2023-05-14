@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-second-box">
           <h3>Nos Services</h3>
-          <p>Travaux</p>
+          <p>Services Travaux</p>
           <p>Bureau d'études GO</p>
           <p>Service Clé En Main</p>
           <p>Conception Architecturale</p>
@@ -38,7 +38,11 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <p>Ona Batiment © 2023</p>
-        <p>Developed By William Hortone</p>
+        <p>
+          <a target="blank" href="https://williamhortone.com/">
+            Developed By William Hortone
+          </a>
+        </p>
       </div>
     </div>
   );

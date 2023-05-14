@@ -11,7 +11,7 @@ const SingleProject = ({
   const [scroll, setScroll] = useState(false);
 
   const handleChangeBg = () => {
-    if (window.scrollY >= 1200) {
+    if (window.scrollY >= 1500) {
       setScroll(true);
     } else {
       setScroll(false);
@@ -25,8 +25,8 @@ const SingleProject = ({
       <div
         className={
           scroll
-            ? "app__singleProject-container bg-color"
-            : "app__singleProject-container bg-color-initial "
+            ? "app__singleProject-container bg_color"
+            : "app__singleProject-container bg-color-initial"
         }
       >
         <div className="app__singleProject-container_first-box">

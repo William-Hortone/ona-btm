@@ -24,6 +24,7 @@ const Story = () => {
             projet qu'en realisation des travaux. En Afrique et en Europe, nous
             intervenons uniquement en etude de projet.
           </p>
+
           <div className="app__story-description-items">
             <div>
               <span>

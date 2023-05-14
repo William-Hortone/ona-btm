@@ -53,7 +53,7 @@ const ServiceOCA = () => {
         animate={inView ? "visible" : "hidden"}
         variants={variants}
       >
-        <img src={images.plan6} alt="plan images" />
+        <img src={images.travaux2} alt="plan images" />
       </motion.div>
       <div className="app__serviceOCA-third-box">
         <HeadText title="Bureau d'études : structure" />

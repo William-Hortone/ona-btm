@@ -10,16 +10,17 @@ const Description = () => {
         <HeadText title="Ona Bâtiment" />
         <h2>Où nous construisons vos visions</h2>
         <p>
-          Notre bureau d'études offre à ses clients et partenaires l'assurance
-          d'une parfaire réalisation de leurs projets. Nous optimisons les coûts
-          et les délais en apportant les solutions optimales à vos projets. Nos
-          ingénieurs disposent des capacités techniques et des logiciels de
-          pointes pour assurer une qualité maximale des études.
+          Notre entreprise composée du service etude et travaux offre à ses
+          clients et partenaires l'assurance d'une parfaite réalisation de leurs
+          projets. Disposant à la fois de compétences techniques et de
+          compétences en gestion de projet, les équipes d’Ona Batiment peuvent
+          intervenir en maitrise d’œuvre et en entreprise générale. - Notre
+          service etude dispose des logiciels de pointes pour assurer une
+          qualité maximale des études de vos projets, optimisant les coûts et
+          délais en apportant les solutions optimales et adaptées. <br /> -
+          Notre service travaux dispose des capacités techniques et des outils
+          adaptés tout en maitrisant les procédés de construction modernes.
         </p>
-        <div className="app__description-contact_info">
-          <p>Appelez-Nous Dès Aujourd'hui</p>
-          <p> +33 695469273 / +241 077761684</p>
-        </div>
       </div>
       <div className="app__description-right-box">
         <AnimateDiv image={images.building11} />

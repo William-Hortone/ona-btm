@@ -1,167 +1,165 @@
-.app__r-projects{
-    width: 100%;
-    height: auto;
-    display: flex;
-    background-color: #fff;
-    flex-direction: column;
-    gap: 3rem;
-    margin-bottom: 3rem;
+.app__r-projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
-.app__r-projects_head{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: space-between;
-    padding: 0 8rem;
+.app__r-projects_head {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: space-between;
+  padding: 0 8rem;
 }
-.app__r-projects_head-text-box{
-    flex: 1;
+.app__r-projects_head-text-box {
+  flex: 1;
 }
-.app__r-projects_head-text-box p{
-    font-size: 18px ;
-    font-family: var(--font-alt);
-    opacity:.7;
+.app__r-projects_head-text-box p {
+  font-size: 18px;
+  font-family: var(--font-alt);
+  opacity: 0.7;
 }
-.app__r-projects_head-btn-box{
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+.app__r-projects_head-btn-box {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-.app__r-projects_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-auto-rows: minmax(200px, auto);
+.app__r-projects_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
 }
 .item1 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    background: url('../../assets/villa2.jpg');
-    background-position: center center;
-    background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background: url("../../assets/villa2.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 .item2 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-    background: url('../../assets/house16.jpg');
-    background-position: center center;
-    background-size: cover;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  background: url("../../assets/house16.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 .item3 {
-    grid-column: 4 / 5;
-    grid-row: 1 / 3;
-    background: url('../../assets/house8.jpg');
-    background-position: center center;
-    background-size: cover;
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  background: url("../../assets/travaux4.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 .item4 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    background: url('../../assets/house13.jpg');
-    background-position: center center;
-    background-size: cover;
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  background: url("../../assets/house13.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 .item5 {
-    grid-column: 2 /3;
-    grid-row: 3 /5 ;
-    background: url('../../assets/house4.jpg');
-    background-position: center center;
-    background-size: cover;
+  grid-column: 2 /3;
+  grid-row: 3 /5;
+  background: url("../../assets/travaux5.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 .item6 {
-    grid-column:  3 /5 ;
-    grid-row: 3 /5;
-    background: url('../../assets/villa5.jpg');
-    background-position: center center;
-    background-size: cover;
+  grid-column: 3 /5;
+  grid-row: 3 /5;
+  background: url("../../assets/villa5.jpg");
+  background-position: center center;
+  background-size: cover;
 }
-.app__r-projects-items{
-    position: relative;
+.app__r-projects-items {
+  position: relative;
 }
-.app__r-projects-items:hover.app__r-projects-items span{
-    background-color: var(--color-orange);
-    opacity: .56;
-    transition: .3s ease ;
+.app__r-projects-items:hover.app__r-projects-items span {
+  background-color: var(--color-orange);
+  opacity: 0.56;
+  transition: 0.3s ease;
 }
-.app__r-projects-items span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #00000091;
-    background-color: #4642428f;
-    z-index: 2;
+.app__r-projects-items span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000091;
+  background-color: #4642428f;
+  z-index: 2;
 }
-.app__r-projects-items p, 
-.app__r-projects-items div{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.app__r-projects-items p,
+.app__r-projects-items div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.app__r-projects-items p{
-    width: 100%;
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
-    z-index: 3;
-    font-weight: 900;
-    font-family: var(--font-alt);
-    display: inline;
+.app__r-projects-items p {
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 3;
+  font-weight: 900;
+  font-family: var(--font-alt);
+  display: inline;
 }
-.app__r-projects-items div{
-    font-size: 7.5rem;
-    color: #fff;
-    z-index: 1;
+.app__r-projects-items div {
+  font-size: 7.5rem;
+  color: #fff;
+  z-index: 1;
 }
 
 @media screen and (max-width: 850px) {
-    .app__r-projects_head{
-        flex-direction: column;
-        padding: 4rem;
-    }
-    .app__r-projects_head-btn-box{
-        justify-content: flex-start;
-        margin-top: 3rem;
-    }
-    .app__r-projects_container{
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap; 
-    }
-    .app__r-projects-items{
-        height:60vh ;
-    }
-    .item1,
-    .item6{
-        width: 100%;
-    }
-    .item2,
-    .item3,
-    .item4,
-    .item5{
-        width: 50%;
-    }
+  .app__r-projects_head {
+    flex-direction: column;
+    padding: 4rem;
+  }
+  .app__r-projects_head-btn-box {
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+  .app__r-projects_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .app__r-projects-items {
+    height: 60vh;
+  }
+  .item1,
+  .item6 {
+    width: 100%;
+  }
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 650px) {
-    .app__r-projects_head{
-        flex-direction: column;
-        padding: 4rem 2rem;
-    }
+  .app__r-projects_head {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
 }
 @media screen and (max-width: 500px) {
- 
-    .app__r-projects-items{
-
-        height:40vh ;
-    }
-    .item2,
-    .item3,
-    .item4,
-    .item5{
-        width: 100%;
-    }
+  .app__r-projects-items {
+    height: 40vh;
+  }
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    width: 100%;
+  }
 }

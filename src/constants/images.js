@@ -50,10 +50,16 @@ import service2 from "../assets/service2.jpg";
 import service3 from "../assets/service3.jpg";
 import boss from "../assets/boss.jpg";
 import team from "../assets/team.jpg";
+import team2 from "../assets/oob.jpg";
 import office from "../assets/image3.jpg";
 import place1 from "../assets/contact1.png";
 import place2 from "../assets/contact2.png";
 import place3 from "../assets/restaurant.jpg";
+import travaux1 from "../assets/travaux1.jpg";
+import travaux2 from "../assets/travaux2.jpg";
+import travaux3 from "../assets/travaux3.jpg";
+import travaux4 from "../assets/travaux4.jpg";
+import travaux5 from "../assets/travaux5.jpg";
 
 export default {
   logo,
@@ -108,8 +114,14 @@ export default {
   service3,
   boss,
   team,
+  team2,
   office,
   place1,
   place2,
   place3,
+  travaux1,
+  travaux2,
+  travaux3,
+  travaux4,
+  travaux5,
 };

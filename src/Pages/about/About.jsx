@@ -17,6 +17,11 @@ const About = () => {
       <HeadImage title="A Propos" img={images.building7} />
       <Story />
       <Team />
+      <div className="team-presentation">
+        <div className="team-presentation-box">
+          <img src={images.team2} alt="" />
+        </div>
+      </div>
       <Consultation />
       <Footer />
     </motion.div>

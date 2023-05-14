@@ -67,6 +67,22 @@ const description = [
     dsc: "Cinq Chambres, Trois douches (dont une dans la chambre parentale), Un grand salon, Une salle a mange, Une reserve, Un WC visiteur,  Un cuisine, Un bureau, Trois terrasses ",
     img: [images.btm1, images.btm2],
   },
+  {
+    link: "/house",
+    title1: "Maison plein pieds",
+    title2: "de type F5",
+    category: "Maison",
+    service: "Conception et construction",
+    dsc: "Quatre Chambres Une toilette visiteur,Un grand salon,Une salle a mange,Une zone véhicule,Deux Salle deau, Un dressing dans la chambre parent,Une grande cuisine avec magasin, Trois terrasses,",
+    img: [images.travaux4, images.travaux2],
+  },
+  {
+    link: "/batiment",
+    category: "Bâtiment",
+    service: "Conception et construction",
+    dsc: "Cinq Chambres, Trois douches (dont une dans la chambre parentale), Un grand salon, Une salle a mange, Une reserve, Un WC visiteur,  Un cuisine, Un bureau, Trois terrasses ",
+    img: [images.travaux1, images.travaux3],
+  },
 ];
 
 export default description;
