@@ -8,6 +8,7 @@ import SingleProject from "./SingleProject/SingleProject";
 import NextProject from "./NextProject/NextProject";
 import AnimateDiv from "./AnimateDiv/AnimateDiv";
 import AnimateLeft from "./AnimateDiv/AnimateLeft";
+import CardCategory from "./cardCategory/CardCategory";
 
 export {
   CardImage,
@@ -20,4 +21,5 @@ export {
   NextProject,
   AnimateDiv,
   AnimateLeft,
+  CardCategory,
 };
