@@ -1,0 +1,74 @@
+.app__counter {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #000;
+}
+.company-name {
+  font-size: 5vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline;
+  font-family: var(--font-alt);
+  /* color: var(--color-orange); */
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+
+  /* font-size: 5rem; */
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(../../assets/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  /* font-family: var(--font-link); */
+  text-transform: uppercase;
+  animation: back 20s linear infinite;
+  font-weight: 900;
+}
+.counter {
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  animation: countAnimation 5s ease-in-out, counterMove 5s ease-in-out forwards;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+@keyframes countAnimation {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes counterMove {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .company-name {
+    font-size: 6vw;
+  }
+  .counter {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    font-size: 40px;
+  }
+}

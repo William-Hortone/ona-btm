@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import logoWebsite from "../assets/logosite.png";
 import villa1 from "../assets/house1.jpg";
 import villa2 from "../assets/house12.jpg";
 import villa3 from "../assets/villa2.jpg";
@@ -63,6 +64,7 @@ import travaux5 from "../assets/travaux5.jpg";
 
 export default {
   logo,
+  logoWebsite,
   villa1,
   villa2,
   villa3,

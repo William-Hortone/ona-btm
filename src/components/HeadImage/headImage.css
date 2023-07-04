@@ -1,55 +1,66 @@
-.app__headImage{
-    width: 100%;
-    height: 60vh;
-    position: relative;
+.app__headImage {
+  width: 100%;
+  height: 60vh;
+  position: relative;
 }
-.app__headImage img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.app__headImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.title_box{
-    height: fit-content;
-    width: fit-content;
-    z-index: 1;
-    overflow: hidden;
-    position: relative;
-    top: -200px;
-    left: 10%;
+.title_box {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  top: -200px;
+  left: 10%;
+  z-index: 1;
+  overflow: hidden;
 }
-.app__headImage h1{
-    font-size: 4.4rem;
-    color: #fff;
-    z-index: 1;
-    font-weight: 900;
-    overflow: hidden;
+.app__headImage h1 {
+  font-size: 4.4rem;
+  color: #fff;
+  z-index: 1;
+  font-weight: 900;
+  overflow: hidden;
 }
-.app__headImage h1::after{
-    content: '';
-    width: 80px;
-    height: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    background-color: var(--color-orange);
+.app__headImage h1::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background-color: var(--color-orange);
 }
-.headImage-blur{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    opacity: .56;
+.headImage-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.56;
 }
-@media screen  and ( max-width: 768px ) {
-    .app__headImage{
-        height: 40vh;
-    }
-    .title_box{
-        top: -130px;
-    }
-    .app__headImage h1{
-        font-size: 3rem;
-    }
+@media screen and (max-width: 768px) {
+  .app__headImage {
+    height: 40vh;
+  }
+  .title_box {
+    top: -130px;
+  }
+  .app__headImage h1 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .app__headImage {
+    height: 40vh;
+  }
+  .title_box {
+    top: -130px;
+  }
+  .app__headImage h1 {
+    font-size: 2rem;
+  }
 }

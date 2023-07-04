@@ -35,7 +35,9 @@ const Team = () => {
         </p>
       </div>
       <div className="app__team-right-box">
-        <AnimateDiv image={images.boss} />
+        <div className="app__team-right-box-img">
+          <AnimateDiv image={images.boss} />
+        </div>
       </div>
     </div>
   );

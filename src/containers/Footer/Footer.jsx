@@ -1,6 +1,14 @@
 import React from "react";
 import images from "../../constants/images";
 import { FaFacebookF } from "react-icons/fa";
+// import { FaCaretRight } from " react-icons/fa";
+import {
+  FaCaretRight,
+  FaWhatsapp,
+  FaPhoneAlt,
+  FaMapMarkedAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 import "./footer.css";
 
 const Footer = () => {
@@ -15,7 +23,11 @@ const Footer = () => {
               la province de l’Estuaire.
             </p>
             <div className="footer-icons">
-              <a target="blank" href="https://www.facebook.com/ONABATIMENTG">
+              <a
+                target="blank"
+                className="facebook"
+                href="https://www.facebook.com/ONABATIMENTG"
+              >
                 <FaFacebookF />
               </a>
             </div>
@@ -23,17 +35,40 @@ const Footer = () => {
         </div>
         <div className="app__footer-second-box">
           <h3>Nos Services</h3>
-          <p>Services Travaux</p>
-          <p>Bureau d'études GO</p>
-          <p>Service Clé En Main</p>
-          <p>Conception Architecturale</p>
+          <p>
+            <FaCaretRight color="#ff7a3d" />
+            Services Travaux
+          </p>
+          <p>
+            <FaCaretRight color="#ff7a3d" />
+            Bureau d'études GO
+          </p>
+          <p>
+            <FaCaretRight color="#ff7a3d" />
+            Service Clé En Main
+          </p>
+          <p>
+            <FaCaretRight color="#ff7a3d" />
+            Conception Architecturale
+          </p>
         </div>
         <div className="app__footer-third-box">
           <h3>Contacts</h3>
-          <p>Paris,France / Libreville, Gabon</p>
-          <p>+33 695469273</p>
-          <p>+241 077761684</p>
-          <p>onabatiment@gmail.com</p>
+          <p>
+            <FaMapMarkedAlt color="#ff7a3d" /> Paris,France / Libreville, Gabon
+          </p>
+          <p>
+            <FaWhatsapp color="#ff7a3d" />
+            +33 695469273
+          </p>
+          <p>
+            <FaPhoneAlt color="#ff7a3d" />
+            +241 077761684
+          </p>
+          <p>
+            <FaEnvelope color="#ff7a3d" />
+            onabatiment@gmail.com
+          </p>
         </div>
       </div>
       <div className="footer-copyright">

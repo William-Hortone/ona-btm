@@ -19,10 +19,10 @@ const Navbar = () => {
     <div className="app__navbar">
       <div className="app__navbar-logo">
         <div className="app__navbar-logo-img">
-          <img src={images.logo} alt="logo img" />
+          <img src={images.logoWebsite} alt="logo img" />
         </div>
         <h2>Ona Bâtiment</h2>
-      </div>
+    </div>
       <div className="app__navbar-links-container">
         <ul className="app__navbar-links">
           <li className="navbar__link">
@@ -62,7 +62,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="app__navbar-smallScreen_overlay slide-bottom">
             <div className="smallSreen-headLine">
-              <img src={images.logo} alt="logo img" />
+              <img src={images.logoWebsite} alt="logo img" />
               <FaTimes
                 color="#fff"
                 fontSize={27}

@@ -82,22 +82,25 @@
   padding-right: 2rem;
 }
 .smallSreen-headLine img {
-  width: 200px;
-  height: 100%;
+  height: 70px;
+  aspect-ratio: 1/1;
+  /* height: 100%; */
   object-fit: cover;
+  margin-left: 1rem;
 }
 .app__navbar-smallScreen-links {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: flex-start; */
   align-items: center;
+  padding-top: 100px;
 }
 .app__navbar-smallScreen-links li {
   list-style: none;
 }
 .app__navbar-smallScreen-links li a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font-base);
   font-weight: 600;
   color: #fff;

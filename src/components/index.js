@@ -9,6 +9,7 @@ import NextProject from "./NextProject/NextProject";
 import AnimateDiv from "./AnimateDiv/AnimateDiv";
 import AnimateLeft from "./AnimateDiv/AnimateLeft";
 import CardCategory from "./cardCategory/CardCategory";
+import Counter from "./counter/Counter";
 
 export {
   CardImage,
@@ -22,4 +23,5 @@ export {
   AnimateDiv,
   AnimateLeft,
   CardCategory,
+  Counter,
 };

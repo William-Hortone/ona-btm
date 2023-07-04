@@ -1,50 +1,50 @@
-.app__description{
-    height: 110vh;
-    width: 100%;
-    display: flex;
-    background-color: hsl(0, 0%, 100%);
+.app__description {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
 }
-.app__description-left-box{
-    flex: 1;
-    display: flex;
+.app__description-left-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem 0 0;
+}
+.app__description-left-box h2 {
+  margin-bottom: 2rem;
+  font-weight: 100;
+  font-size: 25px;
+}
+.app__description-left-box p:nth-of-type(1) {
+  font-family: var(--font-alt);
+  color: #000000b2;
+  line-height: 1.7;
+  font-size: 20px;
+}
+.app__description-contact_info {
+  margin-top: 3rem;
+}
+.app__description-contact_info p:nth-of-type(2) {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: 0.7rem;
+}
+.app__description-right-box {
+  flex: 1;
+  padding-left: 4rem;
+}
+@media screen and (max-width: 1100px) {
+  .app__description {
     flex-direction: column;
-    padding:2rem  4rem 0 0;
-}
-.app__description-left-box h2{
-    margin-bottom: 2rem;
-    font-weight: 100;
-    font-size: 25px;
-}
-.app__description-left-box p:nth-of-type(1){
-    font-family: var(--font-alt);
-    color: #000000b2;
-    line-height: 1.7;
-    font-size: 20px;
-}
-.app__description-contact_info{
-    margin-top: 3rem;
-}
-.app__description-contact_info p:nth-of-type(2){
-    font-size: 1.3rem;
-    font-weight: 900;
-    margin-top: .7rem;
-}
-.app__description-right-box{
-    flex: 1;
-   padding-left: 4rem;
-}
-@media screen and (max-width: 1100px){
-    .app__description{
-        flex-direction: column;
-        height: auto;
-        gap: 3rem;
-    }
-    .app__description-right-box{
-       padding-left: 0;
-       display: flex;
-       align-items: center;
-    }
-    .app__description-left-box{
-        padding-right: 0;
-    }
+    height: auto;
+    gap: 3rem;
+  }
+  .app__description-right-box {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .app__description-left-box {
+    padding-right: 0;
+  }
 }
