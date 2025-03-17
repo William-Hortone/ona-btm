@@ -30,11 +30,11 @@ const Navbar = () => {
               Accueil
             </NavLink>
           </li>
-          <li className="navbar__link">
+          {/* <li className="navbar__link">
             <NavLink style={navLinkStyle} to="/about">
               A propos
             </NavLink>
-          </li>
+          </li> */}
           <li className="navbar__link">
             <NavLink style={navLinkStyle} to="/services">
               Services

@@ -44,37 +44,37 @@ const NextProject = ({
             <div className="wrapper">
               <span>Vous souhaitez</span>
               <div className="div_image">
-                <img src={images.place2} alt="photo of restaurant" />
+                <img src={images.place2} alt="next project of restaurant" />
               </div>
               <span>travailler avec nous?</span>
               <div className="div_image">
-                <img src={images.place3} alt="photo of restaurant" />
+                <img src={images.place3} alt="next project of restaurant" />
               </div>
               <span>Contactez-nous</span>
               <div className="div_image">
-                <img src={images.place1} alt="photo of restaurant" />
+                <img src={images.place1} alt="next project of restaurant" />
               </div>
             </div>
             <div className="wrapper">
               <span>Vous souhaitez</span>
               <div className="div_image">
-                <img src={images.place2} alt="photo of restaurant" />
+                <img src={images.place2} alt="next project of restaurant" />
               </div>
               <span>travailler avec nous?</span>
               <div className="div_image">
-                <img src={images.place3} alt="photo of restaurant" />
+                <img src={images.place3} alt="next project of restaurant" />
               </div>
               <span>Contactez-nous</span>
               <div className="div_image">
-                <img src={images.place1} alt="photo of restaurant" />
+                <img src={images.place1} alt="next project of restaurant" />
               </div>
             </div>
           </div>
         </Link>
       </div>
       <div className="app__nextProject-second-box">
-        <p>Ona Batiment@2023 </p>
-        <p>By William Hortone </p>
+        <p>Ona Batiment@2025 </p>
+        <p>By WanTech </p>
       </div>
     </div>
   );

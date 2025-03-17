@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Home, About, Services, Contact, Projects } from "./Pages";
+import { Home, Services, Contact, Projects } from "./Pages";
 import { Navbar } from "./containers";
 import { AnimatePresence } from "framer-motion";
 import { Counter } from "./components";
@@ -36,7 +36,7 @@ const App = () => {
           <AnimatePresence exitBeforeEnter initial={false}>
             <Routes key={location.pathname} location={location}>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              {/* <Route path="/about" element={<About />} /> */}
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />

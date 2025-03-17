@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="app__footer-third-box">
           <h3>Contacts</h3>
           <p>
-            <FaMapMarkedAlt color="#ff7a3d" /> Paris,France / Libreville, Gabon
+            <FaMapMarkedAlt color="#ff7a3d" /> Nzeng-Ayong / Libreville
           </p>
           <p>
             <FaWhatsapp color="#ff7a3d" />
@@ -63,7 +63,7 @@ const Footer = () => {
           </p>
           <p>
             <FaPhoneAlt color="#ff7a3d" />
-            +241 077761684
+            +241 74382648 / 065150664
           </p>
           <p>
             <FaEnvelope color="#ff7a3d" />
@@ -72,10 +72,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <p>Ona Batiment © 2023</p>
+        <p>Ona Batiment © 2025</p>
         <p>
-          <a target="blank" href="https://williamhortone.com/">
-            Developed By William Hortone
+          <a target="blank" href="https://wan-tech.vercel.app">
+            Developed By <span style={{color: "#df6127"}}>  WanTech </span>
           </a>
         </p>
       </div>

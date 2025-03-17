@@ -55,12 +55,11 @@ const Contact = () => {
           <div className="contact_section-infos">
             <div>
               <p>+33 695469273</p>
-              <p>+241 077761684</p>
+              <p>+241 74382648 / 065150664</p>
               <p>onabatiment@gmail.com</p>
             </div>
             <div>
-              <p>Paris / France</p>
-              <p>Libreville / Gabon</p>
+              <p> Nzeng-Ayong / Libreville</p>
             </div>
           </div>
         </div>

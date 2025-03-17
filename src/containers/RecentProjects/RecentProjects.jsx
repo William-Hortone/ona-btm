@@ -1,12 +1,13 @@
 import React from "react";
-import { HeadText } from "../../components";
+import { HeadText, MovingCart } from "../../components";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./recentProjects.css";
+import { projectsData1, projectsData2 } from "../../constants/recentProjects";
 
 const RecentProjects = () => {
   return (
-    <div className="app__r-projects">
+    <div className="py-8 bg-secondary app__r-projects">
       <div className="app__r-projects_head ">
         <div className="app__r-projects_head-text-box">
           <HeadText title="nos projets récents" />
@@ -28,32 +29,10 @@ const RecentProjects = () => {
           </Link>
         </div>
       </div>
-      <div className="app__r-projects_container">
-        <Link to="/villa1" className="app__r-projects-items item1">
-          <span />
-          <div>01 </div>
-        </Link>
-        <Link to="/villa2" className="app__r-projects-items item2">
-          <span />
-          <div>02 </div>
-        </Link>
-        <Link to="villa3" className="app__r-projects-items item3">
-          <span />
-          <div>03 </div>
-        </Link>
-        <Link to="/house" className="app__r-projects-items item4 ">
-          <span />
-          <div>04 </div>
-        </Link>
-        <Link to="/villa2" className="app__r-projects-items item5">
-          <span />
-          <div>05 </div>
-        </Link>
-        <Link to="/apartment" className="app__r-projects-items item6">
-          <span />
-          <div>06 </div>
-        </Link>
-      </div>
+
+      {/* <div className="app__r-projects_container"></div> */}
+      <MovingCart data={projectsData1} direction="left" />
+      <MovingCart data={projectsData2} direction="right" />
     </div>
   );
 };

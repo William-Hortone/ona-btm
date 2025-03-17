@@ -17,6 +17,7 @@ import apartment2 from "../assets/villa1.jpg";
 import apartment3 from "../assets/villa4.jpg";
 import house1 from "../assets/house3.jpg";
 import house2 from "../assets/house13.jpg";
+// import house16 from "../asset/house16.jpg";
 import btm1 from "../assets/house15.jpg";
 import btm2 from "../assets/house6.jpg";
 import building from "../assets/building.jpg";
@@ -82,6 +83,7 @@ export default {
   apartment3,
   house1,
   house2,
+  // house16,
   btm1,
   btm2,
   building,
