@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 import "./singleProject.css";
 
 const SingleProject = ({
@@ -46,12 +46,12 @@ const SingleProject = ({
             viewport={{ once: true }}
             className="container_second-box-img"
           >
-            <img src={sProjectImg2} alt="villa image" />
+            <img src={sProjectImg2} alt="villa " />
           </motion.div>
         </div>
         <div className="app__singleProject-container_third-box">
           <div className="container_third-box-img">
-            <img src={sProjectImg3} alt="photo of the house" />
+            <img src={sProjectImg3} alt=" house" />
           </div>
         </div>
       </div>

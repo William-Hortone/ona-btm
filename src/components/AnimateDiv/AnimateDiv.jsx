@@ -1,7 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
-import { images } from "../../constants";
 import { CardImage } from "../";
 
 const AnimateDiv = ({ image }) => {

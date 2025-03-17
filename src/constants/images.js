@@ -63,7 +63,7 @@ import travaux3 from "../assets/travaux3.jpg";
 import travaux4 from "../assets/travaux4.jpg";
 import travaux5 from "../assets/travaux5.jpg";
 
-export default {
+const images = {
   logo,
   logoWebsite,
   villa1,
@@ -129,3 +129,5 @@ export default {
   travaux4,
   travaux5,
 };
+
+export default images;
