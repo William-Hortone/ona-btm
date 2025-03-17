@@ -13,7 +13,7 @@ import {
   Apartment,
   Batiment,
 } from "./PageProjects";
-import ScrollToTop from './hook/ScrollToTop'
+import ScrollToTop from "./hook/ScrollToTop";
 import "./App.css";
 
 const App = () => {
@@ -35,8 +35,8 @@ const App = () => {
         <>
           <Navbar />
           <AnimatePresence exitBeforeEnter initial={false}>
-          <ScrollToTop />
             <Routes key={location.pathname} location={location}>
+              <ScrollToTop />
               <Route path="/" element={<Home />} />
               {/* <Route path="/about" element={<About />} /> */}
               <Route path="/services" element={<Services />} />
