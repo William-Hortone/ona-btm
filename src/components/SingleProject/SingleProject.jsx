@@ -35,7 +35,7 @@ const SingleProject = ({
           </div>
           <div className="container_right-box">
             <div className="container_right-box-img">
-              <img src={sProjectImg1} alt="images of house" />
+              <img src={sProjectImg1} alt="s of house" />
             </div>
           </div>
         </div>
@@ -46,12 +46,12 @@ const SingleProject = ({
             viewport={{ once: true }}
             className="container_second-box-img"
           >
-            <img src={sProjectImg2} alt="villa image" />
+            <img src={sProjectImg2} alt="villa " />
           </motion.div>
         </div>
         <div className="app__singleProject-container_third-box">
           <div className="container_third-box-img">
-            <img src={sProjectImg3} alt="photo of the house" />
+            <img src={sProjectImg3} alt="house" />
           </div>
         </div>
       </div>

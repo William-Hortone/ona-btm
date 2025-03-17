@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 import "./contact.css";
 
 const Contact = () => {
@@ -8,10 +8,10 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+  // };
 
   const sendEmail = (e) => {
     e.preventDefault();
