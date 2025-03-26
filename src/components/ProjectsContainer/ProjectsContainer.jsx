@@ -19,10 +19,12 @@ const ProjectsContainer = ({ projects }) => {
               </div>
               <div className="project-info">
                 <div>
-                  <span>{project.category}</span>
-                  <span>{project.surface}</span>
+                  <span className="text-black">{project.category}</span>
+                  <span className="text-black">{project.surface}</span>
                 </div>
-                <span className="project-title">{project.specification}</span>
+                <span className="text-black project-title">
+                  {project.specification}
+                </span>
               </div>
             </article>
           </Link>

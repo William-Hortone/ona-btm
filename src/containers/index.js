@@ -11,6 +11,10 @@ import ServiceOCA from "./ServiceOCA/ServiceOCA";
 import ServiceOT from "./ServiceOT/ServiceOT";
 import SectionProject from "./SectionProject/SectionProject";
 import ServiceContact from "./ServiceContact/ServiceContact";
+import WrapperHeader from "./Header/WrapperHeader";
+import HomeNavbar from "./Navbar/HomeNavbar";
+
+
 
 export {
   Description,
@@ -26,4 +30,6 @@ export {
   ServiceOT,
   SectionProject,
   ServiceContact,
+  WrapperHeader,
+  HomeNavbar
 };

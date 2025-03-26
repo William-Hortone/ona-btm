@@ -1,9 +1,9 @@
 .section__padding {
   padding: 6rem 8rem;
 }
-.App{
+.App {
   height: 100%;
-  width:100%;
+  width: 100%;
   overflow-x: hidden;
   position: absolute;
 }
@@ -25,24 +25,24 @@
 .custom__btn {
   background: transparent;
   color: var(--color-white);
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1px;
-    border: 1px solid transparent;
-    outline: none;
-    cursor: pointer;
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
 }
-.custom__button:hover{
+.custom__button:hover {
   color: var(--color-white);
   background: #df6127;
 }
-.custom__btn:hover{
+.custom__btn:hover {
   color: var(--color-white);
- border: 1px solid var(--color-orange);
+  border: 1px solid var(--color-orange);
 }
 
 .p__cormorant {
@@ -51,7 +51,7 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: "tnum" on, "lnum" on;
   line-height: 29.9px;
   font-size: 23px;
 }
@@ -86,7 +86,7 @@
   .section__padding {
     padding: 4rem 2rem;
   }
-    .p__cormorant {
+  .p__cormorant {
     font-size: 21px;
   }
 
@@ -100,5 +100,90 @@
   }
   .p__cormorant {
     font-size: 19px;
+  }
+}
+
+/* Global styles */
+body {
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure sections stack properly on smaller screens */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image handling */
+.section-center__img,
+.section-right__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  .section-left,
+  .section-center,
+  .section-right {
+    width: 100%;
+  }
+
+  .section-top__title {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-top__title {
+    font-size: 8vw;
+  }
+
+  .section-left__title {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-top__title {
+    font-size: 6vw;
+  }
+
+  .section-left__title {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.8rem;
   }
 }

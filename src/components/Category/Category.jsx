@@ -1,42 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./category.css";
 
 const Category = ({ handleFilterProjects }) => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  useEffect(() => {
+    console.log("Active category:", activeCategory);
+  }, [activeCategory]);
+
+  const handleClick = (category) => {
+    setActiveCategory(category);
+    handleFilterProjects(category);
+  };
+
   return (
     <div className="categories-container">
-      <h3>Catégories</h3>
-      <div className="categories_btn-container">
-        <div
-          className="btn-category"
-          onClick={() => handleFilterProjects("all")}
-        >
-          <span>Tous</span>
-        </div>
-        <div
-          className="btn-category"
-          onClick={() => handleFilterProjects("Villa")}
-        >
-          <span>Villas</span>
-        </div>
-        <div
-          className="btn-category"
-          onClick={() => handleFilterProjects("Maison")}
-        >
-          <span>Maisons</span>
-        </div>
-
-        <div
-          className="btn-category"
-          onClick={() => handleFilterProjects("Bâtiment")}
-        >
-          <span> Bâtiment</span>
-        </div>
-        <div
-          className="btn-category"
-          onClick={() => handleFilterProjects("Appartement")}
-        >
-          <span> Appartements</span>
-        </div>
+      <h3 className="text-black">Catégories</h3>
+      <div className="text-gray-600 categories_btn-container">
+        {["all", "Villa", "Maison", "Bâtiment", "Appartement"].map((category) => (
+          <div
+            key={category}
+            className={`btn-category ${activeCategory === category ? "active" : ""}`}
+            onClick={() => handleClick(category)}
+          >
+            <span>{category === "all" ? "Tous" : category}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

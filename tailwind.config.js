@@ -18,7 +18,10 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        antonio: ["Antonio", "sans-serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

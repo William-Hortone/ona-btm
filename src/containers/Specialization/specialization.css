@@ -39,6 +39,9 @@
 
 .app__specialization-category h3{
     font-weight: 600;
+    color: black;
+    font-size: 16px;
+    font-family: var(--font-alt);
 }
 @media screen and (max-width: 1200px) {
     .app__specialization-left-box{

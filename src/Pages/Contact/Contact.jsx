@@ -1,34 +1,36 @@
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
+import { Navbar } from "../../containers";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-  // };
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     emailjs
       .sendForm(
-        "service_86h9uwu",
-        "template_meb9jv8",
-        // form.current,
-        "YOUR_PUBLIC_KEY"
+        "service_gwc2cvj", // Replace with your EmailJS Service ID
+        "template_hortone",
+        // Replace with your EmailJS Template ID
+        form.current,
+        "ucL7ZCbnHctpnLKBb" // Replace with your EmailJS Public Key
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email Sent:", result.text);
+          alert("Message envoyé avec succès !");
+          form.current.reset();
+          setIsLoading(false);
         },
         (error) => {
-          console.log(error.text);
+          console.error("Email Error:", error.text);
+          alert("Une erreur est survenue. Veuillez réessayer.");
+          setIsLoading(false);
         }
       );
   };
@@ -37,10 +39,11 @@ const Contact = () => {
     <motion.div
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 1 }}
-      exit={{ Scale: 0 }}
+      exit={{ scale: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__contact"
     >
+      <Navbar />
       <div className="app__contact-container">
         <div className="app__contact-container_left-box">
           <div className="contact-title-box">
@@ -53,47 +56,40 @@ const Contact = () => {
             </motion.h2>
           </div>
           <div className="contact_section-infos">
-            <div>
-              <p>+33 695469273</p>
-              <p>+241 74382648 / 065150664</p>
-              <p>onabatiment@gmail.com</p>
+            <div className="text-white">
+              <p className="text-white">+33 695469273</p>
+              <p className="text-white">+241 74382648 / 065150664</p>
+              <p className="text-white">onabatiment@gmail.com</p>
             </div>
             <div>
-              <p> Nzeng-Ayong / Libreville</p>
+              <p className="text-white">Nzeng-Ayong / Libreville</p>
             </div>
           </div>
         </div>
         <div className="app__contact-container_right-box">
-          <form onSubmit={sendEmail}>
-            <label id="name">Nom</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              value={email}
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label for="message">Message</label>
-            <textarea
-              value={message}
-              name="email"
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <button type="submit" className="custom__buttocn">
-              Envoyer
+          <form ref={form} onSubmit={sendEmail}>
+            <label htmlFor="name">Nom</label>
+            <input className="bg-transparent" type="text" id='name' name="user_name" required />
+
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="user_email" required />
+
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" required />
+
+            <button
+              type="submit"
+              className="custom__button"
+              disabled={isLoading}
+            >
+              {isLoading ? "Envoi..." : "Envoyer"}
             </button>
           </form>
         </div>
       </div>
       <div className="contact-copyright">
-        <p>© Ona Batiment 2023</p>
-        <p>By William Hortone</p>
+        <p className="text-white">© Ona Batiment 2025</p>
+        <p className="text-white">developed By <a target="blank" className="font-bold text-orange-600" href="https://wan-tech.vercel.app">WanTech</a> </p>
       </div>
       <span className="blur-span" />
     </motion.div>

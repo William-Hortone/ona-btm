@@ -4,6 +4,7 @@ import images from "../../constants/images";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./serviceOCA.css";
+import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 const ServiceOCA = () => {
   const [ref, inView] = useInView({
@@ -31,21 +32,36 @@ const ServiceOCA = () => {
       <div className="app__serviceOCA-first-box">
         <HeadText title="conception architecturale" />
         <p>
-          Les prestations de conception architecturale proposées par CONCEPTION
-          ARCHI s’adaptent aux besoins les plus ciblés de vos chantiers partout
-          dans le Gabon. <br />
-          Dans le cadre d’une remise en état, d’une extension ou d’un projet
-          neuf, nous réalisons : <br /> <br />
+          Nous adaptons nos prestations aux besoins spécifiques de chaque projet
+          en tenant compte de la topographie du terrain. Que ce soit pour une
+          remise en état, une extension ou une construction neuve, nous vous
+          accompagnons à chaque étape avec des solutions sur mesure : <br />
+          <br />
         </p>
+        <span className="text=black font-medium">Nos Prestations :</span>
         <ul>
-          <li>Esquisses et plans d'aménagement</li>
-          <li>Des plans 3D de construction</li>
-          <li>Des plans de valorisation d’un bâtiment ancien</li>
-          <li>Des plans de surélévation d’appartement</li>
-          <li>Simulation 3D</li>
-          <li>Synthèse des plans</li>
+          <li className="flex items-center">
+            <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+            <span>Esquisses et plans d'aménagement </span>
+          </li>
+          <li className="flex w-full h-auto gap-2 items-centedr">
+            <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+            <span>
+              Modélisation 3D (plans de construction, simulations, <br />
+              valorisation du patrimoine)
+            </span>
+          </li>
+          <li className="flex items-center">
+            <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+            <span>Études de surélévation et optimisation des espaces</span>
+          </li>
+          <li className="flex items-center">
+            <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+            <span>Synthèse des plans et intégration technique</span>
+          </li>
         </ul>
       </div>
+
       <motion.div
         ref={ref}
         className="animated app__serviceOCA-img-box"
@@ -55,27 +71,23 @@ const ServiceOCA = () => {
       >
         <img src={images.travaux2} alt="plan images" />
       </motion.div>
+
       <div className="app__serviceOCA-third-box">
         <HeadText title="Bureau d'études : structure" />
         <p>
-          ÉTUDES est un bureau d’études structure spécialisé dans le calcul, la
-          conception, l’optimisation et les études d’exécutions des structures
-          pour le bâtiment et le génie civil. <br />
-          Alliant rigueur et créativité, nos ingénieurs relèvent les différents
-          challenges techniques des grands projets. Ils analysent et identifient
-          avec précision les contraintes dès la phase d’avant projet tout en
-          conseillant et orientant le client et nos partenaires. Nos ingénieurs
-          jouissent d’une grande expérience et connaissent les multiples genres
-          de structures exploités dans le bâtiment ainsi que les matériaux
-          utilisés, qu’il s’agisse de béton, de métal, de bois ou d’une
-          association entre ces différents matériaux.
+          Notre bureau d’études, est spécialisé dans le calcul, la conception et
+          l’optimisation des structures en bâtiment et en génie civil. Nos
+          ingénieurs combinent rigueur et créativité pour relever les défis
+          techniques et proposer des solutions adaptées aux contraintes
+          spécifiques de chaque projet
         </p>
         <p>
           Notre professionnalisme, notre engagement et notre sens du service de
           proximité sont la garantie de la qualité de nos missions. Nous
           intervenons dans les domaines d’activités suivants: <br />
         </p>
-        <h3>STRUCTURE</h3>
+        {/* <HeadText title="Nos domaines d'expertise" /> */}
+        <h3>Nos domaines d'expertise</h3>
         <motion.div
           ref={ref}
           className="animated service_be-structure-container "
@@ -83,25 +95,49 @@ const ServiceOCA = () => {
           animate={inView ? "visible" : "hidden"}
           variants={variants}
         >
-          <p>La conception, l’optimisation et l'étude de structures :</p>
+          <p>Conception et optimisation des structures:</p>
           <ul>
-            <li>Béton armé</li>
-            <li>Construction métallique</li>
-            <li>Construction en bois</li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Béton armé</span>
+            </li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Construction métallique</span>
+            </li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Construction en bois</span>
+            </li>
           </ul>
-          <p>Les plans de projet et d'exécutions:</p>
+          <p>Plans d'exécution détaillés:</p>
           <ul>
-            <li>Coffrage</li>
-            <li>Armature</li>
-            <li>Nomenclatures</li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Coffrage</span>
+            </li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Armature</span>
+            </li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Nomenclature</span>
+            </li>
           </ul>
-          <p>Les calculs de structures :</p>
+          <p>Calculs et analyses techniques :</p>
           <ul>
-            <li>Descentes de charges</li>
-            <li>Calcul 3D et dynamique</li>
-            <li>
-              Éditer toute note de calcul de dimensionnement conformément aux
-              réglementations en vigueur.
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Descentes de charges</span>
+            </li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Calculs 3D et simulations dynamiques</span>
+            </li>
+            <li className="flex items-center">
+              <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />
+              <span>Notes de calcul conformes aux normes en vigueur.</span>
             </li>
           </ul>
         </motion.div>

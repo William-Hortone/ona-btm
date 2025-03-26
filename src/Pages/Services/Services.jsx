@@ -8,6 +8,7 @@ import {
   ServiceOT,
   ServiceContact,
   Footer,
+  Navbar,
 } from "../../containers";
 import "./service.css";
 
@@ -20,6 +21,7 @@ const Services = () => {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__service"
     >
+      <Navbar />
       <HeadImage img={images.building17} title="Services" />
       <ServiceOCA />
       <ServiceOBE />

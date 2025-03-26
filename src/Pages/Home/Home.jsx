@@ -1,13 +1,13 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Consultation } from "../../components";
-import { motion } from "framer-motion";
 import {
-  Header,
   Description,
-  Specialization,
-  RecentProjects,
   Footer,
+  RecentProjects,
+  Specialization
 } from "../../containers";
+import SectionHeader from './../../containers/Header/SectionHeader';
 import "./home.css";
 
 const Home = () => {
@@ -19,7 +19,8 @@ const Home = () => {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__homePage"
     >
-      <Header />
+ 
+      <SectionHeader />
       <Description />
       <Consultation />
       <Specialization />

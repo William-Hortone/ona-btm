@@ -62,6 +62,17 @@ import travaux2 from "../assets/travaux2.jpg";
 import travaux3 from "../assets/travaux3.jpg";
 import travaux4 from "../assets/travaux4.jpg";
 import travaux5 from "../assets/travaux5.jpg";
+import travaux6 from "../assets/travaux6.jpg";
+import travaux7 from "../assets/travaux7.jpg";
+import travaux8 from "../assets/travaux8.jpg";
+import travaux9 from "../assets/travaux9.jpg";
+import travaux10 from "../assets/travaux10.jpg";
+import travaux11 from "../assets/travaux11.jpg";
+import travaux12 from "../assets/travaux12.jpg";
+import travaux13 from "../assets/travaux13.jpg";
+import travaux14 from "../assets/travaux14.jpg";
+import travaux15 from "../assets/travaux15.jpg";
+import travaux16 from "../assets/travaux16.jpg";
 
 const images = {
   logo,
@@ -128,6 +139,17 @@ const images = {
   travaux3,
   travaux4,
   travaux5,
+  travaux6,
+  travaux7,
+  travaux8,
+  travaux9,
+  travaux10,
+  travaux11,
+  travaux12,
+  travaux13,
+  travaux14,
+  travaux15,
+  travaux16,
 };
 
 export default images;

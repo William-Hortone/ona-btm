@@ -11,6 +11,11 @@ import AnimateLeft from "./AnimateDiv/AnimateLeft";
 import CardCategory from "./cardCategory/CardCategory";
 import Counter from "./counter/Counter";
 import MovingCart from "./MovingCart";
+import SectionCenter from "./HeroHeader/SectionCenter";
+import SectionLeft from "./HeroHeader/SectionLeft";
+import SectionRight from "./HeroHeader/SectionRight";
+import SectionTop from "./HeroHeader/SectionTop";
+import HeroHeader from "./HeroHeader/HeroHeader";
 
 export {
   CardImage,
@@ -26,4 +31,9 @@ export {
   CardCategory,
   Counter,
   MovingCart,
+  SectionCenter,
+  SectionLeft,
+  SectionRight,
+  SectionTop,
+  HeroHeader
 };

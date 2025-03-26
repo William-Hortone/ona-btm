@@ -10,6 +10,7 @@
     font-weight: 500;
     position: relative;
     padding-bottom: 1rem;
+    color: black;
 }
 .app__headText h1::after{
     content: '';

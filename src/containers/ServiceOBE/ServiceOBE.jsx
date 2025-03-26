@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./serviceOBE.css";
 
+import { FaSlack } from "react-icons/fa";
+
 const ServiceOBE = () => {
   const [ref, inView] = useInView({
     threshold: 0.2,
@@ -47,14 +49,39 @@ const ServiceOBE = () => {
     <div className="app__serviceOBE">
       <div className="app__serviceOBE-box-one">
         <h3>ECONOMIE DE LA CONSTRUCTION</h3>
-        <p>Les prescriptions techniques et études de prix tous corps d’état:</p>
+        <p>
+          Nous assurons un suivi précis des coûts et de la qualité à travers:
+        </p>
+
         <ul>
-          <li>Choix des matériaux et optimisation du projet</li>
-          <li>Elaboration des budgets prévisionnels et définitifs</li>
-          <li>Elaboration des cahiers des charges</li>
-          <li>Vérification et analyse technique des offres d'entreprises</li>
-          <li>Assistance à la passation des contrats de travaux</li>
+          <li className="flex items center">
+            <FaSlack size={20} color="#ff7a3d" />
+            <span>
+              Prescriptions techniques et études de prix (choix des matériaux,
+              optimisation du budget)
+            </span>
+          </li>
+          <li className="flex items center">
+            <FaSlack size={20} color="#ff7a3d" />
+            <span> Élaboration des cahiers des charges</span>
+          </li>
+          <li className="flex items center">
+            <FaSlack size={20} color="#ff7a3d" />
+            <span>Elaboration des cahiers des charges</span>
+          </li>
+          <li className="flex items center">
+            <FaSlack size={20} color="#ff7a3d" />
+            <span>Analyse et validation des offres d’entreprises</span>
+          </li>
+          <li className="flex items center">
+            <FaSlack size={20} color="#ff7a3d" />
+            <span>Assistance à la passation des contrats de travaux</span>
+          </li>
         </ul>
+        <p className="mt-3">
+          Vous bénéficiez d’une expertise complète et d’un accompagnement
+          sur-mesure pour garantir le succès de vos projets de construction.
+        </p>
       </div>
       <motion.div
         ref={ref}
@@ -63,7 +90,7 @@ const ServiceOBE = () => {
         animate={inView ? "visible" : "hidden"}
         variants={variants}
       >
-        <img src={images.building17} alt="images of building" />
+        <img src={images.travaux16} alt="images of building" />
       </motion.div>
       <motion.div
         ref={refLeft}
@@ -72,22 +99,22 @@ const ServiceOBE = () => {
         animate={inViewLeft ? "visible" : "hidden"}
         variants={variantsLeft}
       >
-        <img src={images.building9} alt="images of building" />
+        <img src={images.travaux12} alt="images of building" />
       </motion.div>
       <div className="serviceOBE_item app__serviceOBE-box-four">
-        <img src={images.plan7} alt="images of building" />
+        <img src={images.travaux14} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-five">
-        <img src={images.building16} alt="images of building" />
+        <img src={images.travaux15} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-six">
-        <img src={images.building15} alt="images of building" />
+        <img src={images.travaux11} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-seven">
-        <img src={images.building11} alt="images of building" />
+        <img src={images.travaux2} alt="images of building" />
       </div>
       <div className="serviceOBE_item app__serviceOBE-box-hight">
-        <img src={images.plan5} alt="images of building" />
+        <img src={images.travaux4} alt="images of building" />
       </div>
     </div>
   );

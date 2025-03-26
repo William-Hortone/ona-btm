@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./singleProject.css";
+import { Navbar } from "../../containers";
 
 const SingleProject = ({
   projectTitle,
@@ -21,6 +22,7 @@ const SingleProject = ({
 
   return (
     <div className="app__singleProject">
+      <Navbar />
       <div className="fixed-box"></div>
       <div
         className={
