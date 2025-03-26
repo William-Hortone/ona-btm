@@ -5,9 +5,9 @@ import {
   Description,
   Footer,
   RecentProjects,
-  Specialization
+  Specialization,
 } from "../../containers";
-import SectionHeader from './../../containers/Header/SectionHeader';
+import SectionHeader from "./../../containers/Header/SectionHeader";
 import "./home.css";
 
 const Home = () => {
@@ -19,7 +19,6 @@ const Home = () => {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="app__homePage"
     >
- 
       <SectionHeader />
       <Description />
       <Consultation />

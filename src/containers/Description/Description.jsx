@@ -29,7 +29,10 @@ const Description = () => {
         </p>
       </div>
       <div className="app__description-right-box">
+      <div className="">
+
         <AnimateDiv image={images.building11} />
+      </div>
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
           </li>
           <li className="navbar__link">
             <NavLink style={navLinkStyle} to="/projects">
-              Projects
+              Projets
             </NavLink>
           </li>
           <li className="navbar__link">

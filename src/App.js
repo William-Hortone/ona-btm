@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { Home, Services, Contact, Projects, AboutPage } from "./Pages";
-import { Navbar } from "./containers";
 import { AnimatePresence } from "framer-motion";
-import { Counter } from "./components";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import "./App.css";
 import {
+  Apartment,
+  Batiment,
+  House,
   Villa1,
   Villa2,
   Villa3,
   Villa4,
-  House,
-  Apartment,
-  Batiment,
 } from "./PageProjects";
+import { AboutPage, Contact, Home, Projects, Services } from "./Pages";
+import { Counter } from "./components";
 import ScrollToTop from "./hook/ScrollToTop";
-import "./App.css";
 
 const App = () => {
   const location = useLocation();
@@ -35,8 +34,8 @@ const App = () => {
         <>
           {/* <Navbar /> */}
           <AnimatePresence exitBeforeEnter initial={false}>
+            <ScrollToTop />
             <Routes key={location.pathname} location={location}>
-              <ScrollToTop />
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<Services />} />

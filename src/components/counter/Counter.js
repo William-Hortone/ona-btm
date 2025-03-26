@@ -5,19 +5,22 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let i = 0;
-    const interval = setInterval(() => {
-      setCount(i);
-      i++;
+    const startTime = Date.now();
+    const duration = 4000;
 
-      if (i > 100) {
-        clearInterval(interval);
+    const updateCount = () => {
+      const elapsedTime = Date.now() - startTime;
+      const progress = Math.min(elapsedTime / duration, 1);
+      const newCount = Math.floor(progress * 100);
+
+      setCount(newCount);
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
       }
-    }, 30);
-
-    return () => {
-      clearInterval(interval);
     };
+
+    requestAnimationFrame(updateCount);
   }, []);
 
   return (

@@ -72,10 +72,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <p>Ona Batiment © 2025</p>
-        <p>
+        <p className="text-white">Ona Batiment © 2025</p>
+        <p className="text-white">
           <a target="blank" href="https://wan-tech.vercel.app">
-            Developed By <span style={{color: "#df6127"}}>  WanTech </span>
+            Developed By <span style={{ color: "#df6127" }}> WanTech </span>
           </a>
         </p>
       </div>

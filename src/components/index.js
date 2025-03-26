@@ -1,39 +1,31 @@
-import CardImage from "./CardImage/CardImage";
-import Consultation from "./Consultation/Consultation";
-import HeadText from "./HeadText/HeadText";
-import HeadImage from "./HeadImage/HeadImage";
-import Category from "./Category/Category";
-import ProjectsContainer from "./ProjectsContainer/ProjectsContainer";
-import SingleProject from "./SingleProject/SingleProject";
-import NextProject from "./NextProject/NextProject";
 import AnimateDiv from "./AnimateDiv/AnimateDiv";
 import AnimateLeft from "./AnimateDiv/AnimateLeft";
 import CardCategory from "./cardCategory/CardCategory";
+import CardImage from "./CardImage/CardImage";
+import Category from "./Category/Category";
+import Consultation from "./Consultation/Consultation";
 import Counter from "./counter/Counter";
-import MovingCart from "./MovingCart";
-import SectionCenter from "./HeroHeader/SectionCenter";
-import SectionLeft from "./HeroHeader/SectionLeft";
-import SectionRight from "./HeroHeader/SectionRight";
-import SectionTop from "./HeroHeader/SectionTop";
+import HeadImage from "./HeadImage/HeadImage";
+import HeadText from "./HeadText/HeadText";
 import HeroHeader from "./HeroHeader/HeroHeader";
+import MovingCart from "./MovingCart";
+import NextProject from "./NextProject/NextProject";
+import ProjectsContainer from "./ProjectsContainer/ProjectsContainer";
+import SingleProject from "./SingleProject/SingleProject";
 
 export {
-  CardImage,
-  Consultation,
-  HeadText,
-  HeadImage,
-  Category,
-  ProjectsContainer,
-  SingleProject,
-  NextProject,
   AnimateDiv,
   AnimateLeft,
   CardCategory,
+  CardImage,
+  Category,
+  Consultation,
   Counter,
+  HeadImage,
+  HeadText,
+  HeroHeader,
   MovingCart,
-  SectionCenter,
-  SectionLeft,
-  SectionRight,
-  SectionTop,
-  HeroHeader
+  NextProject,
+  ProjectsContainer,
+  SingleProject,
 };
