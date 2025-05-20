@@ -9,7 +9,7 @@ const Description = () => {
       <div className="app__description-left-box">
         <HeadText title="Ona Bâtiment" />
         <h2 className="text-black">Où nous construisons vos visions</h2>
-        <p>
+        <p className="text-[15px] md:text-[18px]">
           Chez ONA Bâtiment, nous transformons vos idées en réalisations
           concrètes grâce à l’expertise de nos équipes en études et travaux.
           Nous garantissons à nos clients et partenaires une exécution précise,
@@ -22,7 +22,7 @@ const Description = () => {
           des meilleurs outils et techniques modernes pour mener à bien chaque
           chantier, en assurant une qualité irréprochable et le respect des
           normes en vigueur.
-          <br /> 
+          <br />
           Avec ONA Bâtiment, vous bénéficiez d’un partenaire fiable et
           compétent, capable de répondre à toutes vos exigences avec rigueur et
           professionnalisme.

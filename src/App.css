@@ -1,3 +1,13 @@
+body {
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
 .section__padding {
   padding: 6rem 8rem;
 }
@@ -103,17 +113,7 @@
   }
 }
 
-/* Global styles */
-body {
-  font-family: "Antonio", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Ensure sections stack properly on smaller screens */
 main {

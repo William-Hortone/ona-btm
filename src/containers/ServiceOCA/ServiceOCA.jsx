@@ -38,7 +38,7 @@ const ServiceOCA = () => {
           accompagnons à chaque étape avec des solutions sur mesure : <br />
           <br />
         </p>
-        <span className="text=black font-medium">Nos Prestations :</span>
+        <span className="font-medium text-black">Nos Prestations :</span>
         <ul>
           <li className="flex items-center">
             <IoCheckmarkDoneCircle size={25} color="#ff7a3d" />

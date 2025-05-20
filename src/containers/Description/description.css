@@ -19,7 +19,7 @@
   font-family: var(--font-alt);
   color: #000000b2;
   line-height: 1.7;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 .app__description-contact_info {
   margin-top: 3rem;
