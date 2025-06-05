@@ -1,63 +1,41 @@
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "../../lib/utils";
-import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
-  speed = "fast",
+  direction = "left", // "left" or "right"
+  speed = "fast",       // "fast", "normal", "slow"
   pauseOnHover = true,
   className,
 }) => {
-  const containerRef = React.useRef(null);
-  const scrollerRef = React.useRef(null);
+  const containerRef = useRef(null);
+  const scrollerRef = useRef(null);
+  const [start, setStart] = useState(false);
+  const hasDuplicated = useRef(false);
 
   useEffect(() => {
-    addAnimation();
-  }, []);
-  const [start, setStart] = useState(false);
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
+    if (!hasDuplicated.current && scrollerRef.current && containerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
-
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
+        scrollerRef.current.appendChild(duplicatedItem);
       });
 
-      getDirection();
-      getSpeed();
+      // Set direction
+      const directionValue = direction === "left" ? "forwards" : "reverse";
+      containerRef.current.style.setProperty("--animation-direction", directionValue);
+
+      // Set speed
+      const duration =
+        speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+      containerRef.current.style.setProperty("--animation-duration", duration);
+
       setStart(true);
+      hasDuplicated.current = true;
     }
-  }
-  const getDirection = () => {
-    if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
-      } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
-      }
-    }
-  };
-  const getSpeed = () => {
-    if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      }
-    }
-  };
+  }, [direction, speed]);
+
   return (
     <div
       ref={containerRef}
@@ -75,9 +53,10 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => (
-          <Link to={item.link}
+          <Link
+            to={item.link}
             key={idx}
-            className="relative w-[350px] h-full  max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-cover bg-center flex"
+            className="relative w-[350px] h-full max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-cover bg-center flex"
             style={{ backgroundImage: `url(${item.image})` }}
           >
             <div className="relative z-10 flex items-center justify-center w-full h-full py-20 text-white bg-black/50 rounded-2xl">

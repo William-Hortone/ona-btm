@@ -65,7 +65,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
         />
 
         {toggleMenu || showMenu ? (
-          <div className="app__navbar-smallScreen_overlay slide-bottom">
+          <div className="z-50 app__navbar-smallScreen_overlay slide-bottom">
             <div className="smallSreen-headLine">
               <img src={images.logoWebsite} alt="logo img" />
               <FaTimes color="#fff" fontSize={27} onClick={handleCloseMenu} />
@@ -88,7 +88,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
               </li>
               <li className="navbar__link">
                 <Link to="/projects" onClick={() => setToggleMenu(false)}>
-                  Projects
+                  Projets
                 </Link>
               </li>
               <li className="navbar__link">

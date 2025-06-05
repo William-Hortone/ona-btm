@@ -20,7 +20,6 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an asynchronous task
     setTimeout(() => {
       setIsLoading(false);
     }, 5000);
@@ -32,7 +31,6 @@ const App = () => {
         <Counter />
       ) : (
         <>
-          {/* <Navbar /> */}
           <AnimatePresence exitBeforeEnter initial={false}>
             <ScrollToTop />
             <Routes key={location.pathname} location={location}>

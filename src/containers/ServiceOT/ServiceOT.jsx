@@ -1,5 +1,4 @@
 // import React from "react";
-import { HeadText } from "../../components";
 import "./serviceOT.css";
 
 // const ServiceOT = () => {
@@ -38,16 +37,16 @@ import "./serviceOT.css";
 
 // export default ServiceOT;
 
-import * as React from "react";
 import { styled } from "@mui/material/styles";
+import * as React from "react";
 // import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 
 import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary, {
   accordionSummaryClasses,
 } from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 
 const Accordion = styled((props) => (

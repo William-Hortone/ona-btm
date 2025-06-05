@@ -175,15 +175,7 @@ const SectionHeader = () => {
               />
             </div>
 
-            {/* 
-            <div className="lg:relative  static overflow-hidden flex flex-col justify-end w-[60%] md:w-[45%] h-full min-h-[50%]">
-              <img
-                ref={sectionCenterImgRef}
-                className="absolute object-cover w-full h-full"
-                src={images.building9}
-                alt="center"
-              />
-            </div> */}
+          
           </main>
         </div>
       </div>

@@ -7,7 +7,7 @@ const HomeNavbar = ({setShowMenu, showMenu}) => {
   return (
     <>
         { showMenu && (
-          <div className="app__navbar-smallScreen_overlay slide-bottom">
+          <div className="z-50 app__navbar-smallScreen_overlay slide-bottom">
             <div className="smallSreen-headLine">
               <img src={images.logoWebsite} alt="logo img" />
               <FaTimes color="#fff" fontSize={27} onClick={() => setShowMenu(false)}  />
@@ -30,7 +30,7 @@ const HomeNavbar = ({setShowMenu, showMenu}) => {
               </li>
               <li className="navbar__link">
                 <Link to="/projects" onClick={() => setShowMenu(false)}>
-                  Projects
+                  Projets
                 </Link>
               </li>
               <li className="navbar__link">
